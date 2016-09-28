@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="b2cApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系我们-{pigcms::C('site_title')}</title>
+<meta name="keywords" content="{pigcms::C('keyword')}" />
+<meta name="description"  content="{pigcms::C('content')}" />
+<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/base.css" />
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/add.css" />
+<link rel="stylesheet" href="/tpl/Home/weidogs/css/common.css"/>
+<script>var $pageInfo = { publishmentSystemID : 109, channelID : 119, contentID : 0, siteUrl : "", homeUrl : "/usercenter" }</script>
+</head>
+
+<body ng-controller="userController">
+<include file="Public:header"/>
+<div class="sub-header">
+  <div class="grid16 center clearfix">
+    <h1 class="page-heading left blue darken">
+          联系我们
+    </h1>
+    
+      <ul class="sub-header-nav">
+            <li><a href="{pigcms::U('Home/Index/about')}">公司简介</a></li>
+            <li><a href="{pigcms::U('Home/Index/contact')}" class="current">联系我们</a></li>
+      </ul>
+    
+  </div>
+</div>
+<div class="gutter"></div>
+<!-- header -->
+<div id="main-container" class="main">
+
+  <div class="grids-container clearfix" id="about-company">
+    <h3 class="a-center">加入{pigcms::C('site_name')}共赢亿万商机</h3>
+    <div class="grid10 left">
+      
+        <p style="text-indent:2em;text-align:left;">{pigcms::C('site_name')}网络科技有限公司</p><p style="text-indent:2em;text-align:left;">地　址：{pigcms::C('site_name')}微信营销平台 </p><p style="text-indent:2em;text-align:left;">咨询热线：400-6371-590 &nbsp; &nbsp;</p><p style="text-indent:2em;text-align:left;">全国招商热线-胡总：18520281288
+</p><p style="text-indent:2em;text-align:left;">网　址：http://www.weidogs.com</p><p style="text-indent:2em;text-align:left;">邮　箱：vvvmall@126.com</p>
+      
+    </div>
+    <div id="company-highlights" class="grid5 right">
+      <h5 class="blue">数字指标</h5>
+      <ul>
+        <li> 公司成立至今 <span class="blue">3年</span> </li>
+        <li> 签约大型客户超过<span class="blue">800</span>多家 </li>
+        <li> 服务中国政府部委单位客户共<span class="blue">4</span>家 </li>
+      </ul>
+    </div>
+  </div>
+  <div class="gutter"></div>
+  <div class="grid8 a-center callout">
+    <h3>团队扩充</h3>
+    <p> 我们的客户数量正在迅速增长，我们正在积极寻找优秀人才加入我们的团队。 </p>
+    <a href="mailto:admin@" target="_blank" class="primary-button large">投放简历</a> </div>
+</div><!-- main-container -->
+<include file="Public:footer"/>
+</body>
+</html>
+<script src="{pigcms::RES}/scripts/lib/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="{pigcms::RES}/scripts/lib/json2.js" type="text/javascript"></script>
+<script src="{pigcms::RES}/scripts/lib/Template.js" type="text/javascript"></script>
+<link href="{pigcms::RES}/scripts/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+<script src="{pigcms::RES}/scripts/lib/toastr/toastr.min.js" type="text/javascript"></script>
+
+
+<script src="{pigcms::RES}/scripts/js/png.js" type="text/javascript"></script>
+<script src="{pigcms::RES}/scripts/js/base.js" type="text/javascript"></script>
+
+<script language="javascript" src="{pigcms::RES}/scripts/Template/services/notifyService.js"></script>
+<script language="javascript" src="{pigcms::RES}/scripts/Template/services/authService.js"></script>
+<script language="javascript" src="{pigcms::RES}/scripts/Template/controllers/authController.js"></script>

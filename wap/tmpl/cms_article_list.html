@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cms文章列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+</head>
+<body>
+<header id="header" class="fixed">
+    <div class="header-wrap">
+        <div class="header-l">
+            <a href="javascript:history.go(-1)">
+                <i class="back"></i>
+            </a>
+        </div>
+        <div class="header-title">
+            <h1>cms文章列表</h1>
+        </div>
+        <div class="header-r">
+            <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a>
+        </div>
+    </div>
+    <div class="nctouch-nav-layout">
+        <div class="nctouch-nav-menu">
+            <span class="arrow"></span>
+            <ul>
+                <li><a href="../index.html"><i class="home"></i>首页</a></li>
+                <li><a href="../tmpl/search.html"><i class="search"></i>搜索</a></li>
+                <li><a href="../tmpl/member/member.html"><i class="member"></i>我的商城</a></li>
+                <li><a href="javascript:void(0);"><i class="message"></i>消息<sup></sup></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="nctouch-main-layout">
+    <div id="cms-article-content"></div>
+</div>
+
+<div id="footer"></div>
+
+</body>
+<script type="text/html" id="cms-article-list">
+	<div class="cms_article_type"><%=cms_article_type_name%></div>
+	<% if(cms_article_list.length >0){%>
+	<ul class="cms_article-list">
+		<% for (var i = 0;i<cms_article_list.length;i++){%>
+			<li class="cms_article-list-item">
+				<a href="<%=WapSiteUrl%>/tmpl/cms_article_show.html?article_id=<%=cms_article_list[i].article_id%>&article_title=<%=cms_article_list[i].article_title %>"><%=cms_article_list[i].article_title%>
+				</a>
+			</li>
+        <%}%>
+	</ul>
+    <%}else{%>
+    	<div class="no-record m10">
+            暂无该分类的文章
+        </div>
+    <%}%>
+</script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/cms_article_list.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</html>

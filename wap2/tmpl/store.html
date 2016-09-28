@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>玩艺网</title>
+    <link rel="stylesheet" href="css/dianpuneiye.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="javascript:history.go(-1)"><i class="back"></i></a>
+        <span id="set_head_store_name" style="color: white;"></span>
+    </div>
+    <div class="hezi" id="store_detail">
+
+    </div>
+</div>
+
+<script type="text/html" id="store_detail_model">
+	
+	
+		
+	<div class="shangping-list">
+		<% if(store_info != null) { %>
+			<div class="guangaotu">
+				<img src="<%=store_info.app_banner%>" alt=""/>
+			</div>
+			<div class="guangaotut">
+				<img src="<%=store_info.store_avatar%>" alt=""/>
+				 <span class="biaoti"><%=store_info.store_name%></span>
+				 <i class="biaotipin"></i>
+				 <u class="dizhi">@<%=store_info.area_info%></u>
+				 <p class="duanluowen" id="duanluowen">
+
+						<%== store_info.store_description %>
+
+				</p>
+			</div>
+		<% } %>
+		<% if(goods_list != null) { %>
+			
+			<% for(var i in goods_list) { %>
+				<div class="shangping-m">
+					<div class="cp-pic">
+						<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id%>">
+						<img src="<%=goods_list[i].goods_image_url%>" alt=""/>
+						</a>
+					</div>
+					<div class="cp-text">
+						<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id%>">
+						<i><%=goods_list[i].goods_name%></i>
+						</a>
+						<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id%>">
+						<i>¥<%=goods_list[i].goods_price%></i>
+						</a>
+					</div>
+				</div>
+			<% } %>
+		<% } %>
+
+	</div>
+	
+	<% if(store_info != null) { %>
+		<div style="display: none" class="tanchuk" id="tanchuk">
+			<span class="close" id="close">X</span>
+			<span class="tito">About me</span>
+			<span class="wenben">
+				<%==store_info.store_introduction%>
+			</span>
+			<div class="dianpum">
+				<span class=""><img src="<%=store_info.store_avatar%>" alt=""/></span>
+				<span>
+					<i><%=store_info.store_name%></i>
+					<i>@<%=store_info.area_info%></i>
+				</span>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+
+	<% } %>
+			
+	<script>
+
+		var  tanchuk=document.getElementById("tanchuk");
+		document.getElementById("duanluowen").onclick=function(){
+			tanchuk.style.display="block";
+		};
+		document.getElementById("close").onclick=function(){
+			tanchuk.style.display="none";
+		}
+
+	</script>
+		
+</script>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/tmpl/store_1_5.js"></script> 
+
+</body>
+</html>

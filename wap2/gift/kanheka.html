@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>看礼物</title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333; text-decoration: none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        .header2 {
+            position: fixed;
+            height: 45px;
+            z-index: 58;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+        }
+        .nav-one{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+            height: 45px;
+        }
+        .nav-one>div{
+            float: left;
+        }
+        .search {
+            margin-top: 11.5px;
+            margin-left: 2%;
+            font-size: 14px;
+            color: #999999;
+        }
+        .search:active{
+            color: #cccccc;
+        }
+        #keyword {
+            height: 23px;
+        }
+        .pri{
+            height: 400px;
+            width: 280px;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+            position: relative;
+        }
+        .pri img{
+            width: 100%;
+            height: 100%;
+        }
+        .wai-kuang{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+        }
+        .bofang{
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            display: block;
+            -webkit-box-shadow:0 0 10px rgba(200, 251, 154, 1);
+            -moz-box-shadow:0 0 10px rgba(200, 251, 154, 1);
+            box-shadow:0 0 10px rgba(200, 251, 154, 1);
+            margin: auto;
+            left: 34%;
+            position: absolute;
+            bottom: -60px;
+            background: #FFFFFF;
+        }
+        .bofang i{
+            display:block;
+            font-size: 10px;
+            color: #333333;
+            font-weight: 700;
+            width: 57px;
+            white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+            margin: auto;
+            line-height:40px;
+        }
+        .bofang u {
+            font-size: 9px;
+            color: #333333;
+            display: block;
+            text-align: center;
+            line-height:25px;
+        }
+        .bofang s {
+            width:0;
+            height:0;
+            border-top:10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid green;
+            display: block;
+            margin: auto;
+            margin-top: -5px;
+        }
+        .button-item{
+            width: 280px;
+            height:40px;
+            border-radius: 18px;
+            background: #afc2ee;
+            margin: auto;
+            position: absolute;
+            left: calc((100% - 280px)/2);
+            color: #FFFFFF;
+            top: 510px;
+            font-size: 10px;
+            text-align: center;
+            line-height: 40px;
+            -moz-box-shadow:0px 5px 10px #ced6e7; -webkit-box-shadow:0px 5px 10px #ced6e7; box-shadow:0px 5px 10px #ced6e7;
+        }
+    </style>
+</head>
+<body>
+	
+<header class="header2">
+    <div class="nav-one">
+        <a href="javascript:history.go(-1)">
+            <div class="search" id="keyword">
+                返回
+            </div>
+        </a>
+    </div>
+</header>
+
+<div id="card_info"></div>
+
+<script type="text/html" id="card_info_model">
+
+	<div class="wai-kuang">
+		<div>
+			<span class="pri">
+				<img src="<%=image%>" alt=""/>
+				<% if(mp3 != null) { %>
+				<span class="bofang">
+					<i style="text-align: center;"><%=member_name%></i>
+					
+					<s id="play"></s>
+					<u id="time"></u>
+					
+				</span>
+				<% } %>
+			</span>
+			<a href="javascript:void(0)" onclick="get_new_windows('kankanliwu.html')"><span class="button-item">看看我为你选的礼物</span></a>
+		</div>
+	</div>
+	<% if(mp3 != null) { %>
+	<audio id="mmedia"  >
+		<source src="<%=mp3%>"preload="auto" />
+	</audio>
+
+	<% } %>
+	
+	<script>
+		<% if(mp3 != null) { %>
+		
+		var btn = document.getElementById("play");
+		var mmedia = document.getElementById("mmedia");
+		var time1 = document.getElementById("time");
+		
+		btn.onclick = function(){
+			// 播放与暂停的切换效果
+			if(mmedia.paused){
+				// 暂停状态,播放
+				mmedia.play();
+				jishi();
+			}else{
+				// 播放状态,暂停
+				mmedia.pause();
+				clearTimeout(t);
+			}
+
+		};
+		function jishi(){
+			if(!mmedia.ended) {
+				time1.innerHTML = parseFloat(mmedia.currentTime/60).toFixed(2)+ "/" + parseFloat(mmedia.duration/60).toFixed(2);
+			}else{
+				time1.innerHTML = "0:00/" + parseFloat(mmedia.duration/60).toFixed(2);
+				clearTimeout(t);
+			}
+			t = setTimeout(jishi,500);
+		}
+		
+		<% } %>
+	</script>
+	
+</script>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/gift/kanheka.js"></script>
+<script type="text/javascript" src="../js/gift/turned.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[2016-09-13 20:53:39] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '20160910' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_statis` (os_month,os_year,os_start_date,os_end_date,os_order_totals,os_shipping_totals,os_order_return_totals,os_commis_totals,os_commis_return_totals,os_store_cost_totals,os_result_totals) VALUES ('20160910','2016','1472659200','1473436799','0','0','0','0','0','0','0')

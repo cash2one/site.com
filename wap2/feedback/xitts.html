@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/tianjiahaoyou.css"/>
+    <style>
+       .xitong>div{
+           width: 100%;
+           background: #FFFFFF;
+           line-height: 30px;
+           font-size: 16px;
+           padding: 10px 0;
+           border-bottom: 1px solid #f0f0f0;
+       }
+       .xitong .no-shen{
+           color: #14ceb6;
+           font-size: 14px;
+           width: 35%;
+           padding-left: 8px;
+           display: block;
+           white-space: nowrap;
+           overflow: hidden;
+           float: left;
+           text-overflow: ellipsis;
+       }
+       .xitong .yi-shen{
+           color: #14ceb6;
+           font-size: 14px;
+           padding: 0 8px;
+           display: block;
+       }
+       .xitong>div i:nth-child(2){
+           float: right;
+           margin-right: 8px;
+           color: #dddddd;
+           font-size: 12px;
+       }
+       .xitong .tongzi  i:nth-child(1){
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav ">
+        <a href="hezi.html"><i class="back"></i></a>
+        系统消息
+    </div>
+    <div class="xitong" id="service_list">
+        
+    </div>
+</div>
+
+<!-- 系统列表 add by lizh 18:17 2016/7/8 -->
+<script type="text/html" id="service_list_model">
+	<% if(datas != null){ %> 
+		<% for(var i in datas) { %>
+           <div class="xitong-l">
+               <i class="no-shen"><%=datas[i].message_body%></i><i><%=datas[i].message_time%></i>
+               <span style="clear: both; display: block"></span>
+           </div>
+		<% }%>
+	<% }%>
+    <script>
+        $(function() {
+            var  xitongl=document.getElementsByClassName("xitong-l");
+            for(var i= 0, len=xitongl.length;i<len;i++){
+                xitongl[i].onclick=function(){
+                    this.firstElementChild.className=this.firstElementChild.className=="no-shen"?"yi-shen":"no-shen";
+                }
+            }
+        });
+    </script>
+</script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/feedback/xitts_1_5.js"></script>
+
+</body>
+</html>

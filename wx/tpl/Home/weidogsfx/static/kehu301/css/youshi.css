@@ -1,0 +1,114 @@
+
+#function{width:930px; margin:0px 35px;}
+#function li{width:170px; height:140px; margin-left:20px; margin-top:15px; overflow:hidden; float:left; _display:inline;}
+#function li.list{background:#FFF;position:relative;}
+#function li.list a{display:block; width:170px; height:140px; text-decoration:none; overflow:hidden;}
+#function li.list a *{text-decoration:none;}
+#function li.list .img{width:100px; height:100px; text-align:center; overflow:hidden; position:relative; margin:0 auto;}
+#function li.list .img img{position:absolute; left:0px; top:0px; z-index:1}
+#function li.list .news{position:absolute; left:0px; top:0px; z-index:2; width:47px; height:30px; left:115px; top:15px}
+#function li.list h3{width:170px; height:20px; line-height:20px; margin-bottom:10px; text-align:center; overflow:hidden; font-size:14px; color:#696969}
+#function li.list .info{width:170px; height:40px; line-height:20px; overflow:hidden; text-align:center;}
+#function li.hover{background:#00adf2;}
+#function li.hover .img img{top:-100px;}
+#function li.hover h3{color:#FFF;}
+#function li.line0{width:1px; background:url(../background/fun_bg_1.jpg) left center no-repeat;}
+#function li.line1{width:1000px; height:1px; background:url(../background/fun_bg_0.jpg) center center no-repeat; float:none; clear:both; font-size:0px; line-height:0px; overflow:hidden;}
+
+#index_blank_4{width:100%}
+#index_blank_4 .index_blank_4_main{width:1106px; margin:0 auto; padding:26px 0px 0px;}
+#index_blank_4 .index_blank_4_content{padding:0px 0px 52px}
+
+#index_blank_5{width:100%}
+#index_blank_5 .index_blank_5_main{width:1106px; margin:0 auto; padding:56px 0px 0px;}
+#index_blank_5 .index_blank_5_content{background:url('../images/blank_5_bg.jpg') no-repeat center top; margin:35px 0px 15px}
+#index_blank_5 .index_blank_5_content ul{list-style:none}
+#index_blank_5 .index_blank_5_content .index_blank_5_left{width:50%; float:left; text-align:right;}
+#index_blank_5 .index_blank_5_content .index_blank_5_left img{margin:8px 14px 42px 0px}
+#index_blank_5 .index_blank_5_content .index_blank_5_right{width:50%; float:left; text-align:left}
+#index_blank_5 .index_blank_5_content .index_blank_5_right img{margin:8px 0px 42px 14px}
+
+#index_blank_6{margin:30px 0px; width:100%}
+#index_blank_6 .index_blank_6_main{width:1054px; margin:0px auto}
+
+.servicesBox {margin:0 auto; width:1046px;clear:both; line-height:18px; color:#999999; font-size:12px;}
+.servicesBox .serBox {cursor:pointer; display:inline; width:205px; height:170px; float:left; overflow:hidden; position:relative;}
+.servicesBox .serBoxOn {display:none; width:320px; height:270px; background:#08BAF6; position:absolute; left:0px; top:0px; z-index:19;}
+.servicesBox .serBox .pic1 {width:120px; height:110px; text-align:center; position:absolute; top:22px; right:100px; z-index:99;}
+.servicesBox .serBox .pic2 {width:120px; height:110px; text-align:center; position:absolute; top:22px; left:-110px; z-index:99;}
+.servicesBox .serBox .txt1 {width:205px; height:30px; color:#999; position:absolute; top:112px; left:0px; z-index:99;}
+.servicesBox .serBox .txt2 {width:205px; height:30px; color:#b2d6fc; position:absolute; top:112px; right:-240px; z-index:99;}
+.servicesBox .serBox span.tit {font-size:18px; display:block; text-align:center;}
+.servicesBox .serBox .txt1 .tit {font-family:"Microsoft YaHei" !important; color:#333; line-height:30px;}
+.servicesBox .serBox .txt2 .tit {font-family:"Microsoft YaHei" !important; color:#fff; line-height:30px;}
+
+img{border:none;}
+.clear{clear:both}
+.div_common{width:100%; overflow:hidden}
+.div_common .content{margin:0px auto; padding:0px;}
+.div_common img{float:left; margin:0px; padding:0px}
+
+.bg1{background:url('../youshi/1_bg.jpg') repeat-x left top; height:499px;}
+.bg1 .content{width:1200px;}
+
+.bg2{background:#FFF; height:244px;}
+.bg2 .content{width:1064px;}
+
+.bg3{background:#1e77db; height:480px;}
+.bg3 .content{width:1059px;}
+
+.bg17{background:#d62551; height:480px;}
+.bg17 .content{width:1173px;}
+
+.bg4{background:#ffffff; height:483px;}
+.bg4 .content{width:1043px;}
+
+.bg5{background:#ff7200; height:509px;}
+.bg5 .content{width:1155px;}
+
+.bg7{background:#eaeaea; height:576px;}
+.bg7 .content{width:1088px;}
+
+.bg6{background:#08baf6; height:460px;}
+.bg6 .content{width:1130px;}
+
+.bg8{background:#d11f4f; height:480px;}
+.bg8 .content{width:1218px;}
+
+.bg9{background:#bc2ff0; height:423px;}
+.bg9 .content{width:1192px;}
+
+.bg10{background:#fafafa; height:460px;}
+.bg10 .content{width:1194px;}
+
+.bg11{background:#00ca74; height:460px;}
+.bg11 .content{width:1088px;}
+
+.bg12{background:#ffffff; height:523px;}
+.bg12 .content{width:1182px;}
+
+.bg13{background:#e6e6e6; height:460px;}
+.bg13 .content{width:1182px;}
+
+.bg14{background:#f7f7f7; height:460px;}
+.bg14 .content{width:1182px;}
+
+.bg15{background:#ce5739; height:460px;}
+.bg15 .content{width:1167px;}
+
+.div_common_11{width:100%; margin:0px; padding:0px; background:#f5f4f9}
+.div_common_11 .title{width:1065px; height:121px; margin:0px auto}
+.div_common_11 .content{width:988px; margin:10px auto 0px}
+.div_common_11 .content .items{width:462px; margin:0px 16px 24px; float:left;}
+.div_common_11 .content .items a{display:block; width:359px; float:left; height:124px; padding-left:103px; background:url('../youshi/11_li.jpg') no-repeat left center #FFF; cursor:pointer}
+.div_common_11 .content .items a h2{margin:15px 0px 5px 0px; padding:0px 0px 13px 0px; font-size:24px; font-family:"ËÎÌו"; font-weight:bold}
+.div_common_11 .content .h2bg1 h2{background:url('../youshi/11_li_1_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .h2bg2 h2{background:url('../youshi/11_li_2_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .h2bg3 h2{background:url('../youshi/11_li_3_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .h2bg4 h2{background:url('../youshi/11_li_4_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .h2bg5 h2{background:url('../youshi/11_li_5_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .h2bg6 h2{background:url('../youshi/11_li_6_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .items a h3{margin:10px 0px 0px 0px; font-size:15px; line-height:20px; width:300px; font-family:"ËÎÌו";}
+.div_common_11 .content .items a:hover{text-decoration:none; color:#FFF; background:url('../youshi/11_li_hover.jpg') no-repeat left center #7abb29}
+.div_common_11 .content .items a:hover h2{color:#FFF; background:url('../youshi/11_li_h2_bg.jpg') no-repeat left bottom}
+.div_common_11 .content .items a:hover h3{color:#fbfcfe}

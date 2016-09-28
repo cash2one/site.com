@@ -1,0 +1,51 @@
+[2016-08-05 14:32:48] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610101','1464710400','1465487999','20160610','0','101')
+[2016-08-05 14:34:26] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610101','1464710400','1465487999','20160610','0','101')
+[2016-08-05 14:34:27] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610101','1464710400','1465487999','20160610','0','101')
+[2016-08-05 14:35:07] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610101','1464710400','1465487999','20160610','0','101')
+[2016-08-05 14:37:48] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:37:50] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:42:55] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610101','1464710400','1465487999','20160610','0','101')
+[2016-08-05 14:44:36] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:45:04] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:45:06] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:45:06] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:45:06] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:45:09] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:46:04] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:46:11] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Duplicata du champ '2147483647' pour la clef 'PRIMARY'
+INSERT  INTO `wantease_order_bill` (ob_no,ob_start_date,ob_end_date,os_month,ob_state,ob_store_id) VALUES ('20160610100','1464710400','1465487999','20160610','0','100')
+[2016-08-05 14:52:33] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Champ 'os_start_datet' inconnu dans field list
+INSERT  INTO `wantease_order_statis` (os_month,os_year,os_start_date,os_start_datet,os_end_date,os_end_datet,os_order_totals,os_shipping_totals,os_order_return_totals,os_commis_totals,os_commis_return_totals,os_store_cost_totals,os_result_totals) VALUES ('20160610','2016','1464710400','2016-06-01 00:00:00','1465487999','2016-06-09 23:59:59','0','0','0','0','0','0','0')
+[2016-08-05 14:56:21] /crontab/index.php?act=month ( act=month&op=index ) 
+ERR: Db Error: Champ 'os_start_datet' inconnu dans field list
+INSERT  INTO `wantease_order_statis` (os_month,os_year,os_start_date,os_start_datet,os_end_date,os_end_datet,os_order_totals,os_shipping_totals,os_order_return_totals,os_commis_totals,os_commis_return_totals,os_store_cost_totals,os_result_totals) VALUES ('20160610','2016','1464710400','2016-06-01 00:00:00','1465487999','2016-06-09 23:59:59','0','0','0','0','0','0','0')

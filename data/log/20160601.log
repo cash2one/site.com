@@ -1,0 +1,195 @@
+[2016-06-01 10:36:14] /shop/index.php?act=goods&op=addbrowse&gid=106846 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106846','50','1464748574','1355','1058','1115','1355')
+[2016-06-01 11:12:12] /shop/index.php?act=goods&op=addbrowse&gid=106820 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106820','561','1464750732','1075','470','1075','0')
+[2016-06-01 11:24:01] /mobile1/index.php?act=member_index&op=index&key=638ef166cc570b3331a1270c80ec9f29 ( act=member_index&op=index ) 
+ERR: Db Error: Unknown column 'member_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_order` WHERE ( member_id = '6' ) AND ( order_state = '10' ) LIMIT 1  
+[2016-06-01 11:24:01] /mobile1/index.php?act=member_index&op=index&key=638ef166cc570b3331a1270c80ec9f29 ( act=member_index&op=index ) 
+ERR: Db Error: Unknown column 'member_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_order` WHERE ( member_id = '6' ) AND ( order_state = '20' ) LIMIT 1  
+[2016-06-01 11:24:01] /mobile1/index.php?act=member_index&op=index&key=638ef166cc570b3331a1270c80ec9f29 ( act=member_index&op=index ) 
+ERR: Db Error: Unknown column 'member_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_order` WHERE ( member_id = '6' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-06-01 11:24:01] /mobile1/index.php?act=member_index&op=index&key=638ef166cc570b3331a1270c80ec9f29 ( act=member_index&op=index ) 
+ERR: Db Error: Unknown column 'member_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_order` WHERE ( member_id = '6' ) AND ( order_state = '40' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-06-01 11:24:01] /mobile1/index.php?act=member_index&op=index&key=638ef166cc570b3331a1270c80ec9f29 ( act=member_index&op=index ) 
+ERR: Db Error: Unknown column 'member_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_order` WHERE ( member_id = '6' ) LIMIT 1  
+[2016-06-01 11:35:57] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106820&key=3494535a413a33a7a5eec5fae36f9af3 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106820','402','1464752157','1075','470','1075','0')
+[2016-06-01 11:37:14] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106820&key=3494535a413a33a7a5eec5fae36f9af3 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106820','402','1464752234','1075','470','1075','0')
+[2016-06-01 11:42:42] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106805&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106805','6','1464752562','14','1','4','14')
+[2016-06-01 11:43:02] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105840&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105840','6','1464752582','1175','256','1171','1175')
+[2016-06-01 11:43:09] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105839&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105839','6','1464752589','1175','256','1171','1175')
+[2016-06-01 11:43:10] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105837&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105837','6','1464752590','1175','256','1171','1175')
+[2016-06-01 11:43:11] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105835&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105835','6','1464752591','1175','256','1171','1175')
+[2016-06-01 11:43:21] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104086&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104086','6','1464752601','1131','308','1086','1131')
+[2016-06-01 11:43:26] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104087&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104087','6','1464752606','1131','308','1086','1131')
+[2016-06-01 11:43:37] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106811&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106811','6','1464752617','62','1','6','62')
+[2016-06-01 11:43:52] /mobile1/index.php?act=goods&op=goods_detail&goods_id=102040&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102040','6','1464752632','373','308','313','373')
+[2016-06-01 11:43:58] /mobile1/index.php?act=goods&op=goods_detail&goods_id=100822&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100822','6','1464752638','358','308','312','358')
+[2016-06-01 11:44:03] /mobile1/index.php?act=goods&op=goods_detail&goods_id=102926&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102926','6','1464752643','19','1','4','19')
+[2016-06-01 11:44:10] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104126&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104126','6','1464752650','1075','470','1075','0')
+[2016-06-01 11:44:22] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106829&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106829','6','1464752662','1333','593','594','1333')
+[2016-06-01 11:58:59] /shop/index.php?act=goods&op=addbrowse&gid=105671 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105671','573','1464753539','13','1','4','13')
+[2016-06-01 12:01:57] /shop/index.php?act=goods&op=addbrowse&gid=106833 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106833','573','1464753717','1333','593','594','1333')
+[2016-06-01 12:04:47] /shop/index.php?act=goods&op=addbrowse&gid=106833 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106833','573','1464753887','1333','593','594','1333')
+[2016-06-01 12:05:00] /shop/index.php?act=goods&op=addbrowse&gid=106834 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106834','573','1464753900','1333','593','594','1333')
+[2016-06-01 15:05:56] /shop/index.php?act=goods&op=addbrowse&gid=107172 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('107172','577','1464764756','14','1','4','14')
+[2016-06-01 15:08:02] /shop/index.php?act=goods&op=addbrowse&gid=107172 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('107172','577','1464764882','14','1','4','14')
+[2016-06-01 15:20:50] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106829&key=aef120e60b8989c54d4308b14c0a1d3d ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106829','6','1464765650','1333','593','594','1333')
+[2016-06-01 15:24:05] /shop/index.php?act=goods&op=addbrowse&gid=106817 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106817','66','1464765845','19','1','4','19')
+[2016-06-01 15:24:23] /shop/index.php?act=goods&op=addbrowse&gid=106808 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106808','66','1464765863','19','1','4','19')
+[2016-06-01 15:24:30] /shop/index.php?act=goods&op=addbrowse&gid=106466 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106466','66','1464765870','14','1','4','14')
+[2016-06-01 15:24:50] /shop/index.php?act=goods&op=addbrowse&gid=106846 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106846','66','1464765890','1355','1058','1115','1355')
+[2016-06-01 15:34:55] /shop/index.php?act=goods&op=addbrowse&gid=106678 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106678','561','1464766495','11','1','11','0')
+[2016-06-01 15:35:46] /shop/index.php?act=goods&op=addbrowse&gid=106676 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106676','561','1464766546','11','1','11','0')
+[2016-06-01 15:38:42] /shop/index.php?act=goods&op=addbrowse&gid=106667 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106667','561','1464766722','1334','1058','1094','1334')
+[2016-06-01 16:09:54] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464768594',NULL,NULL,NULL)
+[2016-06-01 16:09:54] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464768594',NULL,NULL,NULL)
+[2016-06-01 16:10:26] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464768626',NULL,NULL,NULL)
+[2016-06-01 16:10:26] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464768626',NULL,NULL,NULL)
+[2016-06-01 16:18:03] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464769083',NULL,NULL,NULL)
+[2016-06-01 16:18:03] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464769083',NULL,NULL,NULL)
+[2016-06-01 16:32:03] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464769923',NULL,NULL,NULL)
+[2016-06-01 16:36:56] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464770216',NULL,NULL,NULL)
+[2016-06-01 16:41:30] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464770490',NULL,NULL,NULL)
+[2016-06-01 16:43:49] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464770629',NULL,NULL,NULL)
+[2016-06-01 16:45:45] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464770745',NULL,NULL,NULL)
+[2016-06-01 16:46:04] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464770764',NULL,NULL,NULL)
+[2016-06-01 16:50:23] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464771023',NULL,NULL,NULL)
+[2016-06-01 16:52:39] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464771159',NULL,NULL,NULL)
+[2016-06-01 16:54:47] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464771287',NULL,NULL,NULL)
+[2016-06-01 17:05:48] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464771948',NULL,NULL,NULL)
+[2016-06-01 17:43:01] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464774181',NULL,NULL,NULL)
+[2016-06-01 17:45:13] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464774313',NULL,NULL,NULL)
+[2016-06-01 17:53:00] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464774780',NULL,NULL,NULL)
+[2016-06-01 17:56:42] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464775002',NULL,NULL,NULL)
+[2016-06-01 17:58:08] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464775088',NULL,NULL,NULL)
+[2016-06-01 18:22:18] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464776538',NULL,NULL,NULL)
+[2016-06-01 18:23:29] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464776609',NULL,NULL,NULL)
+[2016-06-01 18:24:26] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464776666',NULL,NULL,NULL)
+[2016-06-01 18:25:20] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464776720',NULL,NULL,NULL)
+[2016-06-01 18:38:54] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464777534',NULL,NULL,NULL)
+[2016-06-01 18:40:32] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464777632',NULL,NULL,NULL)
+[2016-06-01 18:41:55] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464777715',NULL,NULL,NULL)
+[2016-06-01 18:46:06] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464777966',NULL,NULL,NULL)

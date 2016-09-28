@@ -1,0 +1,78 @@
+[2016-04-28 10:01:33] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT * FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:01:33] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT * FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:01:33] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT * FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:01:33] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT * FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:01:33] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT * FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:03:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT goods_id,store_id,goods_name,goods_alias,goods_image,goods_price,goods_salenum FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:03:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT goods_id,store_id,goods_name,goods_alias,goods_image,goods_price,goods_salenum FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:03:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT goods_id,store_id,goods_name,goods_alias,goods_image,goods_price,goods_salenum FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:03:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT goods_id,store_id,goods_name,goods_alias,goods_image,goods_price,goods_salenum FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 10:03:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_state' in 'where clause'
+SELECT goods_id,store_id,goods_name,goods_alias,goods_image,goods_price,goods_salenum FROM `wantease_goods` WHERE ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY goods_salenum desc LIMIT 5  
+[2016-04-28 14:40:59] /shop/index.php?act=goods&op=addbrowse&gid=104130 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','29','1461825659','624','593','597','624')
+[2016-04-28 15:53:38] /shop/index.php?act=goods&op=addbrowse&gid=105883 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105883','328','1461830018','1333','593','594','1333')
+[2016-04-28 15:53:38] /shop/index.php?act=goods&op=addbrowse&gid=105883 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105883','328','1461830018','1333','593','594','1333')
+[2016-04-28 22:02:25] /shop/index.php?act=goods&op=addbrowse&gid=101896 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101896','38','1461852145','94','1','8','94')
+[2016-04-28 22:02:35] /shop/index.php?act=goods&op=addbrowse&gid=102773 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102773','38','1461852155','18','1','4','18')
+[2016-04-28 22:03:02] /shop/index.php?act=goods&op=addbrowse&gid=104136 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104136','38','1461852182','1429','593','594','1429')
+[2016-04-28 22:03:18] /shop/index.php?act=goods&op=addbrowse&gid=103657 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103657','38','1461852198','19','1','4','19')
+[2016-04-28 22:03:39] /shop/index.php?act=goods&op=addbrowse&gid=103221 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103221','38','1461852219','1075','470','1075','0')
+[2016-04-28 22:03:50] /shop/index.php?act=goods&op=addbrowse&gid=101159 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101159','38','1461852230','19','1','4','19')
+[2016-04-28 22:38:08] /shop/index.php?act=goods&op=addbrowse&gid=104130 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','38','1461854288','624','593','597','624')
+[2016-04-28 22:38:32] /shop/index.php?act=goods&op=addbrowse&gid=103364 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103364','38','1461854312','1500','593','594','1500')
+[2016-04-28 22:38:38] /shop/index.php?act=goods&op=addbrowse&gid=104075 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104075','38','1461854318','1101','308','1098','1101')
+[2016-04-28 23:51:48] /shop/index.php?act=goods&op=addbrowse&gid=102314 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102314','38','1461858708','119','1','6','59')
+[2016-04-28 23:51:54] /shop/index.php?act=goods&op=addbrowse&gid=102321 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102321','38','1461858714','119','1','6','59')
+[2016-04-28 23:51:56] /shop/index.php?act=goods&op=addbrowse&gid=100877 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100877','38','1461858716','1075','470','1075','0')
+[2016-04-28 23:52:02] /shop/index.php?act=goods&op=addbrowse&gid=105590 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105590','38','1461858722','1528','1526','1528','0')

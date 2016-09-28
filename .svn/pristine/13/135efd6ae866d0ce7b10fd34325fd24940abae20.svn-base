@@ -1,0 +1,18 @@
+[2016-05-29 03:25:18] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106465&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106465','538','1464463518','1516','1058','1515','1516')
+[2016-05-29 03:25:43] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106844&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106844','538','1464463543','1355','1058','1115','1355')
+[2016-05-29 03:26:00] /mobile1/index.php?act=goods&op=goods_detail&goods_id=106465&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106465','538','1464463560','1516','1058','1515','1516')
+[2016-05-29 03:26:21] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105735&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105735','538','1464463581','1075','470','1075','0')
+[2016-05-29 03:26:35] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105379&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105379','538','1464463595','1075','470','1075','0')
+[2016-05-29 03:26:45] /mobile1/index.php?act=goods&op=goods_detail&goods_id=105735&key=911bc93474a859f10003db4194f834c4 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105735','538','1464463605','1075','470','1075','0')

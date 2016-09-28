@@ -1,0 +1,162 @@
+.title{ width:100%; height:70px; padding-top:15px;}
+.title .hr1{ display:inline-block; width:calc(50% - 150px); float:left; border-bottom:double 6px #fff; padding-bottom:40px;}
+.title-cont{ float:left; width:300px; text-align:center; color:#fff;}
+.title-cont p{ font-size:32px; font-weight: bold;}
+.title-cont span{ font-size:14px;}
+
+.effect{ background:url(../images/effect-bg.png) no-repeat center; width:100%; height:650px;}
+.kinds{ background:#8EC4EB;width:100%; height:900px;}
+.importance{ background:url(../images/importance-bg.png) no-repeat center; width:100%; height:650px;}
+.cost{ background:#000; width:100%; height:650px;}
+.process{ background:url(../images/process-bg.png) no-repeat center; width:100%; height:650px; position: relative;background-size: 100% 100%}
+
+.effect-cont p{padding:60px 0; font-size:20px; text-align:center; color: #ffffff;}
+.effect-cont ul{ width:1000px; margin:0 auto;}
+.effect-cont ul li{float:left; width:25%; text-align:center;}
+.effect-cont ul span{
+    display:inline-block;
+    margin-top: 35px;
+    color: #ffffff;
+}
+.kinds .effect-cont ul{
+    margin-top: 50px;
+    width: 1240px;
+}
+.kinds .effect-cont ul li{
+    border: 1px solid #ffffff;
+    width: 200px;
+    height: 160px;
+}
+.kinds .effect-cont ul span{
+    display:block;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.importance .effect-cont ul{
+    width: 1200px;
+}
+.importance .effect-cont li{
+    width: 20%;
+    margin-top: 80px;
+}
+.importance .effect-cont li b{
+    display: block;
+    margin-top: 35px;
+    color: #ffffff;
+    font-size: 25px;
+}
+.importance .effect-cont li span{
+    display: inline-block;
+    margin-top:25px;
+}
+.cost .effect-cont{
+    margin-top: 120px;
+}
+.cost ul li{
+    background: #6fc7d5;
+    width: 188px;
+    height: 250px;
+    margin-left: 12px;
+    border-radius: 16px;
+    color: #ffffff;
+}
+.cost ul li h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cost ul li span{
+    margin-top: 5px;
+    font-size: 13px;
+}
+.cost ul li h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cost ul li u{
+    width: 150px;
+    height: 35px;
+    display: block;
+    background: #2ca1d2;
+    margin: 0 auto;
+    text-decoration: none;
+    line-height: 34px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.cost ul li i{
+    display: inline;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-style:normal;
+}
+.cost ul  .afthree u{
+    margin-top: 36px;
+}
+.process-all{
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    padding-left: 40px;
+}
+.process-all div{
+   float: left;
+    color: #ffffff;
+}
+.process-main-text{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+.process-main-text li,.process-main-text1 li{
+    height: 40px;
+    padding: 0 5px;
+    line-height: 40px;
+}
+.process-main-text li{
+    margin-bottom: 78px;
+}
+.process-main-text1 li{
+    margin-bottom: 78px;
+}
+.process-main-text1{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 80px;
+}
+.process-main>ul>li{
+    vertical-align: middle;
+    background: url("../images/projiantou.png") no-repeat bottom center;
+    font-size: 25px;
+    margin-top: 25px;
+    width: 28px;
+    text-align: center;
+}
+.process-main>ul>li>a{
+    color: #ffffff;
+}
+.process-main-text>ul>li,.process-main-text1>ul>li{
+    color: #ffffff;
+    font-size: 14px;
+}
+.process-main-text li span,.process-main-text1 li span{
+    background-color:#3a424c;
+    display: inline;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 14px 15px;
+}
+/*******************************/
+.flexslider{
+    width: 100%;
+    min-height: 451px;
+}

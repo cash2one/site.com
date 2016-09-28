@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+        <title>设计师品牌</title>
+        <link rel="stylesheet" href="css/shejishipingpai.css"/>
+    </head>
+    <body>
+        <div class="lian-nav">
+            <a href="http://www.site.com/wap/index.html"><i class="back"></i></a>
+            设计师品牌
+        </div>
+        <div class="xuanzhe">
+            <div class="xuanzhek">
+                <span id = "def_sort"><i>默认排序</i></span>
+                <span id = "new_sort"><i>新上品牌</i></span>
+            </div>
+        </div>
+        <div class="lian-main">
+            <div id="store">
+                <script type="text/html" id="store_model">
+                <% if(datas != null) { %>
+                <% for(var i in datas) { %>    
+        <div class="geren-t-bg">
+            
+            <div class="wo-toubu">
+                <img src="<%=datas[i].app_banner; %>" alt=""/>    
+                <div class="wo-xinxi">
+                    <span class="wodetouxiang"><a href="..\tmpl/store.html?store_id=<%= datas[i].store_id; %>"><img src="<%=datas[i].store_avatar; %>" alt=""/></a></span>
+                    <span class="wode-xinxi">
+                        <s><%=datas[i].store_name; %></s>
+                        <i>fans <%=datas[i].store_collect; %></i>
+                    </span>
+                </div>
+                <div class="gz-brn"><img src="img/shouchang.png" alt=""/> 收藏</div>
+            </div>
+            <div class="js-text"><p><%=datas[i].store_keywords; %></p></div>
+            <div class="cp-list">
+                <ul>
+                    <% for(var j in datas[i].search_list_goods) { %>
+                    <a href="..\tmpl/product_detail.html?goods_id=<%= datas[i].search_list_goods[j].goods_id; %>">     
+                    <li>
+                        <div class="changping-list">
+                            <img src="<%=datas[i].search_list_goods[j].goods_image; %>" alt=""/>
+                            <span>
+                                ¥ <%=datas[i].search_list_goods[j].goods_promotion_price; %>
+                            </span>
+                        </div>
+                    </li>
+                    </a>
+                    <% } %>
+                    
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+<% } %>
+<% } %>
+                </script>
+            </div>
+             <div id="store2" style="display: none">
+                <script type="text/html" id="store_model2">
+                <% if(datas != null) { %>
+                <% for(var i in datas) { %>    
+        <div class="geren-t-bg">
+            
+            <div class="wo-toubu">
+                <img src="<%=datas[i].app_banner; %>" alt=""/>    
+                <div class="wo-xinxi">
+                    <span class="wodetouxiang"><a href="..\tmpl/store.html?store_id=<%= datas[i].store_id; %>"><img src="<%=datas[i].store_avatar; %>" alt=""/></a></span>
+                    <span class="wode-xinxi">
+                        <s><%=datas[i].store_name; %></s>
+                        <i>fans <%=datas[i].store_collect; %></i>
+                    </span>
+                </div>
+                <div class="gz-brn"><img src="img/shouchang.png" alt=""/> 收藏</div>
+            </div>
+            <div class="js-text"><p><%=datas[i].store_keywords; %></p></div>
+            <div class="cp-list">
+                <ul>
+                    <% for(var j in datas[i].search_list_goods) { %>
+                    <a href="..\tmpl/product_detail.html?goods_id=<%= datas[i].search_list_goods[j].goods_id; %>">     
+                    <li>
+                        <div class="changping-list">
+                            <img src="<%=datas[i].search_list_goods[j].goods_image; %>" alt=""/>
+                            <span>
+                                ¥ <%=datas[i].search_list_goods[j].goods_promotion_price; %>
+                            </span>
+                        </div>
+                    </li>
+                    </a>
+                    <% } %>
+                    
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+<% } %>
+<% } %>
+                </script>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/zepto.min.js"></script>
+        <script type="text/javascript" src="../js/config.js"></script>
+        <script type="text/javascript" src="../js/template.js"></script>
+        <script type="text/javascript" src="../js/simple-plugin.js"></script> 
+        <script type="text/javascript" src="../js/indexmore/designers.js"></script>
+    </body>
+</html>

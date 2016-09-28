@@ -1,0 +1,219 @@
+[2016-04-05 02:59:57] /shop/index.php?act=login&op=usersave ( act=login&op=usersave ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','354','1459795563','624','593','597','624'),('104775','354','1459795753','1524','470','1524','0'),('104776','354','1459796000','1524','470','1524','0'),('104774','354','1459796004','1524','470','1524','0')
+[2016-04-05 03:00:41] /shop/index.php?act=goods&op=addbrowse&gid=104775 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104775','354','1459796441','1524','470','1524','0')
+[2016-04-05 03:01:02] /shop/index.php?act=goods&op=addbrowse&gid=104146 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104146','354','1459796462','626','593','597','626')
+[2016-04-05 03:01:23] /shop/index.php?act=goods&op=addbrowse&gid=104509 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','354','1459796483','1516','1058','1515','1516')
+[2016-04-05 03:02:07] /shop/index.php?act=goods&op=addbrowse&gid=102711 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102711','354','1459796527','1431','470','1184','1431')
+[2016-04-05 03:03:26] /shop/index.php?act=goods&op=addbrowse&gid=102723 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102723','354','1459796606','1510','470','1273','1510')
+[2016-04-05 03:05:55] /shop/index.php?act=goods&op=addbrowse&gid=102314 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102314','354','1459796755','119','1','6','59')
+[2016-04-05 03:07:02] /shop/index.php?act=goods&op=addbrowse&gid=104881 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104881','354','1459796822','668','662','668','0')
+[2016-04-05 03:07:13] /shop/index.php?act=goods&op=addbrowse&gid=104879 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104879','354','1459796833','664','662','664','0')
+[2016-04-05 03:10:31] /shop/index.php?act=goods&op=addbrowse&gid=103766 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103766','354','1459797031','1246','308','1138','1246')
+[2016-04-05 03:10:46] /shop/index.php?act=goods&op=addbrowse&gid=103689 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103689','354','1459797046','1131','308','1086','1131')
+[2016-04-05 03:16:12] /shop/index.php?act=goods&op=addbrowse&gid=103688 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103688','354','1459797372','1131','308','1086','1131')
+[2016-04-05 03:16:14] /shop/index.php?act=goods&op=addbrowse&gid=103687 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103687','354','1459797374','1131','308','1086','1131')
+[2016-04-05 03:16:17] /shop/index.php?act=goods&op=addbrowse&gid=103688 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103688','354','1459797377','1131','308','1086','1131')
+[2016-04-05 03:16:19] /shop/index.php?act=goods&op=addbrowse&gid=103690 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103690','354','1459797379','1131','308','1086','1131')
+[2016-04-05 03:16:25] /shop/index.php?act=goods&op=addbrowse&gid=103689 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103689','354','1459797385','1131','308','1086','1131')
+[2016-04-05 03:16:29] /shop/index.php?act=goods&op=addbrowse&gid=103688 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103688','354','1459797389','1131','308','1086','1131')
+[2016-04-05 03:16:35] /shop/index.php?act=goods&op=addbrowse&gid=103689 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103689','354','1459797395','1131','308','1086','1131')
+[2016-04-05 03:17:20] /shop/index.php?act=goods&op=addbrowse&gid=103727 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103727','354','1459797440','1246','308','1138','1246')
+[2016-04-05 03:18:17] /shop/index.php?act=goods&op=addbrowse&gid=103766 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103766','354','1459797497','1246','308','1138','1246')
+[2016-04-05 03:18:40] /shop/index.php?act=goods&op=addbrowse&gid=103763 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103763','354','1459797520','1246','308','1138','1246')
+[2016-04-05 03:18:52] /shop/index.php?act=goods&op=addbrowse&gid=103727 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103727','354','1459797532','1246','308','1138','1246')
+[2016-04-05 03:19:13] /shop/index.php?act=goods&op=addbrowse&gid=103764 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103764','354','1459797553','1246','308','1138','1246')
+[2016-04-05 03:19:16] /shop/index.php?act=goods&op=addbrowse&gid=103765 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103765','354','1459797556','1246','308','1138','1246')
+[2016-04-05 03:19:19] /shop/index.php?act=goods&op=addbrowse&gid=103766 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103766','354','1459797559','1246','308','1138','1246')
+[2016-04-05 03:21:10] /shop/index.php?act=goods&op=addbrowse&gid=103763 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103763','354','1459797670','1246','308','1138','1246')
+[2016-04-05 03:21:36] /shop/index.php?act=goods&op=addbrowse&gid=103764 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103764','354','1459797696','1246','308','1138','1246')
+[2016-04-05 03:21:58] /shop/index.php?act=goods&op=addbrowse&gid=102325 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102325','354','1459797718','1246','308','1138','1246')
+[2016-04-05 03:22:20] /shop/index.php?act=goods&op=addbrowse&gid=102018 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102018','354','1459797740','375','308','313','375')
+[2016-04-05 03:25:20] /shop/index.php?act=goods&op=addbrowse&gid=102017 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102017','354','1459797920','375','308','313','375')
+[2016-04-05 03:26:16] /shop/index.php?act=goods&op=addbrowse&gid=101935 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101935','354','1459797976','1313','308','1311','1313')
+[2016-04-05 03:26:40] /shop/index.php?act=goods&op=addbrowse&gid=101744 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101744','354','1459798000','1315','308','1311','1315')
+[2016-04-05 03:28:02] /shop/index.php?act=goods&op=addbrowse&gid=104697 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104697','354','1459798082','61','1','6','61')
+[2016-04-05 03:32:16] /shop/index.php?act=goods&op=addbrowse&gid=104743 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104743','354','1459798336','664','662','664','0')
+[2016-04-05 03:34:50] /shop/index.php?act=goods&op=addbrowse&gid=104550 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104550','354','1459798490','59','1','6','59')
+[2016-04-05 03:38:50] /shop/index.php?act=goods&op=addbrowse&gid=102377 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102377','354','1459798730','13','1','4','13')
+[2016-04-05 03:40:27] /shop/index.php?act=goods&op=addbrowse&gid=104200 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104200','354','1459798827','20','1','4','20')
+[2016-04-05 03:42:05] /shop/index.php?act=goods&op=addbrowse&gid=104772 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104772','354','1459798925','1524','470','1524','0')
+[2016-04-05 03:43:30] /shop/index.php?act=goods&op=addbrowse&gid=104803 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104803','354','1459799010','11','1','11','0')
+[2016-04-05 10:58:14] /shop/index.php?act=goods&op=addbrowse&gid=104620 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104620','231','1459825094','1429','593','594','1429')
+[2016-04-05 11:58:03] /shop/index.php?act=goods&op=addbrowse&gid=104186 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104186','339','1459828683','1500','593','594','1500')
+[2016-04-05 12:03:22] /shop/index.php?act=goods&op=addbrowse&gid=105119 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105119','339','1459829002','1075','470','1075','0')
+[2016-04-05 15:20:41] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','八点多就是好',NULL,'0','1459840841',NULL,NULL,'6','niro')
+[2016-04-05 15:20:41] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459840841',NULL,NULL,'6','niro','1','3','2')
+[2016-04-05 15:21:20] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','v 现在 v 中心',NULL,'0','1459840880',NULL,NULL,'6','niro')
+[2016-04-05 15:21:20] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459840880',NULL,NULL,'6','niro','4','4','3')
+[2016-04-05 15:22:09] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','呢德语课本是',NULL,'0','1459840929',NULL,NULL,'6','niro')
+[2016-04-05 15:22:09] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459840929',NULL,NULL,'6','niro','3','4','1')
+[2016-04-05 15:24:06] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105169','6','1459841029','1075','470','1075','0')
+[2016-04-05 15:24:07] /shop/index.php?act=goods&op=addbrowse&gid=105169 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105169','6','1459841047','1075','470','1075','0')
+[2016-04-05 15:24:26] /shop/index.php?act=goods&op=addbrowse&gid=104555 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104555','6','1459841066','9','1','9','0')
+[2016-04-05 15:24:49] /shop/index.php?act=goods&op=addbrowse&gid=104555 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104555','6','1459841089','9','1','9','0')
+[2016-04-05 15:25:17] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','Fasgsafga',NULL,'0','1459841117',NULL,NULL,'6','niro')
+[2016-04-05 15:25:17] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459841117',NULL,NULL,'6','niro','1','3','2')
+[2016-04-05 15:25:54] /shop/index.php?act=goods&op=addbrowse&gid=104738 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104738','6','1459841154','1529','1526','1529','0')
+[2016-04-05 15:28:43] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','波兰将会有很多事情要',NULL,'0','1459841323',NULL,NULL,'6','niro')
+[2016-04-05 15:28:43] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459841323',NULL,NULL,'6','niro','2','3','4')
+[2016-04-05 15:29:45] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','健健康康，我们都是一样',NULL,'0','1459841385',NULL,NULL,'6','niro')
+[2016-04-05 15:29:45] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459841385',NULL,NULL,'6','niro','1','2','2')
+[2016-04-05 15:39:36] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45',NULL,NULL,'0','1459841975',NULL,NULL,'6','niro')
+[2016-04-05 15:39:36] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459841976',NULL,NULL,'6','niro','1','1','1')
+[2016-04-05 15:46:00] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'32','咯喇叭袖古典音乐学院附中',NULL,'0','1459842360',NULL,NULL,'6','niro')
+[2016-04-05 15:46:00] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459842360',NULL,NULL,'6','niro','2','4','3')
+[2016-04-05 15:46:44] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_image,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'1','爸爸说爸爸妈妈一起睡',NULL,'0','1459842404',NULL,NULL,'6','niro')
+[2016-04-05 15:46:44] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459842404',NULL,NULL,'6','niro','1','1','1')
+[2016-04-05 15:56:19] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'32','其实就是一个好','0','1459842979',NULL,NULL,'6','niro')
+[2016-04-05 15:56:19] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459842979',NULL,NULL,'6','niro','2','3','4')
+[2016-04-05 15:58:22] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'32','测定方法就是不要','0','1459843102',NULL,NULL,'6','niro')
+[2016-04-05 15:58:22] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1459843102',NULL,NULL,'6','niro','1','5','1')
+[2016-04-05 15:59:16] /shop/index.php?act=goods&op=addbrowse&gid=104512 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104512','6','1459843156','14','1','4','14')
+[2016-04-05 16:09:11] /shop/index.php?act=goods&op=addbrowse&gid=104548 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104548','33','1459843751','59','1','6','59')
+[2016-04-05 16:09:14] /shop/index.php?act=goods&op=addbrowse&gid=103373 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103373','33','1459843754','1500','593','594','1500')
+[2016-04-05 19:41:15] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104945&key=1a6f9e5493177b839b3772ae4b32c666 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104945','355','1459856475','11','1','11','0')

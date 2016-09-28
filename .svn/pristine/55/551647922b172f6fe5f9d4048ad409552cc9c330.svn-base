@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-style:normal;
+    font-weight:normal;
+    font-family: "Microsoft YaHei";
+}
+body{
+    background-image: url(img/playbg.jpg);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    width: 1200px;
+    margin: auto;
+}
+.btn{
+    margin: auto;
+    margin-top: 25px;
+}
+.btn>span{
+    width: 585px;
+    height: 82px;
+    border-radius: 5px;
+    background: #14cfb5;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+    float: left;
+    font-size: 30px;
+    font-weight: 500;
+}
+.btn>span:nth-child(2){
+    float: right;
+}
+.btn>span:hover{
+    background: #42d9c5;
+}
+.banner-pic{width:1200px;height:400px; margin-left: 8px}
+.banner-pic ul li{list-style:none;width:96px;height:400px;float:left;}
+.banner-pic .l1{background-image:url(img/1.jpg);}
+.banner-pic .l2{background-image:url(img/2.jpg);}
+.banner-pic .l3{background-image:url(img/3.jpg);}
+.banner-pic .l4{background-image:url(img/4.jpg);}
+.banner-pic .l5{background-image:url(img/5.jpg);width:800px;}
+.tle{
+    border-bottom: 2px solid #ffffff;
+    width: 1200px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.tle>span{
+    float: left;
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.tle>span:nth-child(2){
+    float: right;
+    color: #00cf9e;
+    font-size: 18px;
+    margin-top: 9px;
+}
+.tle>span:nth-child(2)>img{
+    margin-right: 5px;
+}
+.everyone-text{
+    position: relative;
+}
+.gerenxinxi{
+    position: absolute;
+    top: -30px;
+}
+.touxiang{
+    margin-right: 18px;
+    float: left;
+}
+.gerenxinxi .gerenxinxi-text .huoname>a{
+    font-size: 14px;
+}
+.gerenxinxi-text{
+    padding-top: 40px;
+    float: left;
+    width: 258px;
+}
+.biaoti{
+    margin-top: 18px;
+}

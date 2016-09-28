@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+
+    <title>玩艺网</title>
+    <!-- 以前的样式；头部底部有用到 -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/faxianye.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- end -->
+    
+    <link rel="stylesheet" href="css/index_1_5.css"/>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipsternavtabs.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.flipster.js"></script>
+</head>
+<body>
+    <header class="header2" >
+        <div class="nav-one">
+            <div class="search" id="">
+                <a href="tmpl/search.html" ><img class="search-input" id="keyword" src="img/search_ico.png"></a>
+            </div>
+            <div class="logo-name" id="logo-name">封面 Cover<img src="img/uptwo.png" alt=""/>
+
+			</div>
+			<div class="xialai-cadan" id="xialai-cadan" >
+				<a href="index.html"><span>封面 Cover</span></a>
+				<a href="tmpl/find_1.html"><span>找灵感 Inspiration</span></a>
+			</div>
+            <span class="gouwuche">
+               <!--  <a href="tmpl/cart_list.html" ><img src="img/chouti.png" alt=""/></a> -->
+               <a href="feedback/hezi.html" ><img src="img/chouti.png" alt=""/></a>
+            </span>
+        </div>
+    </header>
+	<div class="nctouch-home-top fixed-Width">
+		<div class="adv_list" id="main-container1"></div>
+	</div>
+    <div style="margin-top: 60px;">
+        <div>
+            <span class="index-tit">
+                <img src="img/newp.png" alt=""/>
+            </span>
+            <div class="con_mid-two-m" id="goods_new">
+                
+            </div>
+        </div>
+		<div class="popular" >
+             <span class="index-tit">
+                <img src="img/peop.png" alt=""/>
+            </span>
+            <div class="flipster popular-main" id="goods_popular">
+                
+            </div>
+        </div>
+        <div class="popular">
+
+        </div>
+        <div class="big-pic">
+            <span class="index-tit">
+                <img src="img/redc.png" alt=""/>
+            </span>
+            <div class="big-pic-big-o" id="Note_buyers">
+                
+            </div>
+        </div>
+        <div class="big-pic">
+            <span class="index-tit">
+                <img src="img/didb.png" alt=""/>
+            </span>
+            <div class="big-pic-big-t big-pic-big-o" id="Designer_brand">
+                
+            </div>
+        </div>
+        <div>
+            <span class="index-tit">
+                <img src="img/rds.png" alt=""/>
+            </span>
+            <div class="con_mid-rds-o con_mid-two-m" id="Notes_ingenuity">
+                
+            </div>
+        </div>
+        <div>
+            <span class="index-tit">
+                <img src="img/rep.png" alt=""/>
+            </span>
+            <div class="con_mid-two-m" id="you_like">
+                
+            </div>
+        </div>
+    </div>
+	<div class="fix-block-r">
+		<a href="javascript:void(0);" class="gotop-btn gotop hide" id="goTopBtn"><i></i></a>
+	</div>
+    <div class="footer-top"></div>
+    <footer id="footer" class="fixed-Width"></footer>
+	
+	<!-- 轮播图模型 -->
+    <script type="text/html" id="adv_list">
+        <div class="swipe-wrap">
+        <% for (var i in banner) { %>
+            <div class="item">
+                <a href="http://<%= banner[i].adv_pic_url %>">
+                        <img src="<%= banner[i].adv_pic %>" alt="">
+                </a>
+            </div>
+        <% } %>
+        </div>
+    </script>
+	
+	<!-- 买手笔记模型 -->
+    <script type="text/html" id="Note_buyers_model">
+	
+		<div class="big-pic-big">
+			<% var model_num = 0; %>
+			<% if(special_list != null) { %>
+			
+				<ul id="note_model_leng">
+				
+				<% for (var i in special_list) { %> 
+					
+					<li>
+						<a href="special.html?special_id=<%= special_list[i].special_id; %>">
+							<img src="<%= special_list[i].special_banner; %>" alt=""/>
+						</a>
+						<% if(special_list[i].goods_list != null) { %>
+						<ul class="lit-pic">
+						<% goods_list = special_list[i].goods_list; %>
+						 <% for (var n in goods_list) { %> 
+							<li>
+								<a href="tmpl/product_detail.html?goods_id=<%=goods_list[n].goods_id;%>">
+									<img src="<%= goods_list[n].goods_image; %>" alt=""/>
+									<i>¥<%= goods_list[n].goods_promotion_price; %></i>
+								</a>
+							</li>
+							<% if(n >= 3){ break; } %>
+						<% } %>
+						</ul>
+						<% } %>
+						<div style="clear: both"></div>
+					</li>
+					<% model_num++; %>
+				<% } %>
+				
+				</ul>
+		
+			<% } %>
+            <div style="clear: both"></div>
+        </div>
+		<style>
+			
+			#note_model_leng {
+				width: calc(290px *<%=model_num;%>);
+				height: 125px;
+			}
+			
+		</style>
+    </script>
+	
+	<!-- 设计师品牌模型 add by lizh 10:37 2016/7/6 -->
+    <script type="text/html" id="Designer_brand_model">
+	
+		<div class="big-pic-fd">
+			<% var model_num = 0; %>
+			<% if(store_list != null) { %>
+			<ul id="designer_model_length">
+				<% for(var i in store_list) { %> 
+				<li>
+					<a href="tmpl/store.html?store_id=<%= store_list[i].store_id; %>"><img src="<%= store_list[i].app_banner; %>" alt=""/></a>
+					<div class="fd-text">
+						<a href="tmpl/store.html?store_id=<%= store_list[i].store_id; %>"><img src="<%= store_list[i].store_avatar; %>" alt=""/></a>
+						<span>
+							<a href="tmpl/store.html?store_id=<%= store_list[i].store_id; %>"><I><%= store_list[i].store_name; %></I></a>
+							<i><%= store_list[i].goods_count; %> fans</i>
+						</span>
+					</div>
+					<% search_list_goods = store_list[i].search_list_goods; %>
+					<% if(search_list_goods != null) { %>
+					<ul class="lit-pic">
+						<% for(var n in search_list_goods) { %> 
+						<li>
+							<a href="tmpl/product_detail.html?goods_id=<%=search_list_goods[n].goods_id;%>">
+								<img src="<%= search_list_goods[n].goods_image; %>" alt=""/>
+								<i>¥<%= search_list_goods[n].goods_price; %></i>
+							</a>
+							
+						</li>
+						<% if(n >= 3){ break; } %>
+						<% } %>
+
+					</ul>
+					<% } %>
+					<div style="clear: both"></div>
+				</li>
+				<% model_num++; %>
+				<% } %>
+			</ul>
+			<% } %>
+			<div style="clear: both"></div>
+		</div>
+		<style>
+			
+			#designer_model_length {
+				width: calc(290px *<%=model_num;%>);
+				height: 125px;
+			}
+			
+		</style>
+    </script>
+	
+	<!-- 匠心手记模型 add by lizh 11:22 2016/7/6 -->
+    <script type="text/html" id="Notes_ingenuity_model">
+	
+		<div class="con_mid-rds con_mid-two">
+		<% var num = 0; %>
+		<% if(article_list != null) { %>
+			<ul id="nontes_model_length">
+			
+				<% for(var i in article_list) { %>
+				<li style="width: 250px;"><a href="<%= article_list[i].url; %>"><img src="<%= article_list[i].article_image; %>" alt=""/></a></li>
+				<% num++; %>
+				<% } %>
+				
+			</ul>	
+		<% } %>
+		</div>
+		<style>
+			
+			#nontes_model_length {
+				width: calc(258px *<%=num;%>);
+				height: 125px;
+			}
+			
+		</style>
+    </script>
+	
+	<!-- 最新单品模型 add by lizh 11:36 2016/7/6 -->
+    <script type="text/html" id="goods_new_model">
+	
+		<div class="con_mid-two">
+		<% var model_num = 0; %>
+		<% if(goods_new != null) { %>
+			<ul id="new_model_length">
+			<% for(var i in goods_new) { %>
+				<li>
+					<a href="tmpl/product_detail.html?goods_id=<%= goods_new[i].goods_id; %>">
+						<img src="<%= goods_new[i].goods_image; %>" alt=""/>
+					</a>
+					<a href="tmpl/product_detail.html?goods_id=<%= goods_new[i].goods_id; %>" title="<%=goods_new[i].goods_name%>">
+						<i>
+						<%if(goods_new[i].goods_name.length > 8) { %>
+							<%= goods_new[i].goods_name.substring(0,8); %>...
+						<% } else { %>
+							<%= goods_new[i].goods_name; %>
+						<% } %>
+						</i>
+					</a>
+					<a href="tmpl/product_detail.html?goods_id=<%= goods_new[i].goods_id; %>" title="<%=goods_new[i].goods_name%>">
+						<i>¥<%= goods_new[i].goods_promotion_price; %></i>
+					</a>
+				</li>
+				<% model_num++; %>
+			<% } %>
+			
+			</ul>
+			
+		<% } %>
+		</div>
+		<style>
+			
+			#new_model_length {
+				
+				width: calc(158px *<%=model_num;%>);
+				height: 125px;
+			}
+			
+		</style>
+		
+    </script>
+	
+	<!-- 猜你喜欢模型 add by lizh 16:04 2016/7/6 -->
+    <script type="text/html" id="you_like_model">
+	
+		<div class="con_mid-two">
+		<% var num = 0; %>
+		<% if(guess_like != null){ %> 
+			<ul id="like_model_length">
+			
+			<% for(var i in guess_like) { %>
+				<li>
+					<a href="tmpl/product_detail.html?goods_id=<%= guess_like[i].goods_id; %>">
+					<img src="<%= guess_like[i].goods_image; %>" alt=""/>
+					</a>
+					<a href="tmpl/product_detail.html?goods_id=<%= guess_like[i].goods_id; %>">
+						<i>
+							
+							<%if(guess_like[i].goods_name.length > 8) { %>
+							<%= guess_like[i].goods_name.substring(0,8); %>...
+							<% } else { %>
+								<%= guess_like[i].goods_name; %>
+							<% } %>
+						
+						</i>
+						<i>¥<%= guess_like[i].goods_promotion_price; %></i>
+					</a>
+					
+				</li>
+				<% num++; %>
+			<% }%>
+
+			</ul>
+		<% } %>
+		</div>
+		<style>
+			
+			#like_model_length {
+				width: calc(158px *<%=num;%>);
+				height: 125px;
+			}
+			
+		</style>
+    </script>
+	
+	<!-- 心水尖货 add by lizh 17:50 2016/7/6 -->
+    <script type="text/html" id="goods_popular_model">
+		
+		<% if(goods_popular != null){ %> 
+		<ul>
+			<% for(var i in goods_popular) { %>
+			<li>
+				<a href="tmpl/product_detail.html?goods_id=<%= goods_popular[i].goods_id; %>" class="Button Block">
+					<img src="<%= goods_popular[i].goods_image; %>" alt=""/>
+					<p>
+					<%if(goods_popular[i].goods_name.length > 8) { %>
+						<%= goods_popular[i].goods_name.substring(0,8); %>...
+					<% } else { %>
+						<%= goods_popular[i].goods_name; %>
+					<% } %>
+					</p>
+					<i>¥ <%= goods_popular[i].goods_promotion_price; %></i>
+				</a>
+			</li>
+			<% }%>
+		</ul>
+		<% }%>
+		<script>
+			 	$(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 , enableKeyboard:false , enableMousewheel:false }); });
+		</script>
+    </script>
+	
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script> 
+    <script type="text/javascript" src="js/template.js"></script> 
+    <script type="text/javascript" src="js/common.js?g"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+	
+	<!-- 新的首页模板的JS -->
+    <script type="text/javascript" src="js/index_1_5.js"></script>
+    <script type="text/javascript" src="js/head.js"></script>
+    <!-- END  -->
+	
+    <script type="text/javascript" src="js/tmpl/footer.js"></script>
+    
+    <script type="text/javascript" src="js/addtohomescreen.js"></script>
+	<script>
+	
+		addToHomescreen({
+			message:'如要把应用程式加至主屏幕,请点击%icon, 然后<strong>加至主屏幕</strong>'
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    font-family: "Microsoft YaHei";
+
+}
+.footer-wai{
+    width: 100%;
+    background: #343a48;
+	margin-top:20px
+}
+.footer{
+    width: 1200px;
+    margin: auto;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+.down-load ,.about-wanyi ,.call-me{
+    float: left;
+}
+.footer h6{
+   font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 27px;
+	color:#fff
+}
+
+.down-load{
+    margin-left: 140px;
+}
+.down-load div{
+   margin: auto;
+   width: 90px;
+    margin-bottom: 10px;
+}
+.down-load span{
+    border: 1px solid #14ceb6 ;
+    color: #14ceb6;
+    padding: 3px 20px;
+}
+.about-wanyi{
+    margin-left: 180px;
+}
+.about-wanyi h6{
+    margin-bottom: 21px;
+}
+.about-wanyi p{
+    line-height: 24px;
+    font-size: 12px;
+	color:#fff
+}
+.call-me-icon {
+    width: 20px;
+    float: left;
+}
+.call-me-icon i{
+    display: block;
+}
+.call-me-icon i:nth-child(1){
+    margin-bottom: 75px;
+}
+.call-num{
+    display: block;
+}
+.call-num i{
+    font-size: 18px;
+}
+.call-num i:nth-child(2){
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+.call-me{
+    margin-left: 127px;
+}
+.call-num{
+    float: left;
+    margin-left: 15px;
+}
+.call-num i{
+    display: block;
+    text-align: center;
+	color:#fff
+}
+.fenxiang{
+    text-align: center;
+    margin-top: 15px;
+}
+.fenxiang a i{
+    display: inline-block;
+    background: url("../newimg/fengxiangicon.png") ;
+    width: 30px;
+    height: 30px;
+}
+.fenxiang a:hover i{
+    background: url("../newimg/fengxiangiconhover.png");
+    cursor:pointer;
+}
+.fenxiang  a:nth-child(1) i{
+   background-position: 0 0;
+}
+.fenxiang a:nth-child(2) i{
+    background-position: -64px 0;
+    margin: 0 30px;
+}
+.fenxiang a:nth-child(3) i{
+    background-position:-130px 0;
+}
+.hezuo-banquan{
+    text-align: center;
+
+}
+.hezuo-banquan ul{
+    margin:auto;
+    width: 433px;
+    margin-top: 60px;
+}
+.hezuo-banquan ul li{
+   float: left;
+    font-size: 16px;
+	color:#fff;
+}
+.hezuo-banquan ul li:nth-child(even){
+   margin:0 10px;
+}
+.hezuo-banquan span{
+    font-size: 10px;
+    margin-top: 10px;
+    display: block;
+	color:#fff;
+
+}
+
+.footerAClass {
+	
+	color:#fff;
+	
+}

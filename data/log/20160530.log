@@ -1,0 +1,57 @@
+[2016-05-30 15:04:45] /shop/index.php?act=goods&op=addbrowse&gid=107031 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('107031','366','1464591885','14','1','4','14')
+[2016-05-30 16:12:27] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+UPDATE `wantease_goods` SET like_count=like_count-1 WHERE ( personal_id = '106402' )
+[2016-05-30 16:43:35] /shop/index.php?act=goods&op=addbrowse&gid=106442 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106442','366','1464597815','1369','1058','1186','1369')
+[2016-05-30 16:43:42] /shop/index.php?act=goods&op=addbrowse&gid=106441 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106441','366','1464597822','1369','1058','1186','1369')
+[2016-05-30 16:43:48] /shop/index.php?act=goods&op=addbrowse&gid=106439 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106439','366','1464597828','1369','1058','1186','1369')
+[2016-05-30 16:44:34] /shop/index.php?act=goods&op=addbrowse&gid=106430 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106430','366','1464597874','1369','1058','1186','1369')
+[2016-05-30 16:44:54] /shop/index.php?act=goods&op=addbrowse&gid=106443 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106443','366','1464597894','1411','1058','1187','1411')
+[2016-05-30 16:50:13] /mobile1/index.php?act=goods_like&op=like_save&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_save ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+SELECT * FROM `wantease_goods_common` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:53:19] /mobile1/index.php?act=goods_like&op=like_save&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_save ) 
+ERR: Db Error: Unknown column 'like_count' in 'field list'
+SELECT like_count FROM `wantease_goods_common` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:53:26] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+UPDATE `wantease_goods` SET like_count=like_count-1 WHERE ( personal_id = '106402' )
+[2016-05-30 16:53:26] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'like_count' in 'field list'
+SELECT like_count FROM `wantease_goods_common` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:54:27] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+SELECT like_count FROM `wantease_goods` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:54:46] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+UPDATE `wantease_goods` SET like_count=like_count-1 WHERE ( personal_id = '106402' )
+[2016-05-30 16:54:46] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+SELECT like_count FROM `wantease_goods` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:57:20] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+SELECT like_count FROM `wantease_goods` WHERE ( personal_id = '106402' ) LIMIT 1  
+[2016-05-30 16:57:59] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+UPDATE `wantease_goods` SET like_count=like_count-1 WHERE ( personal_id = '106402' )
+[2016-05-30 16:59:01] /mobile1/index.php?act=goods_like&op=like_drop&key=638ef166cc570b3331a1270c80ec9f29&like_id=106402 ( act=goods_like&op=like_drop ) 
+ERR: Db Error: Unknown column 'personal_id' in 'where clause'
+UPDATE `wantease_goods` SET like_count=like_count-1 WHERE ( personal_id = '106402' )
+[2016-05-30 17:36:52] /shop/index.php?act=goods&op=addbrowse&gid=106820 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106820','492','1464601012','1075','470','1075','0')
+[2016-05-30 18:23:41] /shop/index.php?act=goods&op=addbrowse&gid=105752 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105752','492','1464603821','1075','470','1075','0')

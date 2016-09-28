@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分销系统 - {pigcms::C('site_name')}{pigcms::C('site_title')}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content=" 分销,系统 ">
+<meta name="description" content="{pigcms::C('content')}">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/global.css" rel="stylesheet" type="text/css">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/style.css" rel="stylesheet" type="text/css">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/products.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/tpl/Home/weidogsfx/static/kehu301/js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body class="app_bg">
+<div id="header">
+    <div class="header_top">
+    <img src="/tpl/Home/weidogsfx/static/kehu301/images/header_telephone.jpg" class="header_telephone"/>
+    </div>
+    <div class="header_main">
+		<div class="logo"><a href="/"><img src="/tpl/Home/weidogsfx/logo/logo.png" alt="{pigcms::C('site_name')}科技"></a></div>
+		<div class="menu">
+			<ul>
+      	<li><a href="/" class="cur_new">首页</a></li>
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=fxxt')}" title="分销系统"   class="cur" >分销系统</a></li> 
+                <li ><a href="/index.php?g=Home&m=Index&a=youshi" title="微信营销" >微信营销</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=yuncanting')}" title="云餐厅" >云餐厅</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=c1')}" title="产品" >产品</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=anli')}" title="案例" >案例</a></li> 
+               <li ><a href="/index.php?g=User&m=Index&a=index" title="管理中心" >管理中心</a></li> 
+                <div class="clear"></div>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+	<div style="text-align:center">
+		 <img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/fba3585d0e0fc4cc6b89b477f8043645.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/403cf02815850ad9af730fbfa8ef8a6b.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/30fae9fd3e6a33cbbb3419ff2045daa0.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/49720879cbc9f7e413dc27974ec320c0.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/7c463cf0e717d18aaf279b3a9296fdb2.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/8a2475528444bc8568163de1db042098.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/78da0488ca91d1b0fa648c109e03b931.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/56b6cf8267fb0b9d88dd8f9bd9acd485.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/6707cc1e7b04a02e60d84cbf8380075b.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/90b96a2d22e76a93041400965d04ece5.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/6b9d00eff1d25f6696c8d2e3144c6f50.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/22373db44c92fd7cb6b157f7b6396d2a.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/a178e64eaa05610e7ac3bfb8dd0ec814.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/e30243904ced612d09c7c5bdbfc0d0a7.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/29627fd06aff7b9ca932d738c37c7f68.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/d6c685f91eb53b55ce28f707db6bc038.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/7187f10b51da19a330336f394d6af81a.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/d5838da9568dcf4384d088c1ce4f845e.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/c5b2e418a46a609019d902c7b7cb47a1.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/7a7f762b0842202c67c94274decbc67d.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/6dd45499d7dbc319e0a1ce52bd32537b.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/3683ff0a5ff451236c48db277f17b5bc.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/6850c234ca3fce9760e026ac60964282.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/be564a175ee86ea4a6fe3737dcf1acea.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/0c023834819cab98d5d560e3ae28bbb6.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/96a4aa85020e7007f573eab65ce09514.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/82eb64ff1defdcc7a671981fb8eff00e.jpg" width="100%" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-14/02eeb783d60abebc7aeb323ac369358c.jpg" width="100%" alt="" /><br />	</div>
+	
+	
+	<div class="blank9"></div>
+	
+<div class="blank9"></div>
+<div id="footer">
+ <div class="footer_top">
+  <div class="footer_top_left">
+   <div class="footer_top_item">
+    <h2>走进{pigcms::C('site_name')}科技</h2>
+    <p><a href="http://www.weidogs.com/">微信狗官网</a></p>
+    <p><a href="http://kf.weidogs.com/">工单系统</a></p>
+    
+   </div>
+   <div class="footer_top_item">
+    <h2>企业产品</h2>
+    <p><a href="http://idc.weidogs.com/" target="_blank">千兆主机</a></p>
+    <p><a href="#" target="_blank">{pigcms::C('site_name')}科技</a></p>
+   </div>
+   <div class="clear"></div>
+  </div>
+  <div class="footer_top_right"><img src="/tpl/Home/weidogsfx/static/kehu301/images/footer_right_logo.jpg" /></div>
+  <div class="clear"></div>
+ </div>
+ <div class="footer_bottom">
+  <font style="letter-spacing:2px"></font> Copyright@2012-2015    <a href="http://www.beianbeian.com/search/wybao.cn" target="_blank"><font style="color:#FFF">{pigcms::C('ipc')}</font></a>
+</div>
+<style type="text/css">
+#kf_box{width:51px; height:500px; position:fixed; top:200px; right:3px; display:block;z-index:999}
+#kf_box #kf_display{display:none;}
+#kf_box .kf_list{display:none;}
+</style>
+<div id="kf_box">
+ <img src="/tpl/Home/weidogsfx/static/kehu301/images/kf_start.jpg" usemap="#kf_startMap" id="kf_start" border="0" />
+ <map name="kf_startMap" id="kf_startMap">
+   <area shape="rect" coords="2,1,71,387" href="javascript:show_kf();" />
+   <area shape="rect" coords="-1,385,90,516" href="#" onclick="go_top();" />
+ </map>
+ <img src="/tpl/Home/weidogsfx/static/kehu301/images/kf.jpg" id="kf_display" usemap="#kf_Map" border="0" />
+ <map name="kf_Map" id="kf_Map">
+  <area shape="rect" coords="-1,3,52,389" href="javascript:hide_kf();" />
+  <area shape="rect" coords="1,388,51,503" href="#" onclick="go_top();" />
+
+  <area shape="rect" coords="73,105,201,139" href="http://wpa.qq.com/msgrd?v=1&uin={pigcms::C('site_qq')}&site={pigcms::C('site_name')}科技&menu=yes" target="_blank" />
+  <area shape="rect" coords="73,145,202,181" href="http://wpa.qq.com/msgrd?v=1&uin={pigcms::C('site_qq')}&site={pigcms::C('site_name')}科技&menu=yes" target="_blank" />
+  <area shape="rect" coords="73,183,204,220" href="http://wpa.qq.com/msgrd?v=1&uin={pigcms::C('site_qq')}&site={pigcms::C('site_name')}科技&menu=yes" target="_blank" />
+  <area shape="rect" coords="73,313,204,349" href="http://wpa.qq.com/msgrd?v=1&uin={pigcms::C('site_qq')}&site={pigcms::C('site_name')}科技&menu=yes" target="_blank" />
+
+ </map>
+</div>
+<script type="text/javascript">
+function show_kf(){
+	$('#kf_box #kf_start').hide();
+	$('#kf_box').css("width",221);
+	$('#kf_box #kf_display').show();
+	$('#kf_box .kf_list').show();
+}
+
+function hide_kf(){
+	$('#kf_box #kf_display').hide();	
+	$('#kf_box .kf_list').hide();
+	$('#kf_box').css("width",51);
+	$('#kf_box #kf_start').show();	
+}
+
+function go_top(){
+	window.scroll(0,0);
+}
+</script>
+
+</body>
+</html>

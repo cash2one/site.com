@@ -1,0 +1,609 @@
+[2016-05-06 01:35:35] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:36:34] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:36:38] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:36:41] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:37:25] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:37:39] /mobile1/index.php?act=cms_like&op=like_save&article_id=(null)&key=eea3b9c9a776975ed63e4b8cff57d575 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '0' )
+[2016-05-06 01:42:44] /mobile1/index.php?act=cms_like&op=like_save&article_id=58&key=e1cbb96a1435ae3090ee976bda70c8d9 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '58' )
+[2016-05-06 01:42:48] /mobile1/index.php?act=cms_like&op=like_save&article_id=58&key=e1cbb96a1435ae3090ee976bda70c8d9 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '58' )
+[2016-05-06 01:43:35] /mobile1/index.php?act=cms_like&op=like_save&article_id=102&key=e1cbb96a1435ae3090ee976bda70c8d9 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '102' )
+[2016-05-06 01:43:45] /mobile1/index.php?act=cms_like&op=like_save&article_id=102&key=e1cbb96a1435ae3090ee976bda70c8d9 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '102' )
+[2016-05-06 08:59:37] /shop/index.php?act=goods&op=addbrowse&gid=104130 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','399','1462496377','624','593','597','624')
+[2016-05-06 09:31:19] /shop/index.php?act=goods&op=addbrowse&gid=101607 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101607','399','1462498279','119','1','6','59')
+[2016-05-06 09:31:46] /shop/index.php?act=goods&op=addbrowse&gid=105701 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105701','399','1462498306','62','1','6','62')
+[2016-05-06 09:42:33] /shop/index.php?act=goods&op=addbrowse&gid=105549 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105549','399','1462498953','62','1','6','62')
+[2016-05-06 09:49:30] /shop/index.php?act=goods&op=addbrowse&gid=102409 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102409','399','1462499370','1502','308','1311','1502')
+[2016-05-06 10:07:38] /shop/index.php?act=login&op=usersave ( act=login&op=usersave ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104144','404','1462500105','1283','593','1061','1283')
+[2016-05-06 10:19:56] /shop/index.php?act=goods&op=addbrowse&gid=105628 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105628','399','1462501196','1531','1526','1527','1531')
+[2016-05-06 10:21:27] /shop/index.php?act=goods&op=addbrowse&gid=105629 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105629','399','1462501287','1531','1526','1527','1531')
+[2016-05-06 10:21:29] /shop/index.php?act=goods&op=addbrowse&gid=105630 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105630','399','1462501289','1531','1526','1527','1531')
+[2016-05-06 10:22:25] /shop/index.php?act=goods&op=addbrowse&gid=105628 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105628','399','1462501345','1531','1526','1527','1531')
+[2016-05-06 10:22:38] /shop/index.php?act=goods&op=addbrowse&gid=105586 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105586','399','1462501358','1528','1526','1528','0')
+[2016-05-06 10:23:02] /shop/index.php?act=goods&op=addbrowse&gid=102048 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102048','399','1462501382','1320','2','152','1320')
+[2016-05-06 10:23:22] /shop/index.php?act=goods&op=addbrowse&gid=104509 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','399','1462501402','1516','1058','1515','1516')
+[2016-05-06 10:48:31] /shop/index.php?act=goods&op=addbrowse&gid=104141 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104141','397','1462502911','13','1','4','13')
+[2016-05-06 10:53:43] /shop/index.php?act=goods&op=addbrowse&gid=103655 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103655','397','1462503223','19','1','4','19')
+[2016-05-06 10:54:21] /shop/index.php?act=goods&op=addbrowse&gid=103655 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103655','397','1462503261','19','1','4','19')
+[2016-05-06 10:54:41] /shop/index.php?act=goods&op=addbrowse&gid=104130 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','397','1462503281','624','593','597','624')
+[2016-05-06 10:55:01] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','397','1462503301','1126','470','1085','1126')
+[2016-05-06 11:27:51] /shop/index.php?act=goods&op=addbrowse&gid=106127 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106127','6','1462505271','1346','1058','1109','1346')
+[2016-05-06 14:14:18] /shop/index.php?act=goods&op=addbrowse&gid=104509 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','399','1462515258','1516','1058','1515','1516')
+[2016-05-06 14:14:34] /shop/index.php?act=goods&op=addbrowse&gid=101606 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101606','399','1462515274','119','1','6','59')
+[2016-05-06 14:18:57] /shop/index.php?act=goods&op=addbrowse&gid=102587 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102587','399','1462515537','1075','470','1075','0')
+[2016-05-06 14:24:43] /shop/index.php?act=goods&op=addbrowse&gid=106413 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106413','401','1462515883','14','1','4','14')
+[2016-05-06 14:35:45] /shop/index.php?act=login ( act=login&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106409','403','1462516508','14','1','4','14')
+[2016-05-06 15:03:18] /shop/index.php?act=goods&op=addbrowse&gid=102337 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102337','397','1462518198','24','1','4','24')
+[2016-05-06 15:04:28] /shop/index.php?act=goods&op=addbrowse&gid=101605 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101605','397','1462518268','119','1','6','59')
+[2016-05-06 15:05:56] /shop/index.php?act=goods&op=addbrowse&gid=105318 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105318','397','1462518356','1513','470','1273','1513')
+[2016-05-06 15:33:49] /shop/index.php?act=goods&op=addbrowse&gid=106339 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106339','397','1462520029','109','1','9','109')
+[2016-05-06 15:57:36] /shop/index.php?act=goods&op=addbrowse&gid=105962 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105962','403','1462521456','1175','256','1171','1175')
+[2016-05-06 15:57:39] /shop/index.php?act=goods&op=addbrowse&gid=105959 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105959','403','1462521459','1175','256','1171','1175')
+[2016-05-06 15:57:55] /shop/index.php?act=goods&op=addbrowse&gid=105958 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105958','403','1462521475','1175','256','1171','1175')
+[2016-05-06 15:57:58] /shop/index.php?act=goods&op=addbrowse&gid=105957 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105957','403','1462521478','1175','256','1171','1175')
+[2016-05-06 15:58:03] /shop/index.php?act=goods&op=addbrowse&gid=105958 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105958','403','1462521483','1175','256','1171','1175')
+[2016-05-06 15:58:30] /shop/index.php?act=goods&op=addbrowse&gid=105957 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105957','403','1462521510','1175','256','1171','1175')
+[2016-05-06 15:58:35] /shop/index.php?act=goods&op=addbrowse&gid=105958 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105958','403','1462521515','1175','256','1171','1175')
+[2016-05-06 15:58:44] /shop/index.php?act=goods&op=addbrowse&gid=105959 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105959','403','1462521524','1175','256','1171','1175')
+[2016-05-06 16:48:55] /shop/index.php?act=goods&op=addbrowse&gid=104507 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104507','407','1462524535','14','1','4','14')
+[2016-05-06 16:50:33] /shop/index.php?act=goods&op=addbrowse&gid=104507 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104507','407','1462524633','14','1','4','14')
+[2016-05-06 16:52:40] /shop/index.php?act=goods&op=addbrowse&gid=106026 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106026','327','1462524760','1346','1058','1109','1346')
+[2016-05-06 16:55:21] /shop/index.php?act=goods&op=addbrowse&gid=106225 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106225','327','1462524921','1513','470','1273','1513')
+[2016-05-06 16:56:02] /shop/index.php?act=goods&op=addbrowse&gid=106222 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106222','327','1462524962','1513','470','1273','1513')
+[2016-05-06 17:10:35] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','27','1462521957','624','593','597','624'),('104141','27','1462523660','13','1','4','13')
+[2016-05-06 17:20:29] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','405','1462526171','624','593','597','624'),('100894','405','1462526214','18','1','4','18')
+[2016-05-06 18:51:12] /shop/index.php?act=goods&op=addbrowse&gid=106396 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106396','327','1462531872','14','1','4','14')
+[2016-05-06 19:39:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:39:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:39:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:39:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:41:36] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:41:36] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:41:36] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:41:36] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:41:37] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:41:37] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:51:21] /shop/index.php?act=goods&op=addbrowse&gid=102928 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102928','327','1462535481','19','1','4','19')
+[2016-05-06 19:58:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:58:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:58:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:58:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:58:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:58:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 19:58:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 19:58:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:24:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:24:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:27:40] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:27:40] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:29:41] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:29:41] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:29:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:29:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:29:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:29:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:40:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:40:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:47:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:48:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:54:03] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:54:03] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:54:13] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:57:12] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:57:12] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:58:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:59:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:59:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:59:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:59:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:59:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:59:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 20:59:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 20:59:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:05] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:46] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:46] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:46] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:46] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:01:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:01:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:02:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:03:27] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:03:27] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:03:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:09:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:11] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:18:12] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:18:12] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 21:24:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 21:24:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 22:24:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 1  
+[2016-05-06 23:33:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'item_type' in 'where clause'
+SELECT store_id,store_name,store_avatar,sc_id,app_banner,store_collect FROM `wantease_store` WHERE ( item_type = 'adv_list' ) AND ( special_id = '0' ) AND ( store_state = '1' ) AND ( sc_id IN ('1','2') ) ORDER BY store_id asc LIMIT 0,10  

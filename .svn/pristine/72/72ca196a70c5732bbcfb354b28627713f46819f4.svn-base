@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>收藏店铺</title>
+    <link rel="stylesheet" href="../css/shoucangdianpu.css"/>
+	<style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="javascript:history.go(-1);"><i class="back"></i></a>
+        收藏店铺
+    </div>
+    <div class="zzguanzhu" id="favorites_store_list">
+
+    </div>
+</div>
+
+<!--微信分享-->
+<div id="wx_share"></div>
+<iframe src="../fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+<script>
+	var ifm= document.getElementById("iframepage");
+	//*****************添加点击事件的机制******************
+	var IframeOnClick = {
+		resolution: 200,
+		iframes: [],
+		interval: null,
+		Iframe: function() {
+			this.element = arguments[0];
+			this.cb = arguments[1];
+			this.hasTracked = false;
+		},
+		track: function(element, cb) {
+			this.iframes.push(new this.Iframe(element, cb));
+			if (!this.interval) {
+				var _this = this;
+				this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+			}
+		},
+
+		checkClick: function() {
+			if (document.activeElement) {
+				var activeElement = document.activeElement;
+				for (var i in this.iframes) {
+					if (activeElement === this.iframes[i].element) { // user is in this Iframe
+						if (this.iframes[i].hasTracked == false) {
+							this.iframes[i].cb.apply(window, []);
+
+							this.iframes[i].hasTracked = true;
+						}
+					} else {
+						this.iframes[i].hasTracked = false;
+					}
+				}
+			}
+		}
+	};
+	IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+</script>
+
+<script type="text/html" id="favorites_store_list_model">
+		
+		<% if(favorites_list != null) { %>
+		<% for(var i in favorites_list) { %>
+			<div>
+				<i class="shoucangxinxi">
+					<a href="../store.html?store_id=<%=favorites_list[i].store_id; %>">
+					<img src="<%=favorites_list[i].store_avatar_url; %>" alt=""/>
+					</a>
+					<span class="zzguanzhu-t">
+						<a href="../store.html?store_id=<%=favorites_list[i].store_id; %>">
+						<i><%=favorites_list[i].store_name; %></i>
+						</a>
+						<ul>
+							<li><i><%=favorites_list[i].store_collect; %></i>粉丝</li>
+							<li>/</li>
+							<li><i><%=favorites_list[i].goods_count; %></i>上新</li>
+						</ul>
+					</span>
+				</i>
+				<div class="tubiaos">
+					<i onclick="cancel_favorites_store(this, <%=favorites_list[i].store_id;%>)"><img src="../img/gengduo_icon.png" alt=""/></i>
+					<i onclick='get_wx_share("<%=favorites_list[i].store_name%>","<%=favorites_list[i].store_avatar_url%>","","/tmpl/store.html?store_id=<%=favorites_list[i].store_id%>")'><img src="../img/fengxing_icon.png" alt=""/></i>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		<% } %>
+		<% } %>
+</script>
+
+<!--微信分享配置-->
+<script type="text/html" id="wx_share_model">
+	
+	<script>
+		/*
+		* 注意：
+		* 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+		* 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+		* 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+		*
+		* 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+		* 邮箱地址：weixin-open@qq.com
+		* 邮件主题：【微信JS-SDK反馈】具体问题
+		* 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+		*/
+		wx.config({
+			debug: false,
+			appId: '<%=signPackage.appId;%>',
+			timestamp: '<%=signPackage.timestamp;%>',
+			nonceStr: '<%=signPackage.nonceStr;%>',
+			signature: '<%=signPackage.signature;%>',
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'onMenuShareQZone'
+			]
+		});
+
+	</script>
+	
+</script>	
+
+<script type="text/javascript" src="../../js/config.js"></script> 
+<script type="text/javascript" src="../../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script> 
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/tmpl/favorites_store_1_5.js"></script>
+<!--微信分享JS-->
+<script src="../../js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../../js/wx_share.js"></script>
+</body>
+</html>

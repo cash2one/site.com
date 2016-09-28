@@ -1,0 +1,38 @@
+﻿<div id="footer">
+  <div class="grids-container">
+    <div class="footer-line"></div>
+    <div class="footer-rightsreserved">
+      <div>
+        <p><img src="{pigcms::RES}/images/315.jpg" /></p>
+      </div>
+    </div>
+    
+    <div class="footer-page-links">
+       <div class="grid5">
+        <p><img src="{pigcms::RES}/images/erwei_big.jpg" /></p>
+      </div>
+      <div class="grid2">
+        <h4>用户案例</h4>
+          <p><a href="{pigcms::U('Home/Index/anlie')}">用户案例</a></p>
+      </div>
+      <div class="grid2">
+        <h4>关于我们</h4>
+          <p><a href="{pigcms::U('Home/Index/about')}">公司简介</a></p>
+          <p><a href="{pigcms::U('Home/Index/contact')}">联系我们</a></p>
+      </div>
+      <div class="grid2">
+        <h4>资源</h4>
+        <p><a href="/" target="_blank">{pigcms::C('site_name')}官网</a></p>
+        <p><a href="/" target="_blank">{pigcms::C('site_name')}论坛</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer2">
+    <p>{pigcms::C('site_name')}版权所有 Copyright &copy; 2012-2015 {pigcms::C('ipc')}</p>
+    <p>Powered by {pigcms::C('site_name')}</a></p>
+   
+</div>
+
+
+    

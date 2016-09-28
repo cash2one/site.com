@@ -1,0 +1,175 @@
+*{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333; text-decoration: none;}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    font-family: "Microsoft YaHei";
+    background: #f0f0f0;
+}
+header.fixed {
+    position: fixed;
+    background: #343a49;
+    z-index: 9;
+}
+header, .header {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: #343a49;
+}
+.header-l {
+    display: block;
+    width: 1.95rem;
+    height: 1.95rem;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.header-l a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0.6rem;
+}
+.header-l a i.back {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/arrow_left_b.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header-l a i {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-one {
+    min-width: 320px;
+    max-width: 750px;
+    width: 100%;
+    height: 45px;
+    background: #343a48;
+    line-height: 45px;
+    margin: auto;
+    position: relative;
+}
+.nav-one ul {
+    margin: auto;
+    width: 52.4%;
+}
+.ymt-nav a:nth-child(1) li {
+    margin-left: 17%;
+}
+.nav-one ul .on {
+    color: #ffffff;
+}
+.nav-one ul li {
+    float: left;
+    color: #B0ACC3 ;
+    text-align: center;
+    width: 33%;
+    font-size: 14px;
+}
+.gouwuche {
+    position: absolute;
+    right: -8px;
+    top: 4px;
+}
+.gouwuche img {
+    width: 55%;
+}
+.gouwud-q{
+    background: #ffffff;
+    height: 90px;
+    padding: 0 2%;
+    margin-bottom: 10px;
+}
+.gouwud-q >div {
+    float: left;
+}
+.changpin {
+    margin-top: 5px;
+}
+.gouwud-q div:nth-child(1) img {
+    width: 80px;
+    height: 80px;
+}
+.gouwud-m{
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+.gouwuche-mon{
+    margin-top: 10px;
+    margin-left: 16px;
+    width: 65%
+}
+.gouwuche-mon>span{
+       white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 13px;
+    color: #666;
+}
+.gouwuche-mon .color{
+    margin-top: 7px;
+}
+.color>i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14ceb6;
+    display: inline-block;
+    margin-left: 8px;
+}
+.gouwud-q .xuanzhong{
+    float: right; margin-right: 10px;
+    display: none;
+}
+.xuanzhong img{
+    width: 20px;
+    height: 15px;
+    margin-top: 35px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+}
+.songliwu{
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+    background: #ffffff;
+    height: 100%;
+    padding-top: 20px;
+}
+.song-btn{
+    width: 95.7%;
+    height: 40px;
+    margin: auto;
+    background: #7A8398;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 40px;
+}

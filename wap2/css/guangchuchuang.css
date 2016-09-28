@@ -1,0 +1,81 @@
+*{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    font-family: "Microsoft YaHei";
+    background: #f0f0f0;
+}
+.guangcc{
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 55px;
+}
+.ge-list{
+   margin: 2.1%;
+}
+.ge-list>li{
+    float: left;
+    width: 48.7%;
+}
+.ge-list>li:nth-child(odd){
+   margin-right: 2.1%;
+}
+.ge-list>li img{
+   width: 100%;
+}
+.zhuanti-tit{
+ width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #333333;
+}
+
+  .zhuanti-pic a >img{
+    width: 100%;
+}
+.triangle-up{
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #fff;
+    position: absolute;
+    bottom: 3px;
+    left: calc((100% - 20px)/2);
+}
+.con_mid{
+    width: 97.8%;
+    overflow-x: auto;
+    margin-left: 2.2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.con_mid ul{
+    width: 640px;
+    height: 105px;
+}
+.con_mid ul li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+}
+.con_mid ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.guanggaotu{
+    width: 100%;
+}

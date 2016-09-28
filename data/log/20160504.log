@@ -1,0 +1,135 @@
+[2016-05-04 10:09:47] /shop/index.php?act=store_album&op=album_pic_list&id=244&curpage=2 ( act=store_album&op=album_pic_list ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-15,15' at line 1
+SELECT * FROM `wantease_album_pic` as `album_pic`  WHERE  aclass_id= '244' and `album_pic`.store_id= '56' order by apic_id desc limit -15,15
+[2016-05-04 11:01:55] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','这个产品不错。','0','1462330915',NULL,NULL,'237','13250510697')
+[2016-05-04 11:01:55] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1462330915',NULL,NULL,'237','13250510697','5','5','5')
+[2016-05-04 11:46:13] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','好货','0','1462333573',NULL,NULL,'237','13250510697')
+[2016-05-04 11:46:13] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1462333573',NULL,NULL,'237','13250510697','5','5','5')
+[2016-05-04 11:58:51] /shop/index.php?act=goods&op=addbrowse&gid=106122 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106122','301','1462334331','1346','1058','1109','1346')
+[2016-05-04 11:59:08] /shop/index.php?act=goods&op=addbrowse&gid=106121 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106121','301','1462334348','1346','1058','1109','1346')
+[2016-05-04 11:59:13] /shop/index.php?act=goods&op=addbrowse&gid=106120 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106120','301','1462334353','1346','1058','1109','1346')
+[2016-05-04 12:00:42] /shop/index.php?act=goods&op=addbrowse&gid=106119 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106119','301','1462334442','1346','1058','1109','1346')
+[2016-05-04 12:02:23] /shop/index.php?act=goods&op=addbrowse&gid=106121 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106121','301','1462334543','1346','1058','1109','1346')
+[2016-05-04 12:03:13] /shop/index.php?act=goods&op=addbrowse&gid=106117 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106117','301','1462334593','1346','1058','1109','1346')
+[2016-05-04 12:18:50] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'45','这么样了','0','1462335530',NULL,NULL,'237','13250510697')
+[2016-05-04 12:18:50] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1462335530',NULL,NULL,'237','13250510697','1','4','4')
+[2016-05-04 12:40:40] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=43 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '43' )
+[2016-05-04 12:40:41] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=43 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '43' )
+[2016-05-04 12:40:42] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=43 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '43' )
+[2016-05-04 12:40:45] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=43 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '43' )
+[2016-05-04 12:40:45] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:45] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:46] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:47] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:48] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:49] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:50] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 12:40:51] /mobile1/index.php?act=cms_like&op=like_save&key=03c5d13568a0715e7cd9b758fcbb81a0&article_id=38 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '38' )
+[2016-05-04 13:57:27] /shop/index.php?act=goods&op=addbrowse&gid=105598 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105598','397','1462341447','1502','308','1311','1502')
+[2016-05-04 15:06:50] /shop/index.php?act=goods&op=addbrowse&gid=102792 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102792','397','1462345610','61','1','6','61')
+[2016-05-04 15:07:22] /shop/index.php?act=goods&op=addbrowse&gid=103758 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103758','397','1462345642','1095','1','1079','1095')
+[2016-05-04 15:10:22] /shop/index.php?act=goods&op=addbrowse&gid=104509 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','397','1462345822','1516','1058','1515','1516')
+[2016-05-04 15:29:39] /shop/index.php?act=goods&op=addbrowse&gid=106137 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106137','366','1462346979','1312','308','1311','1312')
+[2016-05-04 15:58:51] /shop/index.php?act=login ( act=login&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106136','6','1462346900','1346','1058','1109','1346'),('105840','6','1462348725','1175','256','1171','1175')
+[2016-05-04 15:58:52] /shop/index.php?act=goods&op=addbrowse&gid=105840 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105840','6','1462348732','1175','256','1171','1175')
+[2016-05-04 15:59:00] /shop/index.php?act=goods&op=addbrowse&gid=105838 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105838','6','1462348740','1175','256','1171','1175')
+[2016-05-04 16:03:00] /shop/index.php?act=goods&op=addbrowse&gid=105840 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105840','6','1462348980','1175','256','1171','1175')
+[2016-05-04 16:18:43] /mobile1/index.php?act=cms_like&op=like_save&key=62bd90b9d25ca72a3043ca60b5007e47&article_id=54 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '54' )
+[2016-05-04 16:18:44] /mobile1/index.php?act=cms_like&op=like_save&key=62bd90b9d25ca72a3043ca60b5007e47&article_id=54 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '54' )
+[2016-05-04 16:18:45] /mobile1/index.php?act=cms_like&op=like_save&key=62bd90b9d25ca72a3043ca60b5007e47&article_id=54 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '54' )
+[2016-05-04 16:36:44] /shop/index.php?act=goods&op=addbrowse&gid=104509 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','399','1462351004','1516','1058','1515','1516')
+[2016-05-04 17:07:57] /shop/index.php?act=goods&op=addbrowse&gid=102587 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102587','374','1462352877','1075','470','1075','0')
+[2016-05-04 17:22:23] /shop/index.php?act=goods&op=addbrowse&gid=104510 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104510','19','1462353743','14','1','4','14')
+[2016-05-04 18:33:17] /shop/index.php?act=goods&op=addbrowse&gid=105887 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105887','22','1462357997','1255','470','1184','1255')
+[2016-05-04 18:35:45] /shop/index.php?act=goods&op=addbrowse&gid=105887 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105887','22','1462358145','1255','470','1184','1255')
+[2016-05-04 20:34:43] /shop/index.php?act=goods&op=addbrowse&gid=106133 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106133','66','1462365283','107','1','9','107')
+[2016-05-04 23:56:01] /mobile1/index.php?act=cms_like&op=like_save&key=500e6a2e84b7f90104f3853e89578169&article_id=54 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '54' )
+[2016-05-04 23:56:02] /mobile1/index.php?act=cms_like&op=like_save&key=500e6a2e84b7f90104f3853e89578169&article_id=54 ( act=cms_like&op=like_save ) 
+ERR: Db Error: Table 'wanyi2.wantease_cms' doesn't exist
+UPDATE `wantease_cms` SET like_count=like_count+1 WHERE ( article_id = '54' )

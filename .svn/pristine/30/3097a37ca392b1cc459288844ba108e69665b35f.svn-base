@@ -1,0 +1,461 @@
+*{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    font-family:Heiti, Heiti SC, DroidSans, DroidSansFallback, Arial, "Microsoft YaHei";
+    background: #f0f0f0;
+}
+
+.gouwud-m{
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 120px;
+}
+.gouwud-t{
+   background: #FFFFFF;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 4% 0 4.7%;
+    font-size: 13px;
+    color: #333333;
+}
+.gouwud-t img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+header.fixed {
+    position: fixed;
+    background: #343a49;
+    z-index: 9;
+}
+header, .header {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: #343a49;
+}
+.nav-one {
+    min-width: 320px;
+    max-width: 750px;
+    width: 100%;
+    height: 45px;
+    background: #343a48;
+    line-height: 45px;
+    margin: auto;
+    position: relative;
+}
+.nav-one ul {
+    margin: auto;
+    width:40%;
+}
+.nav-one ul .on {
+    height: 43px;
+    border-bottom: 2px solid #ffffff;
+}
+.nav-one ul li {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    font-size: 14px;
+}
+.gouwuche{
+    position: absolute;
+    right: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.gouwuche img{
+    width: 25px;
+    height: 25px;
+}
+.gouwud-q{
+    background: #f8f8f8;
+    margin-bottom: 5px;
+    height: 100px;
+}
+.gouwud-q >div{
+    float: left;
+}
+.gouwud-q div:nth-child(1)>img{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 14px;
+}
+.gouwud-q div:nth-child(2) img{
+   width: 60px;
+    height: 60px;
+}
+.gouwud-q div:nth-child(3){
+   width: 62%;
+   margin-left: 10px;
+    margin-top: 20px;
+}
+.gouwuche-mon span{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 800;
+    margin-right: 6px;
+}
+.gouwuche-mon s{
+    color: #cccccc;
+    font-size: 10px;
+    margin-right: 6px;
+}
+.gouwuche-mon i{
+    float: right;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #333333;
+}
+.gouwuche-txt>p{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #333333;
+}
+.color{
+   color: #666;
+    font-size: 12px;
+    display: block;
+}
+.color>i{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14ceb6;
+    display: inline-block;
+    margin-left: 8px;
+}
+.dianpou .bianji{
+    width: 66%;
+    float: right;
+}
+.spsuliang{
+    height: 32px;
+    display: block;
+    border-bottom: 1px solid #FFFFFF;
+}
+.spsuliang i{
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 33px;
+}
+.jian{
+    background: url("../img/jianhaoqian.png") no-repeat center;
+    background-size:50% 50%;
+}
+.jia{
+    background: url("../img/jiahaoqian.png") no-repeat center;
+    background-size: 50% 50%;
+}
+.spsuliang img{
+    width:50%;
+   vertical-align: middle;
+}
+.spsuliang >input{
+    width: 48%;
+    height: 98%;
+   border: none;
+    background: #dddddd;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    float: left;
+}
+.bianji>div:nth-child(1){
+    width: 72%;
+    float: left;
+    margin-top: 20px;
+}
+.bianji .xuanzheguige{
+    margin-top: 1px;
+    display: block;
+    margin-left: 1%;
+}
+.bianji .xuanzheguige span{
+	color: #666;
+    font-size: 12px;
+}
+.bianji .xuanzheguige i{
+	 width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14ceb6;
+    display: inline-block;
+    margin-left: 8px;
+}
+.bianji .xuanzheguige >s{
+    width: 20px;
+    height: 20px;
+    float: right;
+	margin-top: 10px;
+    margin-right: 15px;
+}
+.bianji .xuanzheguige >s img{
+    width: 100%;
+}
+.gouwud-m .delete{
+    width: 23%;
+    float: right;
+    background: #14ceb6;
+    color: #FFFFFF;
+    text-align: center;
+
+    line-height: 100px;
+    font-size: 14px;
+}
+.dianpou{
+    background: #FFFFFF;
+}
+.jiesfooter{
+    position: fixed;
+   z-index: 9;
+    bottom: 44px;
+    width: 100%;
+}
+/*big Resolution*/
+@media only screen and (min-width: 641px) {
+    .jiesfooter {bottom: 85px;}
+}
+.jiesfooter>div{
+    height: 50px;
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+    background: #343a48;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+.jiesfooter>div>div {
+    float: left;
+    font-size: 14px;
+}
+.xuanall{
+    width: 13.3%;
+    height: 100%;
+    background: #cccccc;
+    text-align: center;
+}
+.xuanall img{
+    width:50%;
+    margin-top: 11px;
+}
+.jiesuan-txt{
+    line-height: 50px;
+    width: 85%;
+}
+.jiesuan-txt span:nth-child(1){
+    color: #FFFFFF;
+    margin-left: 3.2%;
+}
+.jiesuan-txt i{
+    color: #FFFFFF;
+    margin-left: 3.2%;
+    font-weight: 800;
+}
+.jiesuan-txt span:nth-child(2){
+  float: right;
+    font-size: 14px;
+    width: 25%;
+}
+.jiesuan-txt s{
+    color: #FFFFFF;
+    display: inline;
+    text-decoration: none;
+}
+.jiesuan-txt u{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 9%;
+}
+.xuanzhong{
+    width: 10%;
+    margin-left: 4.5%;
+    margin-top: 20px;
+}
+.changpin{
+    margin-top: 20px;
+}
+.guige{
+    position: absolute;
+    top: 100px;
+}
+.jairugouwuche{
+    background: #FFFFFF;
+    max-width: 750px;
+    min-width: 320px;
+   padding-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+.shangping{
+    padding: 0 2.4%;
+}
+.shangping span{
+    float: left;
+    margin-top: 20px;
+}
+.shangping span img{
+    width: 104px;
+    height: 104px;
+}
+.shangping span:nth-child(2) i,.shangping span:nth-child(2) u{
+    display: block;
+    margin-left: 10px;
+}
+.shangping span:nth-child(2) i{
+    color: #14ceb6;
+    font-size: 20px;
+}
+.shangping span:nth-child(2) u{
+    margin-top: 8px;font-size: 12px;
+    color: #999999;
+}
+.shangping span:nth-child(3){
+    float: right;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+}
+.yanse{
+    height: 72.5px;
+    margin-top: 20px;
+}
+.yanse div,.yanse ul li{
+    float: left;
+}
+.yanse div{
+    height: 100%;
+    width: 15.7%;
+    text-align: center;
+}
+.yanse ul{
+}
+.yanse ul li{
+    float: left;
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+}
+.hover{
+    background: #14ceb6;
+    color: #FFFFFF;
+}
+.chima{
+    height: 31px;
+    margin-top: 20px;
+}
+.chima div,.chima ul li{
+    float: left;
+}
+.chima div{
+    height: 100%;
+    width: 15.7%;
+    text-align: center;
+    line-height: 31px;
+}
+.chima ul{
+}
+.chima ul li{
+    float: left;
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.shuliang{
+    height: 31px;
+    margin-top: 20px;
+}
+.shuliang div,.shuliang ul li{
+    float: left;
+}
+.shuliang div{
+    height: 100%;
+    width: 15.7%;
+    text-align: center;
+    line-height: 31px;
+}
+.shuliang ul{
+    border: 1px solid #999999;
+    border-radius: 4px;
+    width: 36.9%;
+    height: 100%;
+    float: left;
+}
+.shuliang ul li{
+    float: left;
+}
+.shuliang ul li:nth-child(1),.shuliang ul li:nth-child(3){
+    width: 29%;
+    text-align: center;
+    color: #14ceb6;
+    line-height: 25px;
+    font-size: 25px; height: 100%;
+}
+.shuliang ul li:nth-child(2){
+    width:40%;
+    height: 100%;
+    text-align: center;
+    color: #333333;
+    line-height: 30px;
+    font-size: 20px;
+    border-right: 1px solid #999999 ;
+    border-left: 1px solid #999999 ;
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 0.95rem;
+    height: 0.95rem;
+    background-color: #F5F5F5;
+    border: 0.05rem solid #CCC;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.guige-waiku{
+   background: rgba(0,0,0,0.5);
+    height: 1050px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;display: none;
+}
+.all_checkbox{
+    margin: 12px 6px;
+}
+.store_checkbox{
+    margin-top: -5px;
+}
+.goods_checkbox{
+    margin-top: 20px;
+}

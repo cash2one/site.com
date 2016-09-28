@@ -1,0 +1,6 @@
+[2016-05-22 15:41:04] /shop/index.php?act=login ( act=login&op=index ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106820','27','1463902276','1075','470','1075','0')
+[2016-05-22 22:08:15] /shop/index.php?act=goods&op=addbrowse&gid=105915 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105915','18','1463926095','1175','256','1171','1175')

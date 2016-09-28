@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        .lian-main{
+            min-width: 320px;
+            max-width: 750px;
+            margin: 45px auto 0 ;
+            background: url(img/songlibg.png) no-repeat ;
+            background-size: 100% 100%;
+        }
+        .lian-nav {
+            width: 100%;
+            height: 45px;
+            background: #343a48;
+            line-height: 45px;
+            position: fixed;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 14px;
+            top: 0;
+            z-index: 10;
+        }
+        .lian-nav a{
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0.4775rem;
+            left: 0;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            margin: 10%;
+            background-image: url(img/arrow_left_b.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+        }
+        .title{
+            font-size: 28px;
+            color: #FFFFFF;
+            font-weight: 500;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding-top: 17px;
+        }
+        .title i{
+            color: #f66d9d;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .songlieriweima{
+            width: 65%;
+            margin: auto;
+            margin-top: 25px;
+            position: relative;
+        }
+        .songlieriweima img{
+            width: 100%;
+            height: 100%;
+        }
+        .inputm{
+            width: 75.8%;
+            margin: auto;
+        }
+        .phone{
+            width: 67.7%;
+            height: 30px;
+            float: left;
+        }
+        .yanzhengma{
+            width:30%;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            background: #FFFFFF;
+            float: right;
+            display: inline-block;
+        }
+        .duiyanzhengma , .mima,.newp{
+               width: 100%;
+            height: 30px;
+            margin-top: 10px;
+        }
+        .newp{
+            background: #343a48;
+            border-radius: 4px;
+            display: inline-block;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            height: 40px;
+        }
+        .download{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .download a {
+            display: block;
+            margin: auto;
+            min-width: 320px;
+            max-width: 750px;
+        }
+        .download img{
+            width: 100%;
+        }
+        .erweima{
+            position: absolute;
+            top: 65px;
+            text-align: center;
+            width: 100%;
+        }
+        .erweima img{
+            width: 56px;
+            height: 56px;
+        }
+    </style>
+<body>
+    <div class="lian-nav">
+        <a href=""><i class="back"></i></a>
+       玩艺网 新人尊享
+    </div>
+    <div class="lian-main">
+         <span class="title">
+             马上成为会员，立减<i>20</i>元
+         </span>
+        <div class="songlieriweima">
+            <img src="img/songlieriweima.png" alt=""/>
+            <div class="erweima"><img src="" alt=""/></div>
+        </div>
+        <div class="inputm">
+            <span >
+                <input class="phone" placeholder="输入手机号码" type="number"/>
+                <span class="yanzhengma">获取验证码</span>
+                <div style="clear: both;"></div>
+            </span>
+            <input class="duiyanzhengma" placeholder="输入验证码" type="text"/>
+            <input class="mima" placeholder="设置密码" type="password"/>
+            <span class="newp">领取新人优惠</span>
+        </div>
+    </div>
+    <div class="download">
+        <a href=""><img src="img/download.png" alt=""/></a>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        document.getElementsByClassName("lian-main")[0].style.height = window.screen.height-45+"px";
+    }
+</script>
+</html>

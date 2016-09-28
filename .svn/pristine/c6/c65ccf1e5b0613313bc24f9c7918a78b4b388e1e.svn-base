@@ -1,0 +1,38 @@
+﻿@CHARSET "utf-8";
+/* ------------------------------公共样式 -开始-------------------------------*/
+html{_background:url(about:blank);_background-attachment:fixed;}
+html{color:#000;background:#FFF;font-family:"Lucida Grande",Arial,"微软雅黑","黑体","宋体",sans-serif;font-size:12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:"Lucida Grande",Arial,"微软雅黑","黑体","宋体",sans-serif;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+ul,li{list-style-type:none;}
+img{margin:0px;padding:0px;border:none;_display:block;_vertical-align:top;font-size:0;line-height:0;}
+/* a{font-family:"Lucida Grande",Arial,"微软雅黑","黑体","宋体",sans-serif;font-size:12px;text-decoration:none;} */
+.clear_div{width:100%;height:0px;margin:0px;padding:0px;clear:both;border:none;font-size:0;line-height:0em;}
+/* -------------------------------------------公共样式 -结束------------------------------- */
+
+.spc25c{height: 25px;overflow: hidden;clear:both;}
+.clearfix {display: block;}
+.agnC{text-align:center;}
+.wrap{width:1200PX;margin:0px auto;padding:0px;text-align:left;}
+.hide{display:none;}
+
+/* ------------------------------面包屑------------------------------ */
+.crumbs{float:left;width:730px;height:15px;line-height:1.5em;background:url('../Images/goods_sprites.jpg') no-repeat -940px -100px;margin:10px 0px 15px 0px;padding:0px 0px 0px 20px;}
+.crumbs code{padding:0px 3px;}
+.crumbs,.crumbs a{color:#5c5c5c;font-family:"Lucida Grande",Arial,"微软雅黑","宋体",sans-serif;font-size:12px;}
+.crumbs span.crumbs-links{display:block;height:15px;overflow:hidden;}
+s.curr-cl{left:0;}
+s.curr-cr{right:0;width:13px;background-position:-10px 0;}
+#musicPlayer{position:absolute;right:10px;top:0;}
+

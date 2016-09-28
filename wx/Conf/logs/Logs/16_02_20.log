@@ -1,0 +1,646 @@
+[ 2016-02-20T18:21:27+08:00 ] 140.207.54.80 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=1ba232dd9c5047096ead80d6f8f9115dc0de743f&timestamp=1455963687&nonce=171848713&encrypt_type=aes&msg_signature=66c0caed05c8e7b50ec8913eb7bc1b7ea4bab283
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2016-02-20T18:31:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=61f505c9146fae0147aefb67bcda4f2a0a761b0f&timestamp=1455964286&nonce=277680086&encrypt_type=aes&msg_signature=37b39793375eb1951923081410eac6ec4264f8bc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2016-02-20T18:41:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=748eeb1fae913fb74b83229de56589fe5571c7b9&timestamp=1455964886&nonce=1149958281&encrypt_type=aes&msg_signature=e9b5f95c64c29f975dcf72f7f5dab2d6b920fbc4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2016-02-20T18:51:25+08:00 ] 140.207.54.80 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=cd478e8c08b8419dc32a8776d03a92e2c5adf1f9&timestamp=1455965485&nonce=1260812187&encrypt_type=aes&msg_signature=a7f39576b8b862d058ded1c20d8c89fae2f3cea2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002106s ]
+
+[ 2016-02-20T19:01:25+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=92494143175e2f3a7a406ea2bc3b854042fe9f6a&timestamp=1455966085&nonce=404048889&encrypt_type=aes&msg_signature=54790041ccc27a052f42dbb5011628b13d92a16a
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-02-20T19:11:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=1ba1fcf35d54f158e394d0f7eb32ad028d9f8bac&timestamp=1455966686&nonce=327354803&encrypt_type=aes&msg_signature=53935f3f697e689e1e325a7f3ceac18ca056ef12
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2016-02-20T19:21:25+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=71276e4e3ac9aff51f4604c4ee22dd32f3164163&timestamp=1455967285&nonce=170414053&encrypt_type=aes&msg_signature=823c86cc53c0aa69b890502de88f4853e8efe897
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002396s ]
+
+[ 2016-02-20T19:31:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=4a8063ad2dd0c6e808fb0daed0ac3b63a9bb30a9&timestamp=1455967886&nonce=180534357&encrypt_type=aes&msg_signature=be9011dd6930ea2696230f58474e8e5343f43cba
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.012091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2016-02-20T19:41:24+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=83ba2e32d2102c7b006d637dbb4232227f9153c6&timestamp=1455968484&nonce=1723330036&encrypt_type=aes&msg_signature=deaa522848c19389aa594d3853f26175563567be
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.011066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002098s ]
+
+[ 2016-02-20T19:51:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=67bc19a16066bde3fbda673454fc33da6885f6f2&timestamp=1455969085&nonce=271130572&encrypt_type=aes&msg_signature=94cb813e8e874191b9faebf4c0337824875370a3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002017s ]
+
+[ 2016-02-20T20:01:28+08:00 ] 140.207.54.79 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=953470a504b9e1ae8e9c4c12c884173f1be8bf04&timestamp=1455969688&nonce=363096312&encrypt_type=aes&msg_signature=8078020f23e44ae21776c224833991993c5aa793
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.013068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002963s ]
+
+[ 2016-02-20T20:11:27+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=c9b80e0b6701f78c10afca7fd0dc648732d8801f&timestamp=1455970287&nonce=1602637473&encrypt_type=aes&msg_signature=b2d1b8034e0441f0ad36c70130bc652cc78a6038
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-02-20T20:21:28+08:00 ] 140.207.54.80 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=bcd44991b7e52bd92ee631a91fa79c45b16794a5&timestamp=1455970888&nonce=942558193&encrypt_type=aes&msg_signature=a45b147c00a7d3ab506f02568ec1a39890e77784
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002007s ]
+
+[ 2016-02-20T20:31:28+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=61785ea90db4239cf52569eadceae9c2eafdafb1&timestamp=1455971488&nonce=1177455248&encrypt_type=aes&msg_signature=3bcc0ec7f4fa5d2ff8879afce41dc7b07a6f8389
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002061s ]
+
+[ 2016-02-20T20:41:27+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=b6000b2cb75004cd239a4be6d213c81d577c9789&timestamp=1455972087&nonce=153849876&encrypt_type=aes&msg_signature=37d33d6290e938ddef36b7c36cbda8e6315c99b0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-02-20T20:51:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=e3f511f95f203c9e2dfe8524165253097282e55e&timestamp=1455972686&nonce=1833056370&encrypt_type=aes&msg_signature=7f3cdeab3ad156943103f75dc354de71e8951484
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2016-02-20T21:01:27+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=aae6058dd8b4f4c46ba920a3ee84e0bb96fdc432&timestamp=1455973287&nonce=602501383&encrypt_type=aes&msg_signature=f48f0b5190a1412e4981e7751dadc3ca8f1d9d00
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.009928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2016-02-20T21:11:28+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=d6387766141350cc761aa1c193bb10ed2b791eab&timestamp=1455973888&nonce=2090080307&encrypt_type=aes&msg_signature=d0a4230f445b4201e6039aa437c4c86842eb553c
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002070s ]
+
+[ 2016-02-20T21:21:29+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=0c0492f48ae9a4f2e6b97ea17bde3da486215ed9&timestamp=1455974488&nonce=390333569&encrypt_type=aes&msg_signature=fea11d517fa1f23fcdf486f6cabc0352e1357cfe
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002050s ]
+
+[ 2016-02-20T21:31:27+08:00 ] 140.207.54.78 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=94e009a799a824101fb9ecbd909b673be08ab316&timestamp=1455975087&nonce=486539784&encrypt_type=aes&msg_signature=c6cd6df230b549491a80e3cd3c289c78108f62e9
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.011090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002114s ]
+
+[ 2016-02-20T21:41:27+08:00 ] 140.207.54.80 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=6c78750cca36ab515075837514b7b55b14115984&timestamp=1455975687&nonce=1169105922&encrypt_type=aes&msg_signature=b5796dca31fce095b1323bf1fbe7b2b16b00701c
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2016-02-20T21:51:27+08:00 ] 140.207.54.78 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=924760965a3629e985daaa95691ad147d94e2169&timestamp=1455976287&nonce=1268758171&encrypt_type=aes&msg_signature=091d7849351bfc52dfb44267f6f2520208e38e4b
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002108s ]
+
+[ 2016-02-20T22:01:28+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=ef52dded8631bc5c325ad31a7301aaf1148e6fc0&timestamp=1455976888&nonce=1611375004&encrypt_type=aes&msg_signature=891fedffd44ed0845ca7e5bc94329f332a554f60
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002254s ]
+
+[ 2016-02-20T22:11:27+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=ebeaaaf0278fa2f4e2b2045136c2fef97b83a9b0&timestamp=1455977487&nonce=35693187&encrypt_type=aes&msg_signature=0df2816beba10cc33700621de8880b9190312634
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001971s ]
+
+[ 2016-02-20T22:21:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=5660363bad1e76227a91b4b39226b7b071f6a33f&timestamp=1455978086&nonce=267537487&encrypt_type=aes&msg_signature=8825476d60a7a61384bd1e608a5a6fe4c70744cc
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2016-02-20T22:31:25+08:00 ] 140.207.54.79 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=88f849af7f2fcff934c33b506d9503951b5bb615&timestamp=1455978685&nonce=1426174790&encrypt_type=aes&msg_signature=09ecc8ab4e1b8e9a058914cc6e2dcf307e1c59e7
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2016-02-20T22:41:25+08:00 ] 140.207.54.79 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=8250f26f3e995b00d18386eb07608c4afde587a9&timestamp=1455979285&nonce=1265011865&encrypt_type=aes&msg_signature=6d8e3bcda3534be0f26aa2d2b2da293918921523
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002025s ]
+
+[ 2016-02-20T22:51:26+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=ee95f5a5d9759eb9477668fa3a72cddcdcf69c2f&timestamp=1455979886&nonce=349454217&encrypt_type=aes&msg_signature=18dbc67d1a413471a5029cc3b0892de84ee43fce
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2016-02-20T23:01:24+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=8c649a114a02edde9b4cd0cf10c877f706173556&timestamp=1455980484&nonce=1193769250&encrypt_type=aes&msg_signature=f1c2bce826fe1bddaa15370c5c5b9204264cef46
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002052s ]
+
+[ 2016-02-20T23:11:28+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=2d2fe0298985b3810cf4d0ba7974ba6217c4d0ff&timestamp=1455981088&nonce=1380131771&encrypt_type=aes&msg_signature=f5fd5f0e80f55b0aaa651a69a258b6ac644da9ae
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002042s ]
+
+[ 2016-02-20T23:21:27+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=907e3c5faafa3d9231f672882b521a23b5e92a48&timestamp=1455981687&nonce=1782481309&encrypt_type=aes&msg_signature=e51957f10893d20ddd0f16bef714fb6ad187dbba
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001984s ]
+
+[ 2016-02-20T23:31:28+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=7b27b3c6fd08cb193956c8c8bba08f6bdbbc7492&timestamp=1455982288&nonce=430264912&encrypt_type=aes&msg_signature=9b579885af33326342f49750154ebd87905aeb7d
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.011035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002072s ]
+
+[ 2016-02-20T23:41:26+08:00 ] 140.207.54.79 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=3ca5598b713c959469f82993b7cc33890d464777&timestamp=1455982886&nonce=23287628&encrypt_type=aes&msg_signature=7ec268b5db94f204aa84fdbaf41135b4259cd5a6
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002077s ]
+
+[ 2016-02-20T23:51:24+08:00 ] 140.207.54.77 /index.php?g=User&m=OpenOauth&a=index&serviceid=1&signature=c30af4868b0e790e72315f1a94b80b5667d08b02&timestamp=1455983484&nonce=1752944148&encrypt_type=aes&msg_signature=963e5a026c4e3acc4b733b311fa09eabb6ff441d
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: type /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 9 行.
+NOTIC: [2] mcrypt_generic_init(): Key size is 0 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Iv size incorrect; supplied length: 0, needed: 16 /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mcrypt_generic_init(): Key length incorrect /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 115 行.
+NOTIC: [2] mdecrypt_generic(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 118 行.
+NOTIC: [2] mcrypt_generic_deinit(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 119 行.
+NOTIC: [2] mcrypt_module_close(): 53 is not a valid MCrypt resource /var/www/html/wx/PigCms/Lib/ORG/aes/pkcs7Encoder.php 第 120 行.
+NOTIC: [8] Uninitialized string offset: 0 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 28 行.
+NOTIC: [8] Uninitialized string offset: 1 /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 32 行.
+NOTIC: [2] DOMDocument::loadXML(): Empty string supplied as input /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 34 行.
+NOTIC: [8] Trying to get property of non-object /var/www/html/wx/PigCms/Lib/Action/User/OpenOauthAction.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.010377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002025s ]
+

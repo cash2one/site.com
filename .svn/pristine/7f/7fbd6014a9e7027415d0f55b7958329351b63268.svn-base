@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/hezi.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="/wap/index.html"><i class="back"></i></a>
+        盒子
+    </div>
+   <div class="hezi">
+       <a href="javascript:void(0)" onclick="addFriend()"><div><i>加好友</i><i id="friend_num"></i></div></a>
+       <a href="javascript:void(0)" onclick="addSeviceInfo()"><div ><i>系统消息</i><i id="sevice_num"></i></div></a>
+       <a href="bangzhu.html"><div><i>常见问题</i><i><img src="img/moreleft.png" alt=""/></i></div></a>
+       <a href="javascript:void(0)" onclick="addCustomerService()"><div><i>联系客服</i><i><img src="img/moreleft.png" alt=""/></i></div></a>
+   </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/feedback/hezi_1_5.js"></script>
+
+</body>
+</html>

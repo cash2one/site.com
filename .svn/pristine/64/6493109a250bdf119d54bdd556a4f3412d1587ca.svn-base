@@ -1,0 +1,21 @@
+[2016-04-15 00:24:24] /mobile1/index.php?act=goods&op=goods_detail&goods_id=101158&key=62f285d0b28f1e4157ec2798bf5f8d13 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101158','58','1460651064','19','1','4','19')
+[2016-04-15 00:24:40] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104509&key=62f285d0b28f1e4157ec2798bf5f8d13 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','58','1460651080','1516','1058','1515','1516')
+[2016-04-15 00:24:51] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104509&key=62f285d0b28f1e4157ec2798bf5f8d13 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','58','1460651091','1516','1058','1515','1516')
+[2016-04-15 00:24:55] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104509&key=62f285d0b28f1e4157ec2798bf5f8d13 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104509','58','1460651095','1516','1058','1515','1516')
+[2016-04-15 00:25:50] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104146&key=62f285d0b28f1e4157ec2798bf5f8d13 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104146','58','1460651150','626','593','597','626')
+[2016-04-15 14:38:33] /api/index.php?act=micro_comment&op=comment_drop&comment_id=2&key=50302c6808ab51ab5a70e80c664849d2 ( act=micro_comment&op=comment_drop ) 
+ERR: Db Error: Unknown column 'comment_object_id' in 'where clause'
+UPDATE `wantease_micro_personal` SET comment_count=comment_count-1 WHERE ( comment_object_id = '1' )
+[2016-04-15 14:40:03] /api/index.php?act=micro_comment&op=comment_drop&comment_id=3&key=50302c6808ab51ab5a70e80c664849d2 ( act=micro_comment&op=comment_drop ) 
+ERR: Db Error: Unknown column 'comment_object_id' in 'where clause'
+UPDATE `wantease_micro_personal` SET comment_count=comment_count-1 WHERE ( comment_object_id = '2' )

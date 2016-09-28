@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="../css/xinyuandantwo.css"/>
+    <style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+    <!--微信分享JS-->
+    <script type="text/javascript" src="../../js/zepto.min.js"></script>
+    <script src="../../js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../../js/wx_share.js"></script>
+</head>
+<body>
+<header id="header" class="nctouch-product-header fixed">
+    <div class="nav-one">
+        <ul>
+            <a href="goods.favoritesList.html"><li class="on">心愿单</li></a>
+        </ul>
+        <span class="gouwuche">
+            <!--   <a href="javascript:void(0)" onclick='get_wx_share(this)' title1="分享心愿单"  imgUrl='' desc = '' link = '/tmpl/member/goods.favoritesList_share.html'><img src="../img/fenxiangshme.png" onclick="zhaozhao(this)" alt=""/></a>| !-->
+            <span class="bianji">
+                <i id="bianjih" style="display: block">编辑</i>
+                <span onclick="clear_select_goods()"><i id="wancheng" style="display: none">完成</i></span>
+            </span>
+        </span>
+    </div>
+</header>
+<div class="xinyuanm" id="favorites_list">
+   
+</div>
+<div></div>
+<div class="jiesfooter" id="jiesfooter">
+	<input type="hidden" id="select_goods_id" name="goods_id" value="0"/>
+    <div>
+        <div class="xuanall" onclick="selectAllGoods(this)" value="0"><img src="../img/weibeixuanj.png" alt=""/></div>
+        <div class="jiesuan-txt">
+            <span>已选<i id="select_goods_count">0</i>件商品</span>
+            <span><u onclick="del_goods(this)">删除</u><s>|</s><u onclick="add_goods_cart(this)">加入购物车</u></span>
+        </div>
+    </div>
+</div>
+<!--微信分享-->
+<iframe src="../fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+<script>
+	var ifm= document.getElementById("iframepage");
+	//**********遮罩的******
+	function zhaozhao(){
+		ifm.style.display="block";
+	}
+	//**********设置高度*******
+	function reinitIframe(){
+		ifm.height=document.documentElement.clientHeight;
+	}
+	//*****************添加点击事件的机制******************
+	var IframeOnClick = {
+		resolution: 200,
+		iframes: [],
+		interval: null,
+		Iframe: function() {
+			this.element = arguments[0];
+			this.cb = arguments[1];
+			this.hasTracked = false;
+		},
+		track: function(element, cb) {
+			this.iframes.push(new this.Iframe(element, cb));
+			if (!this.interval) {
+				var _this = this;
+				this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+			}
+		},
+
+		checkClick: function() {
+			if (document.activeElement) {
+				var activeElement = document.activeElement;
+				for (var i in this.iframes) {
+					if (activeElement === this.iframes[i].element) { // user is in this Iframe
+						if (this.iframes[i].hasTracked == false) {
+							this.iframes[i].cb.apply(window, []);
+
+							this.iframes[i].hasTracked = true;
+						}
+					} else {
+						this.iframes[i].hasTracked = false;
+					}
+				}
+			}
+		}
+	};
+	IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+</script>
+
+
+<script type="text/html" id="favorites_list_model">
+	
+	<% if(favorites_list != null) { %>
+	<ul>
+		<% for(var i in  favorites_list) { %>
+			
+			<li>
+				<i class="xuanz" onclick="selectGoods(this,<%=favorites_list[i].goods_id%>)" value="0">
+					<img src="../img/weibeixuanj.png" alt=""/>
+				</i>
+				<input type="hidden" class="set_all_goods_id" value="<%=favorites_list[i].goods_id%>"/>
+				<a href="../product_detail.html?goods_id=<%=favorites_list[i].goods_id%>">
+				<img src="<%=favorites_list[i].goods_image_url%>" alt=""/>
+				</a>
+				
+			</li>
+		
+		<% } %>
+		
+    </ul>
+    <div style="clear: both;"></div>
+	<% } %>
+</script>
+
+<script>
+    var xuanz=document.getElementsByClassName("xuanz");
+    var bianjih=document.getElementById("bianjih");
+    var wancheng=document.getElementById("wancheng");
+    var jiesfooter=document.getElementById("jiesfooter");
+
+    bianjih.onclick=function(){
+        this.style.display="none";
+        jiesfooter.style.display="block";
+        wancheng.style.display="block";
+        for(var i= 0,len=xuanz.length;i<len;i++){
+			xuanz[i].style.display="block";
+        }
+    };
+    wancheng.onclick=function(){
+        this.style.display="none";
+        jiesfooter.style.display="none";
+        bianjih.style.display="block";
+        for(var i= 0,len=xuanz.length;i<len;i++){
+            xuanz[i].style.display="none";
+        }
+    }
+</script>
+
+<script type="text/javascript" src="../../js/config.js"></script>
+<script type="text/javascript" src="../../js/template.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/tmpl/goods.favoritesList_share_1_5.js"></script>
+
+<!-- S 提示 -->
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+<!-- E 提示 -->
+</body>
+</html>

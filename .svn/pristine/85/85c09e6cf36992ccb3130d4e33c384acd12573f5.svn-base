@@ -1,0 +1,9 @@
+[2016-09-10 11:15:09] /crontab/index.php?act=date ( act=date&op=index ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1473477300' WHERE ( goods_id IN ('106867') )
+[2016-09-10 11:15:12] /crontab/index.php?act=date ( act=date&op=index ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1473477300' WHERE ( goods_id IN ('106551') )
+[2016-09-10 11:15:13] /crontab/index.php?act=date ( act=date&op=index ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1473477300' WHERE ( goods_id IN ('106551') )

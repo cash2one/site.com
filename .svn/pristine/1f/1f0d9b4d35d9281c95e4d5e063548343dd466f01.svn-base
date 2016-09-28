@@ -1,0 +1,39 @@
+[2016-04-07 10:25:18] /shop/index.php?act=goods&op=addbrowse&gid=104550 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104550','6','1459995918','59','1','6','59')
+[2016-04-07 10:25:33] /shop/index.php?act=goods&op=addbrowse&gid=104548 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104548','6','1459995933','59','1','6','59')
+[2016-04-07 10:27:48] /shop/index.php?act=goods&op=addbrowse&gid=104986 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104986','6','1459996068','62','1','6','62')
+[2016-04-07 10:55:47] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459997747','1126','470','1085','1126')
+[2016-04-07 10:58:41] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459997921','1126','470','1085','1126')
+[2016-04-07 11:02:11] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459998131','1126','470','1085','1126')
+[2016-04-07 11:03:48] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459998228','1126','470','1085','1126')
+[2016-04-07 11:04:06] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459998246','1126','470','1085','1126')
+[2016-04-07 11:06:02] /shop/index.php?act=goods&op=addbrowse&gid=101252 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','6','1459998362','1126','470','1085','1126')
+[2016-04-07 11:07:51] /shop/index.php?act=goods&op=addbrowse&gid=104086 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104086','6','1459998471','1131','308','1086','1131')
+[2016-04-07 15:13:08] /shop/index.php?act=goods&op=addbrowse&gid=103687 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103687','339','1460013188','1131','308','1086','1131')
+[2016-04-07 16:08:27] /shop/index.php?act=goods&op=addbrowse&gid=105006 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105006','38','1460016507','60','1','6','60')
+[2016-04-07 16:10:36] /shop/index.php?act=goods&op=addbrowse&gid=103796 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103796','38','1460016636','13','1','4','13')

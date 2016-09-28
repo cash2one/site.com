@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/weisongchu.css"/>
+</head>
+<body>
+<header id="header" class="nctouch-product-header fixed">
+    <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
+    <div class="nav-one">
+        <ul class="ymt-nav">
+            <a href="/wap/tmpl/designer_brand.html"><li class="on">未送出</li></a>
+            <a href="/wap/tmpl/art_make.html"><li>已收到</li></a>
+        </ul>
+      <span class="gouwuche">
+          <a href="../tmpl/cart_list.html" ><img src="../img/chouti.png" alt=""/></a>
+          <!--<i id="cart_count"></i>-->
+      </span>
+    </div>
+</header>
+<div class="gouwud-m">
+    <div class="gouwud-q">
+        <div class="changpin"><img src="../img/8718367adab44aedf80ab2a0b31c8701a18bfb2a.jpg" alt=""/></div>
+        <div class="gouwuche-mon">
+            <span>¥300.00</span>
+            <span class="color">规格68x58  颜色<i></i></span>
+        </div>
+        <div class="xuanzhong"><img src="img/weisongchu.png" alt=""/></div>
+        <i style="clear: both; display: block;"></i>
+    </div>
+    <div class="gouwud-q">
+        <div class="changpin"><img src="../img/8718367adab44aedf80ab2a0b31c8701a18bfb2a.jpg" alt=""/></div>
+        <div class="gouwuche-mon">
+            <span>¥300.00</span>
+            <span class="color">规格68x58  颜色<i></i></span>
+        </div>
+        <div class="xuanzhong"><img src="img/weisongchu.png" alt=""/></div>
+        <i style="clear: both; display: block;"></i>
+    </div>
+</div>
+<div class="footer">
+   <div class="songliwu">
+       <div class="song-btn">给朋友送礼</div>
+   </div>
+</div>
+<script>
+    window.onload=function(){
+        var gouwudQ=document.getElementsByClassName("gouwud-q");
+        for(var i= 0, leng=gouwudQ.length ;i<leng ;i++){
+            gouwudQ[i] .onclick=function(){
+                this.getElementsByClassName("xuanzhong")[0].style.display= this.getElementsByClassName("xuanzhong")[0].style.display=="block"?"none":"block";
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

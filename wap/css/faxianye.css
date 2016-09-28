@@ -1,0 +1,235 @@
+*{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+.biankuang{
+    min-width: 320px;
+    max-width: 750px;
+    margin: auto;
+}
+.faxian-main{
+    min-width: 320px;
+    max-width: 750px;
+    margin: 55px auto 0 auto;
+}
+.faxian-list li{
+    background: #ffffff;
+}
+.nav-one{
+    min-width: 320px;
+    max-width: 750px;
+    width: 100%;
+    height:45px;
+    background: #343a48;
+    line-height: 45px;
+    margin: auto;
+    position: relative;
+}
+.nav-one ul{
+    margin: auto;
+    width:52.4%;
+}
+.nav-one ul li{
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    width: 33%;
+    font-size: 14px;
+}
+.ymt-nav a:nth-child(1) li{
+    margin-left:17%;
+}
+.nav-one ul .on{
+    height: 43px;
+    border-bottom: 2px solid #ffffff;
+}
+.gouwuche{
+    position: absolute;
+    right: -8px;
+    top: 12px;
+}
+.gouwuche img{
+    width:55%;
+}
+.gouwuche i{
+    background: #14ceb6;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    font-size: 8px;
+    right: 13px;
+}
+.shangping-m{
+    width: 46.5%;
+    overflow: hidden;
+    background: #ffffff;
+}
+.shangping-m:nth-child(2n){
+    margin-right: 2.1%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    float: right;
+}
+.shangping-m:nth-child(2n+1){
+    margin-left: 2.1%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    float: left;
+}
+.cp-pic{
+    width: 100%;
+}
+.cp-pic >img{
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 200px;
+}
+.cp-pic >a >img{
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 100%;
+}
+.cp-text >i:nth-child(1),.cp-text >i:nth-child(2){
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    display: block;
+    margin-top: 6px;
+}
+.cp-text >i:nth-child(1){
+    text-align: left;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    margin: 10px 4.5%;
+    font-size: 12px;
+	height: 38px;
+}
+.cp-text >i:nth-child(2){
+    font-size: 13px;
+    color: #333333;
+    margin-top: 4px;
+}
+.liwu {
+    display:block;
+    width: 90%;
+    border-top: 1px solid #eeeeee;
+    margin: auto;
+}
+.liwu>i:nth-child(2){
+   /*  text-align: right;
+    font-size: 12px;
+    float: left;
+    margin-top: 7px;
+    padding: 10px 0; */
+	
+	text-align: left;
+    font-size: 12px;
+    float: left;
+    margin-top: 7px;
+    padding: 10px 0;
+    text-overflow: ellipsis;
+    width: 30%;
+	height: 5px;
+    overflow: hidden;
+	
+}
+.liwu> img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+   margin-right: 5px;
+    padding: 10px 0;
+}
+.liwu > i:nth-child(4){
+    float: right;
+    font-size: 10px;
+    color: #999999;
+    margin-top: 2px;
+    padding: 10px 0;
+}
+.liwu >i> a img{
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    vertical-align: -4px;
+}
+/*.footer{
+    width: 100%;
+    background: rgba(248,248,248,0.8);
+    border-top: 1px solid #cdcdcd;
+    position: fixed;
+    bottom: 0;
+    min-width: 320px;
+    max-width: 750px;
+
+}
+.footer ul{
+}
+.footer ul li{
+    width: 20%;
+    text-align: center;
+    float: left;
+    margin: 8px 0;
+
+}
+.footer dl dt{
+}
+.footer dl dt i{
+    width: 38%;
+    display: inline-block;
+    height: 27px;
+    background: url("../img/footericon.png") no-repeat center;
+
+}
+.footer .footer-one dt i{
+    background-position: -175px -55px;
+}
+.footer .footer-two dt i{
+    background-position: -73px -55px;
+}
+.footer .footer-thr dt i{
+    background-position: -236px -55px;
+}
+.footer .footer-for dt i{
+    background-position: -123px -55px;
+}
+.footer .footer-fir dt i{
+    background-position: -25px -55px;
+}
+
+.footer .footer-one dt i:hover{
+    background-position: -175px -16px;
+}
+.footer .footer-two dt i:hover{
+    background-position: -73px -16px;
+}
+.footer .footer-thr dt i:hover{
+    background-position: -236px -16px;
+}
+.footer .footer-for dt i:hover{
+    background-position: -123px -16px;
+}
+.footer .footer-fir dt i:hover{
+    background-position: -25px -16px;
+}
+.footer dl dd{
+    font-size: 12px;
+    vertical-align:middle;
+    color: #7b828c;
+}*/
+/*******************************************/
+.zijiangxin{
+    margin-bottom: 10px;
+}
+.zijiangxin a li img{
+       width: 100%;
+}
+.fax-bg{
+    background: #ffffff;
+}

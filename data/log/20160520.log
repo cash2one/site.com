@@ -1,0 +1,18 @@
+[2016-05-20 16:12:09] /shop/index.php?act=goods&op=addbrowse&gid=103873 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103873','6','1463731929','1075','470','1075','0')
+[2016-05-20 16:12:14] /shop/index.php?act=goods&op=addbrowse&gid=106815 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106815','6','1463731934','62','1','6','62')
+[2016-05-20 16:44:34] /mobile1/index.php?act=store&op=store_bind_class_list&class_id=1 ( act=store&op=store_bind_class_list ) 
+ERR: Db Error: Unknown column 'sc_id' in 'where clause'
+SELECT store_id FROM `wantease_store_bind_class` WHERE ( class_1 = '1' ) AND ( sc_id = '3' ) ORDER BY store_id asc LIMIT 1000  
+[2016-05-20 16:47:37] /mobile1/index.php?act=store&op=store_bind_class_list&class_id=256 ( act=store&op=store_bind_class_list ) 
+ERR: Db Error: Unknown column 'sc_id' in 'where clause'
+SELECT store_id FROM `wantease_store_bind_class` WHERE ( class_1 = '256' ) AND ( sc_id = '3' ) ORDER BY store_id asc LIMIT 1000  
+[2016-05-20 16:47:59] /mobile1/index.php?act=store&op=store_bind_class_list&class_id=256 ( act=store&op=store_bind_class_list ) 
+ERR: Db Error: Unknown column 'sc_id' in 'where clause'
+SELECT store_id FROM `wantease_store_bind_class` WHERE ( class_1 = '256' ) AND ( sc_id = '3' ) ORDER BY store_id asc LIMIT 1000  
+[2016-05-20 16:48:59] /mobile1/index.php?act=store&op=store_bind_class_list&class_id=1 ( act=store&op=store_bind_class_list ) 
+ERR: Db Error: Unknown column 'sc_id' in 'where clause'
+SELECT store_id FROM `wantease_store_bind_class` WHERE ( class_1 = '1' ) AND ( sc_id = '3' ) ORDER BY store_id asc LIMIT 1000  

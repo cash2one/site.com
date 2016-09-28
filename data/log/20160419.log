@@ -1,0 +1,63 @@
+[2016-04-19 10:12:30] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'store_id = 1 LIMIT 1000' at line 1
+SELECT * FROM `wantease_store` WHERE store_state = 1,store_id = 1 LIMIT 1000  
+[2016-04-19 10:27:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+SELECT goods_id,store_id,goods_name,goods_image,goods_price,goods_salenum FROM `wantease_store` WHERE store_id = 1 LIMIT 1  
+[2016-04-19 10:28:03] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+SELECT goods_id,goods_image FROM `wantease_store` WHERE store_id = 1 LIMIT 1  
+[2016-04-19 10:28:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+SELECT goods_id,goods_image FROM `wantease_store` WHERE store_id = 1 LIMIT 1  
+[2016-04-19 10:28:25] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+SELECT goods_id,goods_image FROM `wantease_store` WHERE store_id = 1 LIMIT 1  
+[2016-04-19 10:28:39] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'goods_id' in 'field list'
+SELECT goods_id,goods_image FROM `wantease_store` WHERE store_id = 1 LIMIT 1  
+[2016-04-19 11:10:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc LIMIT 9' at line 1
+SELECT * FROM `wantease_goods` WHERE store_id = 1 ORDER BY desc LIMIT 9  
+[2016-04-19 11:12:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc LIMIT 9' at line 1
+SELECT * FROM `wantease_goods` WHERE store_id = 1 ORDER BY desc LIMIT 9  
+[2016-04-19 11:14:51] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column '1tore_id' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid,',',color_id)) AS nc_count FROM `wantease_goods` WHERE 1tore_id = 1 LIMIT 1  
+[2016-04-19 11:32:21] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column '1tore_id' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid,',',color_id)) AS nc_count FROM `wantease_goods` WHERE 1tore_id = 1 LIMIT 1  
+[2016-04-19 11:35:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column '1tore_id' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid,',',color_id)) AS nc_count FROM `wantease_goods` WHERE 1tore_id = 1 LIMIT 1  
+[2016-04-19 11:35:54] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column '1tore_id' in 'where clause'
+SELECT count(distinct CONCAT(goods_commonid,',',color_id)) AS nc_count FROM `wantease_goods` WHERE 1tore_id = 1 LIMIT 1  
+[2016-04-19 14:01:57] /shop/index.php?act=login&op=usersave ( act=login&op=usersave ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','364','1461045581','1126','470','1085','1126'),('101604','364','1461045595','119','1','6','59'),('102723','364','1461045608','1510','470','1273','1510')
+[2016-04-19 14:05:42] /shop/index.php?act=goods&op=addbrowse&gid=102944 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102944','364','1461045942','1101','308','1098','1101')
+[2016-04-19 14:05:53] /shop/index.php?act=goods&op=addbrowse&gid=102321 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102321','364','1461045953','119','1','6','59')
+[2016-04-19 14:06:07] /shop/index.php?act=goods&op=addbrowse&gid=103796 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103796','364','1461045967','13','1','4','13')
+[2016-04-19 14:08:25] /shop/index.php?act=goods&op=addbrowse&gid=102321 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102321','364','1461046105','119','1','6','59')
+[2016-04-19 14:11:56] /shop/index.php?act=goods&op=addbrowse&gid=104986 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104986','364','1461046316','62','1','6','62')
+[2016-04-19 14:13:10] /shop/index.php?act=goods&op=addbrowse&gid=102101 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102101','364','1461046390','1329','1','8','1329')
+[2016-04-19 14:13:43] /shop/index.php?act=goods&op=addbrowse&gid=101868 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101868','364','1461046423','1133','308','1086','1133')
+[2016-04-19 14:14:27] /shop/index.php?act=goods&op=addbrowse&gid=104512 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104512','364','1461046467','14','1','4','14')

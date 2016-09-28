@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/tianjiahaoyou.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="javascript:history.go(-1)"><i class="back"></i></a>
+        关注的人
+    </div>
+	<div id="add_friends">
+    
+	</div>
+</div>
+
+<!-- 好友列表 add by lizh 16:49 2016/7/8 -->
+<script type="text/html" id="add_friends_model">
+
+	<% if(datas != null){ %> 
+	<% var friends = datas; %>
+		<% for(var i in friends) { %>
+		<div class="zzguanzhu" id="div_toggle_<%=friends[i].friend_tomid%>">
+		<div>
+            <i><img src="<%=friends[i].friend_tomavatar%>" alt=""/><%=friends[i].member_truename%></i>
+            <i>
+			<% if(friends[i].friend_followstate == 0) { %>
+                <a href="javascript:void(0)" id="a_<%=friends[i].friend_tomid%>"><s onclick="attention('<%=friends[i].friend_tomid%>','<%=friends[i].friend_followstate%>','a_<%=friends[i].friend_tomid%>')">+ 关注</s></a>
+			<% } else { %>
+				<a href="javascript:void(0)" id="a_<%=friends[i].friend_tomid%>"><s onclick="attention('<%=friends[i].friend_tomid%>','<%=friends[i].friend_followstate%>','a_<%=friends[i].friend_tomid%>')">- 已关注</s></a>
+			<% } %>
+                <!-- <a href="javascript:void(0)" onclick="divToggle('div_toggle_<%=friends[i].friend_tomid%>')"><s>隐藏</s></a> -->
+            </i>
+        </div>
+		<% }%>
+	<% }%>
+</script>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/tmpl/friend_list.js"></script>
+ 
+
+</body>
+</html>

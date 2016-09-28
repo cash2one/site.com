@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>瞬间详情</title>
+    <link rel="stylesheet" href="css/shunjianziye.css"/>
+	<style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="header-wrap">
+        <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
+        <div class="header-title">
+            <span>瞬间详情</span>
+        </div>
+    </div>
+    <div class="header-r" id="header-nav"><a href="javascript:void(0);"><i class="more"></i></a></div>
+	<div class="nctouch-nav-menu" id="share_control"> 
+		
+	</div>
+</header>
+
+<div class="shunjx-m" >
+    <div id="inspiration_info"></div>
+	<div class="chakanquuanbu">
+		<span>全部评论</span>
+	</div>
+    <div id="user_comment"></div>
+    <div id="tanchuk"></div>
+    <div id="featured_products"></div>
+</div>
+
+<div class="shunjian-f" id="footer"></div>
+
+<!--微信分享-->
+<div id="wx_share"></div>
+<iframe src="fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+<script>
+	var ifm= document.getElementById("iframepage");
+	//*****************添加点击事件的机制******************
+	var IframeOnClick = {
+		resolution: 200,
+		iframes: [],
+		interval: null,
+		Iframe: function() {
+			this.element = arguments[0];
+			this.cb = arguments[1];
+			this.hasTracked = false;
+		},
+		track: function(element, cb) {
+			this.iframes.push(new this.Iframe(element, cb));
+			if (!this.interval) {
+				var _this = this;
+				this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+			}
+		},
+
+		checkClick: function() {
+			if (document.activeElement) {
+				var activeElement = document.activeElement;
+				for (var i in this.iframes) {
+					if (activeElement === this.iframes[i].element) { // user is in this Iframe
+						if (this.iframes[i].hasTracked == false) {
+							this.iframes[i].cb.apply(window, []);
+
+							this.iframes[i].hasTracked = true;
+						}
+					} else {
+						this.iframes[i].hasTracked = false;
+					}
+				}
+			}
+		}
+	};
+	IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+</script>
+
+<script>
+    window.onload=function(){
+        var header=document.getElementsByClassName("header-r");
+       for(var i= 0,len=header.length; i<len;i++){
+           header[i].onclick=function(){
+               this.nextElementSibling.style.display=this.nextElementSibling.style.display=="block"?"none":"block";
+           }
+       }
+    }
+</script>
+
+<script type="text/html" id="share_control_model">
+	
+	<span class="arrow"></span>
+	<ul>
+		<li><a href="javascript:void(0)" onclick='get_wx_share("<%=micro_personal_detail.commend_message%>","<%=micro_personal_detail.commend_image%>","","/tmpl/shunjianziye.html?personal_id=<%=micro_personal_detail.personal_id%>")'><i class="fenxiang"></i>分享</a></li>
+		<li><a href=""><i class="bianji"></i>举报</a></li>
+		<li><a href="javascript:void(0);" id="caozuot2"><i class="delete"></i>关注</a></li>
+	</ul>
+	
+</script>
+
+<!-- 瞬间详情 -->
+<script type="text/html" id="inspiration_info_model">
+
+	<% if(micro_personal_detail != null) { %> 
+	<div class="yonghu">
+		<span class="touxiang"><img src="<%=micro_personal_detail.member_avatar%>" alt=""/></span>
+		<span class="xinxi">
+			<i><%=micro_personal_detail.member_name%></i>
+			<u><%=micro_personal_detail.commend_time%></u>
+		</span>
+		<% if(micro_personal_detail.flag_state != 0) { %>
+		<a href="<%=micro_personal_detail.goods_url%>">
+		<span class="goumai">
+			购买
+		</span>
+		</a>
+		<% } %>
+	</div>
+	
+	<div class="banner"><img src="<%=micro_personal_detail.commend_image%>" alt=""/></div>
+	<div class="chakang">
+		<span class="chakan-su">查看<%=micro_personal_detail.click_count%>次</span>
+		<span class="guanzhu-su" onclick="member_like(this,<%=micro_personal_detail.personal_id%>,1)">
+			<img src="img/zan.png" alt=""/>
+			<span><%=micro_personal_detail.like_count%></span>
+		</span>
+	</div>
+
+	<div class="shunjx-t">
+		<%=micro_personal_detail.commend_message%>
+	</div>
+	<div class="zhankai">
+		展开
+	</div>
+	<input type="hidden" id="set_personal_id" value="<%=micro_personal_detail.personal_id%>" />
+	<% } %>
+	<script>
+		var zhankai=document.getElementsByClassName("zhankai");
+		for(var i= 0,leng=zhankai.length;i<leng;i++){
+			zhankai[i].onclick=function(){
+				this.previousElementSibling.style.height=this.previousElementSibling.style.height=="auto"?"15px":"auto";
+				this.innerHTML=this.innerHTML=="收起"?"展开":"收起";
+			}
+		}
+    </script>
+</script>
+
+<!--用户评论-->
+<script type="text/html" id="user_comment_model">
+
+	<% if(micro_comment_list != null) { %>
+		<% for(var i in micro_comment_list) { %>
+			<div class="birenpilun">
+				<div class="yonghu">
+					<span class="touxiang"><img src="<%=micro_comment_list[i].member_avatar%>" alt=""/></span>
+					<span class="xinxi">
+						<i><%=micro_comment_list[i].member_name%></i>
+						<u><%=micro_comment_list[i].comment_time%></u>
+					</span>
+					<div class="">
+						<span class="guanzhu-su" onclick="comment_like(this,<%=micro_comment_list[i].comment_id%>)">
+							<img src="img/zan.png" alt=""/>
+							<i><%=micro_comment_list[i].like_count%></i>
+						</span>
+					</div>
+					<div class="header-r" ><a href="javascript:void(0);"><i class="more"></i></a></div>
+					<div class="nctouch-nav-menu" >
+						<span class="arrow"></span>
+						<ul>
+							<li><a href=""><i class="fenxiang"></i>点赞</a></li>
+							<li><a href=""><i class="bianji"></i>举报</a></li>
+							<li><a href="javascript:void(0);"><i class="delete"></i>关注</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="shunjx-t">
+					<%==micro_comment_list[i].comment_message%>
+				</div>
+				<div class="zhankai">展开</div>
+			</div>
+		<% } %>
+	<% } %>
+	
+	<div class="shurukuang" id="001">
+		<span class="shutoux"><img src="<%=login_data.avatar%>" alt=""/></span>
+		<input type="text" id="send_info" placeholder="想说些什么，40字以内！" maxlength="40"/>
+	</div>
+
+	<script>
+		var n = 0;
+		$(document).keydown(function(event){ 
+			if(event.keyCode==13 && n == 0){ 
+				send_info();
+				n++;
+			} 
+		});
+		var header=document.getElementsByClassName("header-r");
+		for(var i= 0,len=header.length; i<len;i++){
+			header[i].onclick=function(){
+				this.nextElementSibling.style.display=this.nextElementSibling.style.display=="block"?"none":"block";
+			}
+		}
+		var zhankai=document.getElementsByClassName("zhankai");
+		for(var i= 0,leng=zhankai.length;i<leng;i++){
+			zhankai[i].onclick=function(){
+				this.previousElementSibling.style.height=this.previousElementSibling.style.height=="auto"?"15px":"auto";
+				this.innerHTML=this.innerHTML=="收起"?"展开":"收起";
+			}
+		}
+	</script>
+
+</script>
+
+
+<!--用户评论-->
+<script type="text/html" id="user_comment_model_add_to">
+
+	<% if(micro_comment_list != null) { %>
+		<% for(var i in micro_comment_list) { %>
+			<div class="birenpilun">
+				<div class="yonghu">
+					<span class="touxiang"><img src="<%=micro_comment_list[i].member_avatar%>" alt=""/></span>
+					<span class="xinxi">
+						<i><%=micro_comment_list[i].member_name%></i>
+						<u><%=micro_comment_list[i].comment_time%></u>
+					</span>
+					<div class=""><span class="guanzhu-su" onclick="comment_like(this,<%=micro_comment_list[i].comment_id%>)"><img src="img/zan.png" alt=""/><%=micro_comment_list[i].like_count%></span></div>
+					<div class="header-r" ><a href="javascript:void(0);"><i class="more"></i></a></div>
+					<div class="nctouch-nav-menu" >
+						<span class="arrow"></span>
+						<ul>
+							<li><a href="javascript:void(0)" onclick="comment_like('.guanzhu-su',<%=micro_comment_list[i].comment_id%>)"><i class="fenxiang"></i>点赞</a></li>
+							<li><a href=""><i class="bianji"></i>举报</a></li>
+							<li><a href="javascript:void(0);"><i class="delete"></i>关注</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="shunjx-t">
+					<%==micro_comment_list[i].comment_message%>
+				</div>
+			</div>
+		<% } %>
+	<% } %>
+
+</script>
+
+<!--推荐商品-->
+<script type="text/html" id="featured_products_model">
+
+	<% if(guess_like != null) { %>
+		<% guess_like_length = guess_like.length; %>
+		
+		<div class="changpintu">
+			<% for(var n=0; n<guess_like_length; n++) { %>
+			
+				<% if(n>3){ %>
+					<% break; %>
+				<% } %>
+				
+				<div class="shangping-m">
+					<div class="cp-pic">
+						<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+						<img src="<%=guess_like[n].goods_image%>" alt=""/>
+						</a>
+					</div>
+					<div class="cp-text">
+						<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+						<i style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 170px;"><%=guess_like[n].goods_name%></i>
+						</a>
+						<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+						<i>¥<%=guess_like[n].goods_price%></i>
+						</a>
+					</div>
+				</div>
+			<% } %>
+
+			<div style="clear: both"></div>
+		</div>
+		<% if(guess_like_length > 3) { %>
+		<div class="big-chanpi">
+			<div class="cp-pic">
+				<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+				<img src="<%=guess_like[guess_like_length-1].goods_image%>" alt=""/>
+				</a>
+			</div>
+			<div class="cp-text">
+				<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+				<i><%=guess_like[guess_like_length-1].goods_name%></i>
+				</a>
+				<a href="product_detail.html?goods_id=<%=guess_like[n].goods_id%>">
+				<i>¥<%=guess_like[guess_like_length-1].goods_price%></i>
+				</a>
+			</div>
+		</div>
+		<% } %>
+		
+	<% } %>
+
+</script>
+
+<!--我的橱窗列表-->
+<script type="text/html" id="showcase_list_model">
+	
+	<div class="tanchuk" id="tanchuk_id">
+		<div>
+			<span>
+				<i>添加至我橱窗</i>
+				<span id="close">x</span>
+			</span>
+			<% if(favorites_list != null) { %>
+			<div class="xinjian-m">
+			<% for(var i in favorites_list) { %>
+			<a href="javascript:void(0)" onclick="member_favorites(this,<%=favorites_list[i].favorites_class_id%>)">
+				<span>
+					<img src="<%=favorites_list[i].favorites_img%>" alt=""/>
+					<%=favorites_list[i].favorites_class_name%>
+					<span class="morer">
+						<img src="img/moreright.png" alt=""/>
+					</span>
+				</span>
+			</a>
+			<% }%>
+			</div>
+			<% } %>
+			<a href="javascript:void(0)" onclick="create_favorites_class(this)">
+				<span>
+					<img src="img/tianjjiachuc.png" alt=""/>新建橱窗...
+					<span class="morer"><img src="img/moreright.png" alt=""/></span>
+				</span>
+			</a>
+		</div>
+	</div>
+		
+	<script>
+
+		document.getElementById("close").onclick=function(){
+		
+			document.getElementById("tanchuk_id").style.display="none";
+		
+		};
+
+	</script>
+	
+</script>
+
+<!-- 瞬间底部 -->
+<script type="text/html" id="footer_model">
+    
+	<div class="caozuoo">
+		<ul>
+           <li onclick='get_wx_share("<%=micro_personal_detail.commend_message%>","<%=micro_personal_detail.commend_image%>","","/tmpl/shunjianziye.html?personal_id=<%=micro_personal_detail.personal_id%>")'><img src="img/shunajianfenx.png" alt=""/>分享</li>
+           <li onclick="member_like(this,<%=micro_personal_detail.personal_id%>,2)"><img src="img/shunjiandianzan.png" alt=""/>点赞</li>
+           <li><a href="#001"><img src="img/shunianpinlun.png" alt=""/>评论</a></li>
+		</ul>
+        <div class="caozuot" id="caozuot">
+            <img src="img/shunjianjiarucq.png" alt=""/>加入橱窗
+        </div>
+    </div>
+
+</script>
+
+<!--微信分享配置-->
+<script type="text/html" id="wx_share_model">
+	
+	<script>
+		/*
+		* 注意：
+		* 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+		* 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+		* 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+		*
+		* 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+		* 邮箱地址：weixin-open@qq.com
+		* 邮件主题：【微信JS-SDK反馈】具体问题
+		* 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+		*/
+		wx.config({
+			debug: false,
+			appId: '<%=signPackage.appId;%>',
+			timestamp: '<%=signPackage.timestamp;%>',
+			nonceStr: '<%=signPackage.nonceStr;%>',
+			signature: '<%=signPackage.signature;%>',
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'onMenuShareQZone'
+			]
+		});
+
+	</script>
+	
+</script>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/tmpl/shunjianziye_1_5.js"></script>
+
+<!-- S 提示 -->
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+<!-- E 提示 -->
+
+<!--微信分享JS-->
+<script src="../js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="../js/wx_share.js"></script>
+
+</body>
+</html>

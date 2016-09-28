@@ -1,0 +1,42 @@
+[2016-04-22 11:46:49] /mobile1/index.php?act=goods&op=goods_detail&goods_id=102174&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102174','237','1461296809','16','1','4','16')
+[2016-04-22 11:47:12] /mobile1/index.php?act=goods&op=goods_detail&goods_id=100994&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('100994','237','1461296832','1075','470','1075','0')
+[2016-04-22 11:47:17] /mobile1/index.php?act=goods&op=goods_detail&goods_id=103796&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103796','237','1461296837','13','1','4','13')
+[2016-04-22 11:47:23] /mobile1/index.php?act=goods&op=goods_detail&goods_id=101157&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101157','237','1461296843','19','1','4','19')
+[2016-04-22 11:47:27] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104512&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104512','237','1461296847','14','1','4','14')
+[2016-04-22 11:47:30] /mobile1/index.php?act=goods&op=goods_detail&goods_id=101157&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101157','237','1461296850','19','1','4','19')
+[2016-04-22 11:47:35] /mobile1/index.php?act=goods&op=goods_detail&goods_id=103796&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103796','237','1461296855','13','1','4','13')
+[2016-04-22 11:48:11] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104079&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104079','237','1461296891','1101','308','1098','1101')
+[2016-04-22 11:48:14] /mobile1/index.php?act=goods&op=goods_detail&goods_id=102945&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102945','237','1461296894','1101','308','1098','1101')
+[2016-04-22 11:48:17] /mobile1/index.php?act=goods&op=goods_detail&goods_id=103313&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103313','237','1461296897','1101','308','1098','1101')
+[2016-04-22 11:48:21] /mobile1/index.php?act=goods&op=goods_detail&goods_id=102945&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102945','237','1461296901','1101','308','1098','1101')
+[2016-04-22 11:48:22] /mobile1/index.php?act=goods&op=goods_detail&goods_id=104079&key=ffb0e8139bb63e57381c4e56ac383258 ( act=goods&op=goods_detail ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104079','237','1461296902','1101','308','1098','1101')
+[2016-04-22 14:19:10] /shop/index.php?act=goods&op=addbrowse&gid=102314 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102314','29','1461305950','119','1','6','59')
+[2016-04-22 14:54:37] /shop/index.php?act=goods&op=addbrowse&gid=102397 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102397','29','1461308077','14','1','4','14')

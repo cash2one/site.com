@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #FFFFFF;
+        }
+        input[type="text"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="email"], input[type="url"]{
+            border: 1px solid #dddddd;
+                padding-left: 10px;
+        }
+       
+        .lian-main{
+            min-width: 320px;
+            max-width: 750px;
+            margin: 45px auto 0 ;
+            background:#FFFFFF ;
+        }
+        .lian-nav {
+            width: 100%;
+            height: 45px;
+            background: #343a48;
+            line-height: 45px;
+            position: fixed;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 14px;
+            top: 0;
+            z-index: 10;
+        }
+        .lian-nav a{
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            left: 10px;
+            top: 7px;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            margin: 10%;
+            background-image: url(img/arrow_left_b.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+        }
+        .title{
+            font-size: 28px;
+            color: #FFFFFF;
+            font-weight: 500;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding-top: 17px;
+        }
+        .title i{
+            color: #f66d9d;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .songlieriweima{
+            width: 80%;
+            margin: auto;
+            margin-top: 25px;
+            position: relative;
+        }
+        .songlieriweima img{
+            width: 100%;
+            height: 100%;
+        }
+        .inputm{
+            width: 75.8%;
+            margin: 30% auto 30px;
+        }
+        .phone{
+            width: 67.7%;
+            height: 40px;
+            float: left;
+
+        }
+        .yanzhengma{
+            width:30%;
+            height: 40px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            background: #FFFFFF;
+            float: right;
+            display: inline-block;
+            border: 1px solid #dddddd;
+        }
+        .duiyanzhengma , .mima,.newp{
+               width: 100%;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .newp{
+            background: #FB3D5D;
+            display: inline-block;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            height: 40px;
+        }
+        .download{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .download a {
+            display: block;
+            margin: auto;
+            min-width: 320px;
+            max-width: 750px;
+        }
+        .download img{
+            width: 100%;
+        }
+        .erweima{
+            position: absolute;
+            top: 35%;
+            text-align: center;
+            width: 100%;
+        }
+        .erweima img{
+            width: 56px;
+            height: 56px;
+        }
+        .shoudao{
+              position: absolute;
+               top: 107%;
+               width: 100%;
+            text-align: center;
+            color: #FB3D5D ;
+            font-size: 12px
+        }
+        .erweima{
+            display: block;
+            margin-top:8px;
+            font-size: 14px;
+            color: #343A48;
+        }
+    </style>
+<body>
+    <div class="lian-nav">
+        <a href=""><i class="back"></i></a>
+        新人尊享
+    </div>
+    <div class="lian-main">
+
+        <div class="songlieriweima">
+            <img src="img/songlieriweima.png" alt=""/>
+            <div class="shoudao">收到的邀请码<span id="invite_mycode_2" class="erweima"></span></div>
+        </div>
+        <div class="inputm">
+            <span >
+                <input class="phone" placeholder="输入手机号码" name="usermobile" id="usermobile" type="number"/>
+                <span class="yanzhengma" id="again">获取验证码</span>
+                <div style="clear: both;"></div>
+            </span>
+            <input class="duiyanzhengma" placeholder="输入验证码" name="mobilecode" id="mobilecode" type="text"/>
+            <input class="mima" placeholder="设置密码" name="password" id="password" type="password"/>
+            <input type="hidden" name="invite_mycode" id="invite_mycode" value=""/>
+            <span class="newp" id="refister_mobile_btn">领取新人优惠</span>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/config.js"></script> 
+<script type="text/javascript" src="js/zepto.min.js"></script> 
+<script type="text/javascript" src="js/common.js"></script> 
+<script type="text/javascript" src="js/simple-plugin.js"></script> 
+<script type="text/javascript" src="js/tmpl/register_mobile_code_1_5.js"></script>
+</html>

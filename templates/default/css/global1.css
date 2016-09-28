@@ -1,0 +1,67 @@
+/*!
+ * global.css v1.01
+ * Author XiaoMai.
+ *time 2015-10-14
+ */
+ 
+ /*Global 全局样式*/
+ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, hr {
+font-family: "微软雅黑","黑体", Tahoma,"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;color: #595757;padding:0;margin:0;font-size:12px;
+}
+ 
+i, cite, em {
+  font-style: normal;
+}
+ 
+.w-clearfix:before,
+.w-clearfix:after { display: table; content: ""; line-height: 0; }
+.w-clearfix:after { clear: both; }
+.w-clearfix { *zoom: 1; }
+.w-clear{clear:both;}
+ 
+ul{list-style:none;}
+ul,li{border:0;padding:0;margin:0;}
+
+
+
+.w-container{width: 1200px !important;margin-left:auto;margin-right:auto;}
+.w-min-w1b{min-width:1200px;}
+.w-w1b{width:100%;}
+
+
+ul.w-li-l li,.w-fl{float:left;}
+ul.w-li-r li,.w-fr{float:right;}
+
+table{border-spacing: 0;border-collapse:collapse;}
+
+a{text-decoration:none;color: #595757;}
+a:link, a:visited, a:active { text-decoration: none;color: #595757;}
+a:hover {text-decoration: none;}
+/********** 限制不换行省略号辅助 **********/
+.w-limit{overflow: hidden;text-overflow: ellipsis;  white-space: nowrap;}
+
+.w-mar-lrau{margin-left:auto;margin-right:auto;}
+/* .w-mar-r4{margin-right:4px;}
+.w-mar-l4{margin-left:4px;}
+.w-mar-lr4{margin-left:4px;margin-right:4px;} */
+.w-mar-t4{margin-top:4px;}
+.w-mar-r2{margin-right:2px;}
+.w-mar-l2{margin-left:2px;}
+.w-mar-lr2{margin-left:0px;margin-right:0px;}
+
+
+.w-opacity{filter:alpha(opacity=90);  -moz-opacity:0.9;  -khtml-opacity: 0.9;  opacity: 0.9;}
+
+
+.w-txtc{text-align:center;}
+.w-txtl{text-align:left;}
+.w-txtr{text-align:right;}
+
+.w-fs-12{font-size:12px;}
+
+.w-show{
+    display: block;
+}
+.w-hide{
+    display: none;
+}

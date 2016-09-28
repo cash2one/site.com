@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        .main{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+            text-align: center;
+        }
+        .tit{
+            height: 45px;
+            line-height: 45px;
+            background: #414550;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+        .logo{
+            width: 230px;
+            height: 150px;
+            margin-top: 100px;
+        }
+        .erhuima{
+            width: 144px;
+            height: 144px;
+        }
+        .text-o{
+            color: #3d3d3d;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .text-t{
+            color: #676767;
+            font-size: 13px;
+            text-align: left;
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        .text-tr{
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #a4a4a4;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .text-f{
+            color: #676767;
+            display: block;
+            font-size: 12px;
+            text-align: center;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <p class="tit">
+        邀请奖励
+    </p>
+    <div>
+        <img class="logo" src="img/yaoqingjiangli.png" alt=""/>
+        <p class="text-o">邀请好友加入有jetso！</p>
+        <span class="text-t">
+            好友注册时输入您的邀请码，玩艺网将赠送你现金奖励。如果好友注册成功后两个月内购物，你更可获得额外惊喜。
+        </span>
+        <i class="text-tr">你的邀请码</i>
+        <u class="text-f" id="invite_mycode"></u>
+        <img id="photo_url" class="erhuima" src="" alt=""/>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script> 
+<script type="text/javascript" src="js/common.js?g"></script>
+
+<script>
+    
+    $(function() {
+       
+        var key = getQueryString("key");
+        if(key == "" || key == null) {
+
+            location.href = WapSiteUrl;
+            
+        } else {
+            
+            get_mycode();
+            
+        }
+      
+        
+    });
+    
+    function get_mycode() {
+        
+        var key = getQueryString("key");
+        
+        $.ajax({
+        
+            url: ApiUrl + "/index.php?act=member_index&op=get_invite_mycode",
+            type: 'GET',
+            data: {key: key},
+            dataType: 'json',
+
+            success: function(data) {
+               
+               $('#invite_mycode').html(data.datas.invite_mycode);
+               $('#photo_url').attr('src',data.datas.photo_url);
+
+            }
+        })
+        
+    }
+    
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" contect="U2FsdGVkX1+liZRYkVWAWC6HsmKNJKZKIr5plAJdZUSg1A==">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+<title>玩艺网</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+<link rel="stylesheet" href="../css/jquery.flipster.css">
+<link rel="stylesheet" href="../css/huanlsongindex.css"/>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/jquery.flipster.js"></script>
+</head>
+<body>
+    <header id="header" class="nctouch-product-header fixed">
+        <div class="nav-one">
+            <ul>
+                <a href="happy_send.html"><li class="on">欢乐送</li></a>
+                <!-- <a href="gift_card.html"><li class="">礼品卡</li></a> -->
+            </ul>
+                <span class="gouwuche">
+                   <a href="" ><img src="img/chouti.png" alt=""/></a>
+                </span>
+        </div>
+    </header>
+    <div id="commend_list" class="list"></div>
+	<div id="array_list" class="list"> </div>
+	<div id="product_list" class="list"> </div>
+	<div style="margin-bottom:20px"></div>
+	<footer id="footer" class="fixed-Width"></footer>
+	
+     <script type="text/html" id="commend_body">
+        <div  class="shunjx-m">
+			<div class="banner">
+				<div class="flipster popular-main">
+					<ul>
+						<% var goods_list = datas; %>
+						<% if(goods_list.length >0){%>
+							<%for(i=0;i<goods_list.length;i++){%>
+								<li>
+									<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1" class="Button Block">
+										<img src="<%=goods_list[i].goods_image;%>" alt=""/>
+										<span class="banner-t">
+											<i>¥<%=goods_list[i].goods_promotion_price;%></i>
+											<p><%=goods_list[i].goods_name;%></p>
+										</span>
+									</a>
+								</li>
+							<%}%>
+						<%}%>
+					</ul>
+				</div>
+				<div class="jiarugongn">
+					<a href=""><span><img src="../img/jiaruxinyuan.png" alt=""/></span></a>
+					<a href=""><span><img src="../img/qianbao.png" alt=""/></span></a>
+					<a href=""><span><img src="../img/fenxiangshme.png" alt=""/></span></a>
+				</div>
+			</div>
+        </div>
+		<script>
+			$(".flipster").flipster({ style: 'carousel', start: 0 , enableKeyboard:false , enableMousewheel:false });
+		</script>
+    </script>
+	
+    <script type="text/html" id="array_body">
+		<div class="xiala">
+			<div class="shousuo" id="shousuo">
+				<span class="text-l">搜索</span><span class="text-r" style="margin-top: 10px;"><img src="../img/xiala.png" alt="" /></span>
+				<div style="clear: both"></div>
+			</div>
+			<div class="xianshixuanqu" id="xianshixuanqu">
+				<span class="text-l xianshi" id="xianshi">
+
+				</span>
+				<i class="text-r close" id="close">x</i>
+				<div style="clear: both;"></div>
+			</div>
+			<ul class="xialak" id="xialak">
+				<li>
+					<div class="biaoti">
+						<span class="text-l">价格</span><span class="text-r">任意价格+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="momey" >
+							<li>任意价格</li>
+							<% var price_list = datas.price; %>
+							<% if(price_list.length >0){%>
+							<%for(i=0;i<price_list.length;i++){%>
+								<li data_id="<%=price_list[i].hps_value_id%>"><%=price_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">关系</span><span class="text-r">任意关系+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="friend">
+							<li>任意关系</li>
+							<% var relationship_list = datas.relationship; %>
+							<% if(relationship_list.length >0){%>
+							<%for(i=0;i<relationship_list.length;i++){%>
+								<li data_id="<%=relationship_list[i].hps_value_id%>"><%=relationship_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">场景</span><span class="text-r">任意场景+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="scenes">
+							<li>任意场景</li>
+							<% var scenes_list = datas.scenes; %>
+							<% if(scenes_list.length >0){%>
+							<%for(i=0;i<scenes_list.length;i++){%>
+								<li data_id="<%=scenes_list[i].hps_value_id%>"><%=scenes_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">收件人性别</span><span class="text-r">任意性别+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao sex">
+						<ul class="xiangqing" id="sex">
+							<% var sex_list = datas.sex; %>
+							<% if(sex_list.length >0){%>
+							<%for(i=0;i<sex_list.length;i++){%>
+								<li  data_id="<%=sex_list[i].hps_value_id%>"><%=sex_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">收件人年龄</span><span class="text-r">任意年龄+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="year">
+							<% var year_list = datas.year; %>
+							<% if(year_list.length >0){%>
+							<%for(i=0;i<year_list.length;i++){%>
+								<li data_id="<%=year_list[i].hps_value_id%>"><%=year_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			var liebiaom=document.getElementsByClassName("xiangqing");
+			var textr=document.getElementsByClassName("text-r");
+			var liebiao=document.getElementsByClassName("liebiao");
+			var xianshixuanqu=document.getElementById("xianshixuanqu");
+			var xianshi=document.getElementById("xianshi");
+			var xialak=document.getElementById("xialak");
+			var close=document.getElementById("close");
+			var shousuo=document.getElementById("shousuo");
+			var textarr = new Array();
+			var arr = new Array();
+			document.getElementById("shousuo").onclick=function(){
+				xialak.style.display=xialak.style.display=="block"?"none":"block";
+				if(xialak.style.display=="none"){
+					for(var q= 2,lenq=textr.length;q<lenq;q++){
+						textr[q].parentNode.nextElementSibling.style.display="none";
+			}
+				}
+			};
+			for(var q= 2,lenq=textr.length;q<lenq;q++){
+				textr[q].onclick=function(){
+					if(this.parentNode.nextElementSibling.style.display=="none"){
+						for(var q= 2,lenq=textr.length;q<lenq;q++){
+							textr[q].parentNode.nextElementSibling.style.display="none";
+						}
+					}
+					this.parentNode.nextElementSibling.style.display=this.parentNode.nextElementSibling.style.display=="block"?"none":"block";
+				}
+			}
+			for(var k= 0,lenk=liebiaom.length;k<lenk;k++){
+				var liebiaol=liebiaom[k].children;
+				for(var i= 0,len=liebiaol.length;i<len;i++){
+					liebiaol[i].onclick=function(){
+						for(var i= 0,len=this.parentNode.children.length;i<len;i++) {
+							this.parentNode.children[i].className = "";
+						}
+						console.log(this.getAttribute("data_id"));
+				  
+					   init_get_list(this.getAttribute("data_id"),'','','','');
+						this.className="dianji";
+						xianshixuanqu.style.display="block";
+						shousuo.style.display="none";
+						switch (this.parentNode.id){
+							case "momey":
+								textarr[0]=this.innerHTML;
+								arr[0] = this.getAttribute("data_id");
+								break;
+							case "friend":
+								textarr[1]=this.innerHTML;
+								arr[1] = this.getAttribute("data_id");
+								break;
+							case "scenes":
+							textarr[2]=this.innerHTML;
+							arr[2] = this.getAttribute("data_id");
+							break;
+							case "sex":
+								textarr[3]=this.innerHTML;
+								arr[3] = this.getAttribute("data_id");
+								break;
+							case "year":
+								textarr[4]=this.innerHTML;
+								arr[4] = this.getAttribute("data_id");
+								break;
+					}
+						xianshi.innerHTML=textarr.join(" ");
+					   init_get_list(arr[0], arr[1], arr[2], arr[3], arr[4]);
+				}
+			}
+			}
+			close.onclick=function(){
+				xianshixuanqu.style.display="none";
+				shousuo.style.display="block";
+				xianshi.innerHTML="";
+				xialak.style.display="none";
+				for(var b= 0,leng=liebiao.length;b<leng;b++) {
+					liebiao[b].style.display="none";
+					for(var i= 0,len=liebiao[b].children[0].children.length;i<len;i++) {
+						liebiao[b].children[0].children[i].className = "";
+					}
+				}
+				document.getElementsByClassName("shurunian")[0].value="";
+			};
+
+		</script>
+    </script>
+       <script type="text/html" id="home_body">
+           <div  class="shunjx-m">
+            <div class="changpintu">
+            <% var goods_list = datas; %>
+         <% if(goods_list.length >0){%>
+         <%for(i=0;i<goods_list.length;i++){%>
+           <%if(i==4||i==9){%>
+       <div class="big-chanpi">
+        <div class="cp-pic">
+            <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1"><img src="<%=goods_list[i].goods_image;%>" alt=""/></a>
+        </div>
+        <div class="cp-text">
+            <i><%=goods_list[i].goods_name;%></i>
+            <i><%=goods_list[i].goods_promotion_price;%></i>
+        </div>
+    </div>
+    <%}else{%>    
+          
+        <div class="shangping-m">
+            <div class="cp-pic">
+                <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1"><img src="<%=goods_list[i].goods_image;%>" alt=""/></a>
+            </div>
+            <div class="cp-text">
+                <i><%=goods_list[i].goods_name;%></i>
+                <i><%=goods_list[i].goods_promotion_price;%></i>
+            </div>
+        </div>
+                <%}%>
+           
+        <%}%>
+        
+			<% if (hasmore) {%>
+			<li class="loading"><div class="spinner"><i></i></div>商品数据读取中...</li>
+			<% } %>
+	<%
+	   }else {
+	%>
+		<div class="nctouch-norecord search">
+			<div class="norecord-ico"><i></i></div>
+				<dl>
+					<dt>没有找到任何相关信息</dt>
+					<dd>选择或搜索其它商品分类/名称...</dd>
+				</dl>
+			<a href="javascript:history.go(-1)" class="btn">重新选择</a>
+		</div>
+	<%
+	   }
+	%>
+        </div>
+                   </div>
+   </div>
+        </script>
+
+   
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/happy_send.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</body> 
+</html>

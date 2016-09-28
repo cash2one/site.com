@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Author" contect="U2FsdGVkX1+liZRYkVWAWC6HsmKNJKZKIr5plAJdZUSg1A==">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>致匠心</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/faxianye.css">
+    <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+</head>
+<body>
+<header id="header" class="nctouch-product-header fixed">
+    <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
+    <div class="nav-one">
+        <ul>
+            <a href="/wap/tmpl/play_art.html"><li>玩艺说</li></a>
+            <a href="/wap/tmpl/art_life.html"><li>艺生活</li></a>
+            <a href="/wap/tmpl/by_ingenuity.html"><li class="on">致匠心</li></a>
+        </ul>
+      <span class="gouwuche">
+            <a href="../tmpl/cart_list.html" ><img src="../img/chouti.png" alt=""/></a>
+            <!--<i id="cart_count"></i>-->
+      </span>
+    </div>    
+</header>
+
+<div class="faxian-main">
+    <div id="article_list" >
+       
+    </div>
+</div>
+  <div class="footer-top"></div>
+<footer id="footer" class="fixed-Width"></footer>
+</body>
+<script type="text/html" id="article_body">
+    <% if(datas.length >0){%>
+    <%for(i=0;i<datas.length;i++){%>
+   <ul class="zijiangxin">
+          <a href="<%=datas[i].url;%>"> <li><img src="<%=datas[i].article_image;%>" alt=""/></li></a>
+   </ul>
+    <%}%>
+    <% if (hasmore) {%>
+    <li class="loading"><div class="spinner"><i></i></div>商品数据读取中...</li>
+    <% } %>
+    <%
+    }else {
+    %>
+    <div class="nctouch-norecord search">
+        <div class="norecord-ico"><i></i></div>
+        <dl>
+            <dt>没有找到任何相关信息</dt>
+            <dd>选择或搜索其它商品分类/名称...</dd>
+        </dl>
+        <a href="javascript:history.go(-1)" class="btn">重新选择</a>
+    </div>
+    <%
+    }
+    %>
+</script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/by_ingenuity.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</html>

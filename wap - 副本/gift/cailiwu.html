@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>拆礼物</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        .wai-kuang{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+        }
+        .beijing{
+            width: 100%;
+            position: relative;
+        }
+        .beijing img{
+            width: 100%;
+            height: 100%;
+        }
+        .liwubtn{
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: 6%;
+            text-align: center;
+        }
+        .liwubtn img{
+            width: 38%;
+            height: 94px;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #f0f0f0;
+        }
+        .header2 {
+            position: fixed;
+            height: 45px;
+            z-index: 8;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+        }
+        .nav-one{
+            max-width: 750px;
+            min-width: 320px;
+            background-color: #343a49;
+            margin: auto;
+            height: 45px;
+        }
+        .nav-one>div{
+            float: left;
+        }
+        .search {
+            margin-top: 11.5px;
+            margin-left: 2%;
+            color: #ffffff;
+        }
+        #keyword {
+            height: 23px;
+        }
+        .logo-name {
+            color: #ffffff;
+            width: 60px;
+            margin-left: calc((100% - 140px)/2);
+            font-size: 16px;
+            line-height: 45px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <div class="search" id="keyword">
+            关闭
+        </div>
+        <div class="logo-name" id="logo-name">
+            欢乐送
+        </div>
+    </div>
+</header>
+<div class="wai-kuang">
+    <div class="beijing">
+        <img src="img/huanleserukougg.png" alt=""/>
+        <a href="javascript:void(0)" class="liwubtn" onclick="get_new_windows('kanheka.html')"><img src="img/cailiwubtn.png" alt=""/></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/gift/turned.js"></script>
+
+
+</body>
+</html>

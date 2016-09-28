@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/shuniian.css"/>
+	
+	<link rel="stylesheet" href="../css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/faxianye.css">
+
+    <link rel="stylesheet" href="../css/demo.css">
+
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.flipster.js"></script>
+	<script type="text/javascript" src="../js/head.js"></script>
+	<style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+	
+	<header class="header2" >
+		<div class="nav-one">
+			<div class="search" id="">
+				<a href="search.html" ><img class="search-input" id="keyword" src="../img/search_ico.png"></a>
+			</div>
+			<div class="logo-name" id="logo-name">瞬间 Inspiration<img src="img/uptwo.png" alt=""/>
+
+			</div>
+			<div class="xialai-cadan" id="xialai-cadan" >
+				
+				<a href="/wap/index.html"><span>封面 Cover</span></a>
+				<a href="find_1.html"><span>瞬间 Inspiration</span></a>
+			</div>
+			<span class="gouwuche">
+			   <!--  <a href="tmpl/cart_list.html" ><img src="img/chouti.png" alt=""/></a> -->
+			   <a href="/wap/feedback/hezi.html" ><img src="../img/chouti.png" alt=""/></a>
+			</span>
+		</div>
+	</header>
+	<div style="margin: 15%;"></div>
+    <div class="shunjian">
+        <div class="hot-pepol">
+            <span>红人</span>
+			<div class="con_mid-two-m">
+            <div class="con_mid-two" id="favorite_list">
+
+            </div>
+            </div>
+        </div>
+		
+		<div id="inspiration_list">
+
+		</div>
+		
+        <div class="tanchuk" id="tanchuk">
+            
+        </div>
+    </div>
+	<!-- 底部 -->
+	<div style="margin: 20%;"></div>
+	<footer id="footer" class="fixed-Width"></footer>
+	
+	<div id="wx_share"></div>
+	<iframe src="fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+	<script>
+		var ifm= document.getElementById("iframepage");
+		//*****************添加点击事件的机制******************
+		var IframeOnClick = {
+			resolution: 200,
+			iframes: [],
+			interval: null,
+			Iframe: function() {
+				this.element = arguments[0];
+				this.cb = arguments[1];
+				this.hasTracked = false;
+			},
+			track: function(element, cb) {
+				this.iframes.push(new this.Iframe(element, cb));
+				if (!this.interval) {
+					var _this = this;
+					this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+				}
+			},
+
+			checkClick: function() {
+				if (document.activeElement) {
+					var activeElement = document.activeElement;
+					for (var i in this.iframes) {
+						if (activeElement === this.iframes[i].element) { // user is in this Iframe
+							if (this.iframes[i].hasTracked == false) {
+								this.iframes[i].cb.apply(window, []);
+
+								this.iframes[i].hasTracked = true;
+							}
+						} else {
+							this.iframes[i].hasTracked = false;
+						}
+					}
+				}
+			}
+		};
+		IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+	</script>
+<!--橱窗列表-->
+<script type="text/html" id="showcase_list_model">
+	
+    <div>
+		<span>
+			<i>添加至我橱窗</i>
+			<span id="close">x</span>
+		</span>
+		<% if(favorites_list != null) { %>
+		<div class="xinjian-m">
+		<% for(var i in favorites_list) { %>
+		<a href="javascript:void(0)" onclick="member_favorites(this,<%=favorites_list[i].favorites_class_id%>)">
+			<span>
+				<img src="<%=favorites_list[i].favorites_img%>" alt=""/>
+				<%=favorites_list[i].favorites_class_name%>
+				<span class="morer">
+					<img src="img/moreright.png" alt=""/>
+				</span>
+			</span>
+		</a>
+		<% }%>
+		</div>
+		<% } %>
+		<a href="javascript:void(0)" onclick="create_favorites_class(this)">
+			<span>
+				<img src="img/tianjjiachuc.png" alt=""/>新建橱窗...
+				<span class="morer"><img src="img/moreright.png" alt=""/></span>
+			</span>
+		</a>
+		<input type="hidden" id="set_personal_id" value="0"/>
+	</div>
+	<script>
+		document.getElementById("close").onclick=function(){
+			 document.getElementById("tanchuk").style.display="none";
+			 document.getElementById("set_personal_id").value=0;
+		};
+		
+    </script>
+	
+</script>	
+
+<!--红人列表-->
+<script type="text/html" id="favorite_list_model">
+
+    <% var personal_like_list = datas.personal_like_list; %>
+    <% if(personal_like_list.length >0){%>
+		<ul style="width:<%=158 * personal_like_list.length%>px;margin-top: 10px;">
+    <%for(i=0;i<personal_like_list.length;i++){%>
+	
+		<li>
+			<a href="tarendezhongxin.html?member_id=<%=personal_like_list[i].member_id%>"><img class="gz-img" src="<%=personal_like_list[i].member_avatar%>" alt=""/></a>
+			<span class="gz-main">
+				<a href="tarendezhongxin.html?member_id=<%=personal_like_list[i].member_id%>">
+					<i class="gz-nanme" style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 50px;"><%=personal_like_list[i].member_name%></i>
+				</a>
+				<i class="gz-money" id="red_count_friend"><%=personal_like_list[i].count_friend%></i>
+				<div class="gz-btn" onclick="member_attention(this,<%=personal_like_list[i].member_id%>,0)">关注</div>
+			</span>
+		</li>
+
+    <%}%>
+		</ul>
+    <% } %>
+	
+</script>
+	
+<!--瞬间列表-->
+<script type="text/html" id="inspiration_list_model">
+    <% var goods_list = datas.goods_list; %>
+    <% if(goods_list.length >0){%>
+    <%for(i=0;i<goods_list.length;i++){%>
+	
+		<div class="shunjian-m">
+
+			<div class="shunjian-p">
+				<a href="shunjianziye.html?personal_id=<%=goods_list[i].personal_id;%>">
+					<img src="<%=goods_list[i].commend_image;%>" alt=""/>
+				</a>
+			</div>
+			<div class="guanzhu-x">
+				<a href="shunjianziye.html?personal_id=<%=goods_list[i].personal_id;%>">
+					<span class="shunjian-t">
+						<% if(goods_list[i].commend_message.length > 10) {%>
+							
+							<%=goods_list[i].commend_message.substring(0,10)%>...
+							
+						<% } else { %>
+							
+							<%=goods_list[i].commend_message%>
+							
+						<% } %>
+						
+					</span>
+				</a>
+				<% micro_like_data = goods_list[i].micro_like_data;%>
+				<% if(micro_like_data != null) { %>
+				<ul class="guanzhu-l">
+					<% for(var n in micro_like_data) { %>
+					<li><img src="<%=micro_like_data[n].member_avatar;%>" alt=""/></li>
+					<% } %>
+				</ul>
+				<% } %>
+				<div style="clear: both"></div>
+			</div>
+			<div class="shunjian-tit">
+				<div class="shunjian-pic">
+					<a href="tarendezhongxin.html?member_id=<%=goods_list[i].commend_member_id%>"><img src="<%=goods_list[i].member_avatar;%>" alt=""/></a>
+					<span>
+						<i>
+							<%=goods_list[i].member_name%>
+							<u>+<%=goods_list[i].count_friend%></u>
+						</i>
+						
+						<s onclick="member_attention(this,<%=goods_list[i].commend_member_id%>,2)">关注</s>
+					</span>
+				</div>
+				<div class="gz-f">
+					<span onclick="member_like(this,'<%=goods_list[i].personal_id;%>')">
+						<img src="img/shunjainxin.png" alt=""/>
+						<span><%=goods_list[i].like_count %></span>
+					</span>
+					<span>
+						<a href="javascript:void(0)" onclick='get_wx_share("<%=goods_list[i].personal_id%>","<%=goods_list[i].commend_message%>","<%=goods_list[i].commend_image%>")'><img src="img/asdfasdf.png" alt=""/></a>
+						<a href="javascript:void(0)" onclick="member_favorites_window(this,'<%=goods_list[i].personal_id;%>')"><img class="tjcc" src="img/jiaruchuc.png" alt=""/></a>
+					</span>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+
+    <%}%>
+    <% if (hasmore) {%>
+    <div class="loading"><div class="spinner"><i></i></div>商品数据读取中...</div>
+    <% } %>
+    <% }else { %>
+    <div class="shunjian-m">
+        <div class="shunjian-p"><i></i></div>
+        <dl>
+            <dt>没有找到任何相关信息</dt>
+            <dd>选择或搜索其它商品分类/名称...</dd>
+        </dl>
+        <a href="javascript:history.go(-1)" class="btn">重新选择</a>
+    </div>
+    <% } %>
+
+</script>
+
+<script type="text/html" id="wx_share_model">
+	
+	
+	<script>
+		/*
+		* 注意：
+		* 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+		* 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+		* 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+		*
+		* 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+		* 邮箱地址：weixin-open@qq.com
+		* 邮件主题：【微信JS-SDK反馈】具体问题
+		* 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+		*/
+		wx.config({
+			debug: false,
+			appId: '<%=signPackage.appId;%>',
+			timestamp: '<%=signPackage.timestamp;%>',
+			nonceStr: '<%=signPackage.nonceStr;%>',
+			signature: '<%=signPackage.signature;%>',
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'onMenuShareQZone'
+			]
+		});
+
+	</script>
+	
+</script>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/find_1_5.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>	
+<!--微信分享JS-->
+<script src="../js/jweixin-1.0.0.js"></script>
+<script src="../js/wx_share.js"></script>
+<!-- S 提示 -->
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+<!-- E 提示 -->  
+
+
+</body>
+</html>

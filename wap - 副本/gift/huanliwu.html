@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/huanliwu.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <a href="javascript:history.go(-1)">
+            <div class="search" id="keyword">
+            返回
+        </div>
+        </a>
+    </div>
+</header>
+<div class="banner" id="goods_list_select">
+
+</div>
+
+<script type="text/html" id="goods_list_select_model">
+	
+	<% if(goods_list != null) { %>
+	<div class="beijingtu">
+        <div class="juzhong">
+            <ul class="beijingchangpintu" id="beijingchangpintu">
+				<% for(var i in goods_list) { %> 
+					<li class="" ><a href=""><img src="<%=goods_list[i].goods_image%>" alt=""/></a></li>
+				<% } %>
+            </ul>
+        </div>
+    </div>
+    <div class="flipster popular-main flipster-active flipster-carousel" id="touch">
+        <ul class="flip-items ulwidth" >
+			<% goods_list_length = goods_list.length;%>
+			<% for(var v=0;v< goods_list_length; v++) { %> 
+            <li class="flip-item  <% if(v ==0) { %>flip-current<% } else if(v == 1) {%> flip-next <% }else if(v>1 && v<goods_list_length-1){ %> flip-hidden <% }else if(v==goods_list_length-1){ %> flip-prev <% } %>" >
+                <span class="main">
+                    <s><%=goods_list[v].goods_name%></s>
+                    <i><%=goods_list[v].goods_spec%></i>
+                    <u class="lineing"></u>
+                    <img src="img/jichang.png" alt=""/>
+                </span>
+				<input type="hidden" name="goods_id" value="<%=goods_list[v].goods_id%>">
+            </li>
+			
+			<% } %>
+        </ul>
+    </div>
+    <div class="button-item " id="button-item" onclick="select_goods()">
+        我就要这一个啦！
+    </div>
+	<% } %>
+	<script>
+		
+		
+			$("html").removeClass("ui-loading");
+			$(".loader-bg").remove();
+			var index=0;
+			//单击左箭头
+			var flipNext=document.getElementsByClassName("flip-item");
+			var beijinLi=document.getElementById("beijingchangpintu").children;
+			//var left=document.getElementById("left");
+			//var right=document.getElementById("right");
+			function left(){
+				index--;
+				if (index<0) {index=flipNext.length-1};
+				changeOption(index);
+				nowdonghua(index);
+
+			};
+			//单击右箭头
+			function right(){
+				index++;
+				if (index>=flipNext.length) {index=0};
+				changeOption(index);
+				nowdonghua(index);
+			};
+			function changeOption(curindex){
+				for(var j=0;j<flipNext.length;j++){
+					flipNext[j].className="flip-item flip-hidden";
+				}
+				flipNext[curindex].className="flip-item flip-current";
+				if(curindex-1<0){
+					flipNext[flipNext.length-1].className="flip-item flip-prev";
+				}else{
+					flipNext[curindex-1].className="flip-item flip-prev";
+				}
+				if(curindex+1>=flipNext.length){
+					flipNext[0].className="flip-item flip-next";
+				}else{
+					flipNext[curindex+1].className="flip-item flip-next";
+				}
+			}
+			function buttom(){
+				var buttonItem=document.getElementById("button-item");
+				buttonItem.className="button-item button-down";
+				setTimeout(up,600);
+			}
+			function up(){
+				var buttonItem=document.getElementById("button-item");
+				 buttonItem.className="button-item";
+			}
+			(function (){
+				$(beijinLi[0]).css({"opacity":"1","width":"100%",
+					"height":"320px"});
+			})();
+			function nowdonghua(curindex){
+				//console.log(curindex);
+				//console.log(beijinLi.length-1);
+				//console.log(curindex <= beijinLi.length);
+				//console.log(beijinLi[curindex]);
+				//console.log($(beijinLi[curindex]));
+				if(curindex+1>beijinLi.length-1){
+					$(beijinLi[0]).animate({
+						"width": "10%",
+						"height": "10%",
+						"opacity": "0",
+						"margin": "40%"
+					},300 ,"linear",nextdonghua(curindex));
+				}else{
+					$(beijinLi[curindex+1]).animate({
+						"width": "10%",
+						"height": "10%",
+						"opacity": "0",
+						"margin": "40%"
+					},300 ,"linear",nextdonghua(curindex));
+				}
+				if(curindex-1<0){
+					$(beijinLi[beijinLi.length-1]).animate({
+						"width": "10%",
+						"height": "10%",
+						"opacity": "0",
+						"margin": "40%"
+					},300 ,"linear",nextdonghua(curindex));
+				}else{
+					$(beijinLi[curindex-1]).animate({
+						"width": "10%",
+						"height": "10%",
+						"opacity": "0",
+						"margin": "40%"
+					},300 ,"linear",nextdonghua(curindex));
+				}
+			}
+			function nextdonghua(curindex){
+				$(beijinLi[curindex]).css({
+					"opacity":"0","width":"10%",
+					"height":"10%","margin": "40%"}).delay(300).animate({
+						"width" : "100%",
+						"height" : "100%",
+						"opacity" :"1",
+						"margin":"0"
+					},300);
+			}
+		<% if(goods_list_length > 1) { %>
+			$("#touch").on("swiperight swipeleft",function(event){
+				if( event.type == "swiperight"){
+					left();
+					buttom();
+				}else if(event.type == "swipeleft" ){
+					right();
+					buttom();
+				}
+			});
+		<% } else { %>
+			$("#touch").off("swiperight swipeleft");
+			
+			
+		<% } %>
+	</script>
+</script>
+	
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/gift/huanliwu.js"></script>
+<script type="text/javascript" src="../js/gift/turned.js"></script>	
+
+</body>
+</html>

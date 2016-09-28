@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+        <title>最新单品</title>
+        <style>
+            *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+            a:link {
+                text-decoration: none;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            a:active {
+                text-decoration: none;
+            }
+            body{
+                font-family: "Microsoft YaHei";
+            }
+            .lian-nav {
+                width: 100%;
+                height: 45px;
+                background: #343a48;
+                line-height: 45px;
+                position: fixed;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 14px;
+                top: 0;
+                z-index: 10;
+            }
+            .lian-nav a{
+                position: absolute;
+                z-index: 1;
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                padding: 0.4775rem;
+                left: 0;
+            }
+            .back{
+                width: 100%;
+                height: 100%;
+                margin: 10%;
+                background-image: url(img/arrow_left_b.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: block;
+            }
+            .main{
+                max-width: 750px;
+                min-width: 320px;
+                margin:0 auto;
+                text-align: center;
+                margin-top: 45px;
+            }
+            .guangg-pir img{
+                width: 100%;
+            }
+            .shangpin{
+                margin-bottom: 10px;
+            }
+            .shangpin li{
+                width: 46.8%;
+                margin-left: 2%;
+                float: left;
+                border-radius: 4px;
+                margin-top: 10px;
+                overflow: hidden;
+                -moz-box-shadow:0px 2px 6px #d0d0d0; -webkit-box-shadow:0px 2px 6px #333333; box-shadow:0px 2px 6px #d0d0d0;
+            }
+            .shangpin li img{
+                width: 100%;
+                height: 175px;
+            }
+            .text{
+                padding:0 9% ;
+            }
+            .sp-tit{
+                text-align: left;
+                display: block;
+                font-size: 13px;
+                color: #333333;
+                margin-top: 10px;
+            }
+            .sp-duan{
+                font-size: 13px;
+                color: #666666;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-align: left;
+                margin-top: 8px;
+                line-height: 18px;
+            }
+            .money{
+                margin-top: 10px;
+                display: block;
+                margin-bottom: 12px;
+            }
+            .money i{
+                color: #ff0000;
+                font-size: 14px;
+                font-weight: 700;
+                float: left;
+            }
+            .money u{
+                color: #999999;
+                font-size: 11px;
+                float: right;
+                margin-top: 2px;
+                text-decoration:line-through
+            }
+            .pubu-s{
+                margin-top: 10px;
+            }
+            .pubu-l,.pubu-r{
+                width: 46.8%;
+                margin-left: 2.2%;
+                float: left;
+                display: inline-block;
+            }
+            .pubu-l li ,.pubu-r li{
+                -moz-box-shadow:0px 2px 6px #d0d0d0; -webkit-box-shadow:0px 2px 6px #333333; box-shadow:0px 2px 6px #d0d0d0;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            .pubu-l img,.pubu-r img{
+                width: 100%;;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="lian-nav">
+            <a href="http://www.site.com/wap/index.html"><i class="back"></i></a>
+            最新单品
+        </div>
+        <div class="main">
+
+
+            <div class="guangg-pir" id="banner_head">
+                <script type="text/html" id="banner_head_model">
+                    <% if(banner != null) { %>
+                    <% for(var i in banner) { %>
+                    <% if (i == 0) { %>
+                    <a href="..\tmpl/store.html?store_id=<%= banner[i].store_id; %>">
+                        <img src="<%=banner[i].special_banner; %>" alt=""/>
+                    </a>
+                    <% } %>
+                    <% } %>	
+                    <% } %>	
+                    </script>	
+                </div>
+
+                <div class="shangpin" id="goods_head" >
+                    <script type="text/html" id="goods_head_model">
+                        <% if(goods_head != null) { %>
+                        <ul>
+                            <% for(var i in goods_head) { %>
+                            <a href="..\tmpl/product_detail.html?goods_id=<%= goods_head[i].goods_id; %>">            
+                                <li>
+
+                                    <div>
+
+                                        <img src="<%=goods_head[i].goods_image; %>" alt=""/>
+
+                                        <div class="text">
+                                            <span class="sp-tit"><%=goods_head[i].brand_name;%></span>
+                                            <p class="sp-duan"><%=goods_head[i].goods_name;%></p>
+                                            <span class="money">
+                                                <i>¥ <%=goods_head[i].goods_promotion_price;%></i>
+                                                <u>¥ <%=goods_head[i].goods_price;%></u>
+                                                <div style="clear: both;"></div>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </a>
+                            <% } %>
+
+                        </ul>
+                        <% } %>
+                        <div style="clear: both;"></div>
+                        </script>	
+                    </div>
+
+
+                    <div class="guangg-pir" id="banner_other">
+                        <script type="text/html" id="banner_other_model">
+                            <% if(banner != null) { %>
+                            <% for(var i in banner) { %>
+                            <% if (i == 1) { %>
+                            <a href="..\tmpl/store.html?store_id=<%= banner[i].store_id; %>">
+                                <img src="<%=banner[i].special_banner; %>" alt=""/>
+                            </a>
+                            <% } %>
+                            <% } %>	
+                            <% } %>	
+                            </script>
+                        </div>
+
+                        <div class="pubu-s">
+
+
+
+
+                            <ul class="pubu-l" id="goods_left">
+                                <script type="text/html" id="goods_left_model">
+                                    <% if(goods_list != null) { %>
+                                    <% var n = 0; %>
+                                    <% for(var i in goods_list) { %>
+                                    <% if(n%2 == 0) { %>	
+                                    <a href="..\tmpl/product_detail.html?goods_id=<%= goods_list[i].goods_id; %>">            
+                                        <li>
+
+                                            <div>
+
+                                                <img src="<%=goods_list[i].goods_image; %>" alt=""/>
+
+                                                <div class="text">
+                                                    <span class="sp-tit"><%=goods_list[i].brand_name;%></span>
+                                                    <p class="sp-duan"><%=goods_list[i].goods_name;%></p>
+                                                    <span class="money">
+                                                        <i>¥ <%=goods_list[i].goods_promotion_price;%></i>
+                                                        <u>¥ <%=goods_list[i].goods_price;%></u>
+                                                        <div style="clear: both;"></div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>	
+                                    </a>
+                                    <% } %>
+                                    <% n++; %>
+
+                                    <% } %>
+                                    <% } %>    
+                                    </script>
+                                </ul>
+
+                                <ul class="pubu-r" id="goods_right">
+                                    <script type="text/html" id="goods_right_model">
+                                        <% if(goods_list != null) { %>
+                                        <% var m = 1; %>
+                                        <% for(var i in goods_list) { %>
+                                        <% if(m%2 == 0) { %>
+                                        <a href="..\tmpl/product_detail.html?goods_id=<%= goods_list[i].goods_id; %>">
+                                            <li>
+
+                                                <div>
+
+                                                    <img src="<%=goods_list[i].goods_image; %>" alt=""/>
+
+                                                    <div class="text">
+                                                        <span class="sp-tit"><%=goods_list[i].brand_name;%></span>
+                                                        <p class="sp-duan"><%=goods_list[i].goods_name;%></p>
+                                                        <span class="money">
+                                                            <i>¥ <%=goods_list[i].goods_promotion_price;%></i>
+                                                            <u>¥ <%=goods_list[i].goods_price;%></u>
+                                                            <div style="clear: both;"></div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </li>	
+                                        </a>
+                                        <%　} %>
+                                        <% m++; %>		
+                                        <% } %>
+                                        <% } %>	
+                                        </script>		
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+                            <script type="text/javascript" src="../js/zepto.min.js"></script>
+                            <script type="text/javascript" src="../js/config.js"></script>
+                            <script type="text/javascript" src="../js/template.js"></script>
+                            <script type="text/javascript" src="../js/simple-plugin.js"></script> 
+                            <script type="text/javascript" src="../js/indexmore/new_goods.js"></script>
+
+                        </body>
+                    </html>

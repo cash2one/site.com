@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>新建橱窗</title>	
+    <link rel="stylesheet" href="css/xinjianchuchuang.css"/>
+</head>
+<body>
+    <form id="form">
+        <div class="xincc">
+            <div class="lian-nav">
+                <a href="javascript:history.go(-1)"><i class="back"></i></a>
+                新建橱窗
+            </div>
+            <div class="shuru">
+                <div class="shuru-o">
+                       <span><i>标题</i><input type="text" placeholder="为你的橱窗添加一个标题" name="favorites_class_name" id="favorites_class_name"/></span>
+                       <span><i>简介</i><textarea rows="3" cols="20" placeholder="为你的橱窗添加一个标题" name="favorites_content" id="favorites_content"></textarea></span>
+                       <div style="clear: both;"></div>
+                </div>
+                <div class="shuru-t" >
+                        <i>仅自己可见</i><img src="img/weibeixuanj.png" alt="0" id="xuanzm" datavalue="0"/>
+                </div>
+               <div class="tijian">
+                       <input type="hidden" name="personal_id" id="set_personal_id" value="" />
+                       <a href="javascript:void(0);" class="btn-l">
+                               发布
+                       </a>
+               </div>
+            </div>
+        </div>
+   </form>
+
+    <script>
+        window.onload=function(){
+            document.getElementById("xuanzm").onclick=function(){
+
+                this.src=this.src.substring(29)=="img/weibeixuanj.png"?"img/yijingxuanz.png":"img/weibeixuanj.png";
+                //console.log(this.src)
+                if(this.src.substring(29)=="img/yijingxuanz.png"){
+                        this.datavalue="1";
+                  //console.log(this.datavalue)
+                }else{
+                        this.datavalue="0";
+                  //console.log(this.datavalue)
+                }
+
+            }
+        }
+    </script>
+    <script type="text/javascript" src="../js/config.js"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <!-- <script type="text/javascript" src="../js/simple-plugin.js"></script> 
+    <script type="text/javascript" src="../js/tmpl/share_moment.js"></script> -->
+    <script type="text/javascript" src="../js/tmpl/new_showcase.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/bangzhu.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="hezi.html"><i class="back"></i></a>
+        常见问题
+    </div>
+    <div class="shurukuang">
+        <span>
+			<input type="text" id="select_help_content" placeholder="输入搜索内容"/>
+			<span class="search-h" onclick="selectHelpContent()"><img src="img/icon_search_nor.png" alt=""/></span>
+		</span>
+        <div>
+            <i>你可以搜索：</i>
+            <i onclick="selectContent('认识玩艺网')">认识玩艺网</i>
+            <i onclick="selectContent('加入玩艺网')">加入玩艺网</i>
+            <i onclick="selectContent('支付方式')">支付方式</i>
+        </div>
+    </div>
+    
+	<div class="help-pic" id="help_content"> </div>
+
+</div>
+
+<!-- 帮助中心内容 -->
+<script type="text/html" id="help_content_model">
+	
+	<% if(article_data != null) { %>
+	<ul>
+	<% for(var i in article_data) { %>
+		<li>
+			  <dl>
+				  <dt><a href="help_content.html?article_id=<%=article_data[i].article_id;%>"><img src="<%= article_data[i].icon_url; %>" alt=""/></a></dt>
+				  <dd><%= article_data[i].article_title; %></dd>
+			  </dl>
+		</li>
+	<% } %>
+
+	</ul>
+	<% } %>
+	<div class="yrl">
+		<a href="javascript:void(0)" onclick="addCustomerService()"><span>联系客服</span></a>
+	</div>
+	
+</script>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/common.js?g"></script>
+<script type="text/javascript" src="../js/feedback/bangzhu_1_5.js"></script>
+
+</body>
+</html>

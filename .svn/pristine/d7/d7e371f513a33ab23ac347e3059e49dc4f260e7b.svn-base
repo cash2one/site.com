@@ -1,0 +1,495 @@
+[2016-05-12 10:03:55] /shop/index.php?act=goods&op=addbrowse&gid=102327 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102327','399','1463018635','24','1','4','24')
+[2016-05-12 10:04:15] /shop/index.php?act=goods&op=addbrowse&gid=102046 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102046','399','1463018655','1320','2','152','1320')
+[2016-05-12 12:00:10] /shop/index.php?act=goods&op=addbrowse&gid=105562 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105562','302','1463025610','1175','256','1171','1175')
+[2016-05-12 12:13:12] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('101252','437','1463025831','1126','470','1085','1126')
+[2016-05-12 14:19:48] /shop/index.php?act=goods&op=addbrowse&gid=105845 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105845','17','1463033988','1258','470','1184','1258')
+[2016-05-12 15:50:06] /shop/index.php?act=goods&op=addbrowse&gid=105386 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105386','17','1463039406','1075','470','1075','0')
+[2016-05-12 16:25:40] /shop/index.php?act=goods&op=addbrowse&gid=102420 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102420','305','1463041540','1502','308','1311','1502')
+[2016-05-12 16:26:36] /shop/index.php?act=goods&op=addbrowse&gid=102420 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102420','17','1463041596','1502','308','1311','1502')
+[2016-05-12 16:53:00] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_id =  ) LIMIT 1  
+[2016-05-12 16:53:00] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_id =  ) LIMIT 1  
+[2016-05-12 16:53:01] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_id =  ) LIMIT 1  
+[2016-05-12 16:53:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_id =  ) LIMIT 1  
+[2016-05-12 17:24:02] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:24:02] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:15] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:27:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:33:47] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:36:09] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:38:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:38:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:39:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:39:08] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:21] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:40:21] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:41:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:42:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:42:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:04] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:04] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:06] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:43:50] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:34] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:48] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:49:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:10] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:41] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:41] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:50:49] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:00] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:00] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:20] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:21] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:21] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:24] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:28] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:32] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:38] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:51:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:53:14] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:53:14] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:40] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:40] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:52] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:52] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:53] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:53] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:55] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:56] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:54:57] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:22] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:22] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:22] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:22] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:55:23] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:31] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:31] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:31] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:31] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:35] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:58] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:58] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:58] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:58] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:59] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 17:57:59] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'acticle_id' in 'order clause'
+SELECT article_id,article_title,article_image,article_publisher_id,article_publish_time FROM `wantease_cms_article` WHERE ( article_class_id = '5' ) ORDER BY acticle_id desc LIMIT 1  
+[2016-05-12 22:05:23] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105340','431','1463060795','13','1','4','13')

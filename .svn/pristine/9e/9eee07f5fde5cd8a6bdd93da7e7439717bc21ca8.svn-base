@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+        <meta name="csrf-param" content="_csrf">
+        <meta name="csrf-token" content="T3B2bC5rTEQbNwY7dAckFns.TgFvDzoBJyUlGUwFPwJ5JyRYfzMEKA==">
+        <link href="css/web.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/toolbar.css" rel="stylesheet">	<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="email=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <style>img{width:100%;height:auto;}p span{display: block;margin: 0 12px;}</style>
+        
+        <!--微信分享JS-->
+        <style>
+            iframe{
+                z-index: 55;
+                position: fixed;
+                top: 0;
+                display: none;
+                left: 0;
+            }
+        </style>
+        <script type="text/javascript" src="../js/zepto.min.js"></script>
+        <script src="../js/jweixin-1.0.0.js"></script>
+        <script src="../js/wx_share.js"></script>
+    </head>
+    <body>
+
+<!--        <header id="header" class="fixed">
+            <div class="header-wrap">
+                <div class="header-l">
+                    <a href="javascript:history.go(-1)">
+                        <i class="back"></i>
+                    </a>
+                </div>
+                <div class="header-title">
+                    <h1></h1>
+                </div>
+                <div class="header-r">
+                    <a id="header-nav" href="javascript:void(0);"><i class="more"></i><sup></sup></a>
+                </div>
+            </div>
+            <div class="nctouch-nav-layout">
+                <div class="nctouch-nav-menu">
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><a href="../index.html"><i class="home"></i>首页</a></li>
+                        <li><a href="../tmpl/search.html"><i class="search"></i>搜索</a></li>
+                        <li><a href="../tmpl/member/member.html"><i class="member"></i>我的商城</a></li>
+                        <li><a href="javascript:void(0);"><i class="message"></i>消息<sup></sup></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>-->
+        <div class="container">
+            <div id="cover" >
+                <div class="cover-bar">
+                    <p class="title"></p>
+                    <p class=" desc"></p>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="nctouch-main-layout">
+                    <div id="cms-article-content"></div>
+                </div>
+                <div class="info">
+                    <a href="" class="store"><div><img src="" alt="" class="avatar"  ></div></a>
+                    <div class="name"></div>
+                        <div class="store_description">
+                        <p></p>
+                    </div>
+                    <div class="btns">
+                        <a href="javascript:void(0);" class="follow" id="store_collected">＋ 已关注</a><a href="javascript:void(0);" id="store_notcollect">＋ 关注</a>
+                        <a href="#" class="share" id="share" onclick='get_wx_share(this)' title1="分享店铺"  imgUrl='' desc = '' link = ''><img class="fenxing" src="img/fenxiangshme.png" alt=""/>分享</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <iframe src="fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()"></iframe>
+        <script>
+            var ifm= document.getElementById("iframepage");
+            //**********遮罩的******
+            function zhaozhao(){
+                ifm.style.display="block";
+            }
+            //**********设置高度*******
+            function reinitIframe(){
+                ifm.height=document.documentElement.clientHeight;
+            }
+            //*****************添加点击事件的机制******************
+            var IframeOnClick = {
+                resolution: 200,
+                iframes: [],
+                interval: null,
+                Iframe: function() {
+                    this.element = arguments[0];
+                    this.cb = arguments[1];
+                    this.hasTracked = false;
+                },
+                track: function(element, cb) {
+                    this.iframes.push(new this.Iframe(element, cb));
+                    if (!this.interval) {
+                        var _this = this;
+                        this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+                    }
+                },
+
+                checkClick: function() {
+                    if (document.activeElement) {
+                        var activeElement = document.activeElement;
+                        for (var i in this.iframes) {
+                            if (activeElement === this.iframes[i].element) { // user is in this Iframe
+                                if (this.iframes[i].hasTracked == false) {
+                                    this.iframes[i].cb.apply(window, []);
+                                    this.iframes[i].hasTracked = true;
+                                }
+                            } else {
+                                this.iframes[i].hasTracked = false;
+                            }
+                        }
+                    }
+                }
+            };
+            IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+        </script>
+<!--        <div id="footer"></div>-->
+        <script type="text/javascript" src="../js/config.js"></script>
+        <script type="text/javascript" src="../js/template.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <script type="text/javascript" src="../js/tmpl/cms_article_show_1.js"></script>
+
+    </body>
+</html>

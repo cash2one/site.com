@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>商品详情</title>
+	<link rel="stylesheet" href="css/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="css/xiangqingye.css"/>
+	<script src="../js/tmpl/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../js/idangerous.swiper.min.js"></script>
+</head>
+<body>
+	<div class="xqy">
+       <div class="lian-nav">
+           <a href="javascript:history.go(-1)"><i class="back"></i></a>
+       </div>
+	   
+	   <div class="device" id="head_swiper">
+           
+       </div>
+	   
+       <div class="chanpin" id="product_detail">
+           
+       </div>
+	</div>
+	<div class="buynow" id="choose_the_specifications">
+       
+	</div>
+	<div class="bingpic" >
+		<div class="closeO" onclick="this.style.display="none"; >x</div>
+		<div class="juzhong" id="bingpic">
+			<img src="img/8718367adab44aedf80ab2a0b31c8701a18bfb2a.jpg" alt=""/>
+		</div>
+	</div>
+	<script type="text/html" id="choose_the_specifications_model">
+		
+		<div class="jairugouwuche" id="jairugouwuche">
+           <div class="shangping">
+				<% goods_image = goods_image.split(","); %>
+				<span class="goods-pic"><img src="<%=goods_image[0]%>" alt=""/></span>
+				<span>
+					<% if (goods_info.promotion_type) { %>
+					<%
+						var promo;
+						switch (goods_info.promotion_type) {
+							case "groupbuy": promo = '团购'; break;
+							case "	": promo = '限时折扣'; break;
+							case "sole": promo = '手机专享'; break;
+						}
+					%>
+					<i>¥<%=goods_info.promotion_price%></i>
+					<span class="activity">
+						<% if (promo) { %>
+							<%= promo %>
+						<% } %>
+					</span>
+					<% } else { %>
+						<i>¥<%=goods_info.goods_price%></i>
+					<% } %>
+                   <u>库存<%=goods_info.goods_storage%>件</u>
+				</span>
+               <span id="close">X</span>
+               <div style="clear: both"></div>
+           </div>
+
+			<% if(goods_map_spec.length>0){ %>
+			
+				<% for(var i =0;i<goods_map_spec.length;i++){%>
+					<div class="yanse">
+						
+						<div><%=goods_map_spec[i].goods_spec_name%></div>
+						<ul class="spec">
+						
+							<%for(var j = 0;j<goods_map_spec[i].goods_spec_value.length;j++){%>
+								<li specs_value_id = "<%=goods_map_spec[i].goods_spec_value[j].specs_value_id%>" <%if (goods_info.goods_spec[goods_map_spec[i].goods_spec_value[j].specs_value_id]){%> class="hover" <%}%>><%=goods_map_spec[i].goods_spec_value[j].specs_value_name%></li>
+							<%}%>
+
+						</ul>
+						
+					</div>
+					<div style="clear: both"></div>
+				<% } %>
+			<% } %>
+			<% if (goods_info.is_virtual == "1") { %>
+				<div class="yanse">
+					<div>提货方式：</div>
+					<ul class="spec"><li class="hover">电子兑换券</li></ul>
+				</div>
+				<div class="yanse">
+					<div>有效期：</div>
+					<ul class="spec">
+						<li class="hover">
+							<% if (goods_info.buyLimitation && goods_info.buyLimitation > 0) { %>
+							（每人次限购 <%= goods_info.buyLimitation %> 件）
+							<% } %>
+						</li>
+					</ul>
+				</div>
+			<% } else { %>
+				<% if (goods_info.is_presell == "1") { %>
+				<div class="yanse">
+					<div>预售：</div>
+					<ul class="spec"><li class="hover"><%= goods_info.presell_deliverdate_str %> 日发货</li></ul>
+				</div>
+				<% } %>
+				<% if (goods_info.is_fcode == "1") { %>
+				<div class="yanse">
+					<div>购买类型：</div>
+					<ul class="spec"><li class="hover">F码优先购买（每个F码优先购买一件商品）</li></ul>
+				</div>
+				<% } %>
+			<% } %>
+			
+			<div class="shuliang" >
+               <div>数量</div>
+               <ul id="jiajian">
+                   <li onclick="calc(this)">-</li>
+                   <li id="buynum">1</li>
+                   <li onclick="calc(this)">+</li>
+               </ul>
+			</div>
+       </div>
+       <div class="buynow-m">
+           <span id="buy-now"><img src="img/qianbao.png" alt=""/>立即购买</span>
+           <span id="add-cart"><img src="img/addbag.png" alt=""/></span>
+       </div>
+	</script>
+	<script type="text/html" id="head_swiper_model">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<% goods_image = goods_image.split(","); %>
+				<% if(goods_image != null) { %>
+				<% for(var i in goods_image ){ %>
+			   <div class="swiper-slide"><img class="xianshi" src="<%=goods_image[i]%>" alt=""/></div>
+			   <% } %>
+			   <% } %>
+			</div>
+	   </div>
+	   <div class="pagination">
+			<% if(goods_image != null) { %>
+			<% for(var i in goods_image ){ %>
+		   <span class="swiper-pagination-switch"></span>
+		   <% } %>
+		   <% } %>
+	   </div>
+		<script>
+			var swiperSlide=document.getElementsByClassName("swiper-slide");
+			for(var i= 0,leng=swiperSlide.length;i<leng;i++){
+				swiperSlide[i]
+			}
+		   var mySwiper = new Swiper('.swiper-container',{
+			   pagination: '.pagination',
+			   loop:true,
+			   grabCursor: true,
+			   paginationClickable: true
+		   });
+	   </script>
+	</script>
+	<script type="text/html" id="product_detail_model">
+		<div class="guwu-l">
+		   <div class="xinyuan" onclick="getFavorites(this,<%=goods_info.goods_id%>)">
+			   <a href="javascript:void(0)"><span></span></a>
+			   <span class="qipao" id="favorites_count"><%=goods_info.favorites_count%></span>
+		   </div>
+		   <ul>
+			   <li><a href="../tmpl/cart_list.html"><img src="img/bag.png" alt=""/></a></li>
+			   <li><a href="javascript:void(0)" id="onMenuShareWxAll"><img src="img/fenxiang.png" alt=""/></a></li>
+			   <li><a href="http://chat32.live800.com/live800/chatClient/chatbox.jsp?companyID=662241&configID=91250&jid=5653872184" class="kefu"><img src="img/liantianjiqi.png" alt=""/></a></li>
+		   </ul>
+		   <div style="clear: both"></div>
+	   </div>
+	   <div class="shop-m">
+		   <p><%=goods_info.goods_name%></p>
+			<% if (goods_info.promotion_type) { %>
+			   <span>¥<%=goods_info.promotion_price%></span>
+			   <% if (goods_info.promotion_type == "sole") { %>
+				<span class="activity">手机专享</span>
+				<% } %>
+			<% } else { %>
+				<span>¥<%=goods_info.goods_promotion_price%></span>
+			<% } %>
+		   <ul>
+			   <li>运费: <%=goods_hair_info.content%></li>
+			   <li>市场: ¥<%=goods_info.goods_marketprice%></li>
+			   <li>月销量<%=goods_info.goods_salenum%>件</li>
+		   </ul>
+		   <div style="clear: both"></div>
+	   </div>
+		<% if (goods_info.promotion_type == "xianshi" || goods_info.promotion_type == "groupbuy" || (mansong_info != null && mansong_info.rules) || (gift_array && !isEmpty(gift_array))) { %>
+			
+			<div class="shop-m" style="display:none">
+		
+			   <p>促销</p>
+				
+				<% if (goods_info.promotion_type == "xianshi") { %>
+					<span><%=goods_info.title%></span>
+					<span>直降¥<%=goods_info.down_price%></span>
+					<% if( goods_info.lower_limit ) { %>
+						<span class="activity">最低<%=goods_info.lower_limit%>件起，<%=goods_info.explain%></span>
+					<%  } %>
+
+				<% } else if (goods_info.promotion_type == "groupbuy") { %>
+					
+					<span><%=goods_info.title%></span>
+					<% if (goods_info.upper_limit) { %>
+					<span>最多限购<%=goods_info.upper_limit%>件</span>
+					<%  } %>
+					<span class="activity"><%=goods_info.remark%></span>
+
+				<% } else if (mansong_info != null && mansong_info.rules) { %>
+				
+					<span>满即送</span>
+					<% if (mansong_info != null && mansong_info.rules) { %>
+						<% for (var i =0;i<mansong_info.rules.length;i++){ %>
+							<span>
+								单笔订单满<em><%=mansong_info.rules[i].price%></em>元
+								<% if (mansong_info.rules[i].discount > 0) { %>
+								，立减<em><%=mansong_info.rules[i].discount%></em>元
+								<% } %>
+								<% if (mansong_info.rules[i].goods_image_url) { %>
+								，送礼品：<span><img src="<%=mansong_info.rules[i].goods_image_url%>"/></span>
+								<% } %>
+							</span>
+						<% } %>
+					<% } %>
+					<span class="activity"><%=goods_info.remark%></span>
+				
+				<% } else if (gift_array && !isEmpty(gift_array)) { %>
+					
+					<span>赠品</span>
+					<% for (var k in gift_array) { %>
+					<% var v = gift_array[k]; %>
+					<span>
+						<a href="?goods_id=<%= v.gift_goodsid %>"><%= v.gift_goodsname %></a>
+						<em>&#215; <%= v.gift_amount %></em>
+					</span>
+					<% } %>
+					<span class="activity"><%=goods_info.remark%></span>
+				
+				<% } %>
+				
+			   <ul>
+				   <li>运费: <%=goods_hair_info.content%></li>
+				   <li>市场: ¥<%=goods_info.goods_marketprice%></li>
+				   <li>月销量<%=goods_info.goods_salenum%>件</li>
+			   </ul>
+			   <div style="clear: both"></div>
+		   </div>
+			
+		<% } %>
+		<% if (voucher) { %>
+	   <div class="youhuiquan">
+		   <div class="genduo">
+			   <i class="yuandian"></i>
+			   <a  href="javascript:void(0);" id="getVoucher"><span><img src="img/youhuiquanbiaoti.png" alt=""/>更多优惠券</span>
+			   <span>减满送 <img src="img/moreright.png" alt=""/></span></a>
+		   </div>
+	   </div>
+	   <%}%>
+	   <div class="tuihuan">
+		   <ul>
+			   <li><img src="img/qi.png" alt=""/><i>七天退换</i></li>
+			   <li><img src="img/zheng.png" alt=""/><i>正品保证</i></li>
+			   <li><img src="img/quan.png" alt=""/><i>知识产权</i></li>
+		   </ul>
+	   </div>
+	   <% if(favorites_data != null){ %>
+	   <div class="yiduitx">
+		   <ul class="guanzhu-l">
+				<% for(var i in favorites_data){ %>
+					<li><img src="<%=favorites_data[i].member_avatar%>" alt=""/></li>
+				<% } %>
+			   <li><img src="img/jairuxinyuand.png" alt=""/></li>
+		   </ul>
+	   </div>
+	   <% } %>
+	   <div class="hbs">
+		   <div id="goodsEvaluation1">
+			   <span>TA们是怎么说的 </span>
+			   <span><img src="img/tamenzenms.png" alt=""/><img src="img/moreright.png" alt=""/></span>
+			   <i style="clear: both"></i>
+		   </div>
+	   </div>
+	   <div class="pinfeng">
+		   <div>
+			   <span>
+				   <i>综合评分</i>
+				   <%if(goods_info.evaluation_good_star != null) { %>
+				   <ul>
+					<% for(var i=0; i<goods_info.evaluation_good_star; i++) { %>
+						<li><img src="img/start.png" alt=""/></li>
+					<% } %>
+				   </ul>
+				   <% } %>
+				   <i><%=goods_info.evaluation_good_star%>分</i>
+				   
+			   </span>
+			   <span>更多<img src="img/moreright.png" alt=""/></span>
+			   <i style="clear: both;"></i>
+			   
+		   </div>
+		   <!-- <div class="store-rate">
+				<span class="<%= store_info.store_credit.store_desccredit.percent_class %>" >
+					描述相符
+					<em><%= store_info.store_credit.store_desccredit.credit %></em>
+					
+				</span>
+				<span class="<%= store_info.store_credit.store_servicecredit.percent_class %>" >
+					服务态度
+					<em><%= store_info.store_credit.store_servicecredit.credit %></em>
+					
+				</span>
+				<span class="<%= store_info.store_credit.store_deliverycredit.percent_class %>" style="padding-left: 10px;">
+					发货速度
+					<em><%= store_info.store_credit.store_deliverycredit.credit %></em>
+					
+				</span>
+			</div> -->
+	   </div>
+	   <div class="shangpm">
+		   <i>商品描述</i>
+		   <p><%=goods_info.goods_jingle%></p>
+		   <u>
+			   产品详情图
+		   </u>
+			<div id="goods_common_info_goods_body">
+				<%==goods_common_info.goods_body%>
+			</div>
+			
+	   </div>
+	   <div class="dianpu">
+		   <div class="dianpu-ren">
+			   <span id="login_store">
+				   <img src="<%=store_info.avatar%>" alt=""/>
+				   <span>
+					   <i><%=store_info.store_name%></i>
+					   <u style="width: 200px;text-overflow: ellipsis;overflow: hidden;height: 15px;line-height: 15px;white-space: nowrap;"><%=store_info.gc_name%></u>
+				   </span>
+			   </span>
+			   <a href="javascript:void(0)" onclick="favorites_store(<%=store_info.store_id%>)"><img id="favorites_store_img" src="img/jiaguanzhu.png" alt=""/></a>
+		   </div>
+		   <%if(goods_commend_list != null){ %>
+		   <ul>
+			<% for(var i in goods_commend_list) { %>
+			   <li style="margin:0 5px 5px 0">
+				<a href="product_detail.html?goods_id=<%=goods_commend_list[i].goods_id%>">
+				<img style="height: 99px;" src="<%=goods_commend_list[i].goods_image_url%>" alt=""/>
+				<i>¥<%=goods_commend_list[i].goods_price%></i>
+				</a>
+			   </li>
+			<% } %>
+		   </ul>
+		   <% } %>
+		   <div style="clear: both"></div>
+	   </div>
+	   <% if(guess_like != null) { %>
+	   <div class="weinituijian">
+		  <div class="wnt-tit">
+			 <span>为你推荐</span>
+			  <div class="tuijian-m">
+				<% for(var i in guess_like) { %>
+				  <div>
+					<a href="product_detail.html?goods_id=<%=guess_like[i].goods_id%>">
+					  <img src="<%=guess_like[i].goods_image%>" alt=""/>
+					</a>
+					  <span>
+						<a href="product_detail.html?goods_id=<%=guess_like[i].goods_id%>">
+						  <i><%=guess_like[i].goods_name%></i>
+						  <u>¥<%=guess_like[i].goods_promotion_price%></u>
+						</a>
+					  </span>
+				  </div>
+				<% } %>
+
+			  </div>
+			  <div style="clear: both"></div>
+		  </div>
+	   </div>
+		<% } %>
+
+		<script>
+			/*
+			* 注意：
+			* 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+			* 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+			* 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+			*
+			* 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+			* 邮箱地址：weixin-open@qq.com
+			* 邮件主题：【微信JS-SDK反馈】具体问题
+			* 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+			*/
+			wx.config({
+				debug: false,
+				appId: '<%=signPackage["appId"];%>',
+				timestamp: '<%=signPackage["timestamp"];%>',
+				nonceStr: '<%=signPackage["nonceStr"];%>',
+				signature: '<%=signPackage["signature"];%>',
+				jsApiList: [
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'onMenuShareQZone'
+				]
+			});
+			
+			//微信接口
+			wx.ready(function () {
+				
+				document.querySelector('#onMenuShareWxAll').onclick = function () {
+					
+					//分享到微信好友
+					wx.onMenuShareAppMessage({
+						title: '互联网之子1',
+						desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+						link: 'http://movie.douban.com/subject/25785114/',
+						imgUrl: 'http://demo.open.weixin.qq.com/jssdk/images/p2166127561.jpg',
+						trigger: function (res) {
+							// 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+							alert('用户点击发送给朋友');
+						},
+						success: function (res) {
+							alert('已分享');
+						},
+						cancel: function (res) {
+							alert('已取消');
+						},
+						fail: function (res) {
+							alert(JSON.stringify(res));
+						}
+					});
+					
+					//分享到微信朋友圈
+					wx.onMenuShareTimeline({
+						title: '互联网之子2',
+						link: 'http://movie.douban.com/subject/25785114/',
+						imgUrl: 'http://demo.open.weixin.qq.com/jssdk/images/p2166127561.jpg',
+						trigger: function (res) {
+							// 不要尝试在trigger中使用ajax异步请求修改本次分享的内容，因为客户端分享操作是一个同步操作，这时候使用ajax的回包会还没有返回
+							//alert('用户点击分享到朋友圈');
+						},
+						success: function (res) {
+							alert('已分享');
+						},
+						cancel: function (res) {
+							alert('已取消');
+						},
+						fail: function (res) {
+							alert(JSON.stringify(res));
+						}
+					});
+					
+					//分享到QQ好友
+					wx.onMenuShareQQ({
+						title: '互联网之子3',
+						desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+						link: 'http://movie.douban.com/subject/25785114/',
+						imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+						trigger: function (res) {
+							alert('用户点击分享到QQ');
+						},
+						complete: function (res) {
+							alert(JSON.stringify(res));
+						},
+						success: function (res) {
+							alert('已分享');
+						},
+						cancel: function (res) {
+							alert('已取消');
+						},
+						fail: function (res) {
+							alert(JSON.stringify(res));
+						}
+					});
+					
+					//分享到QQ空间
+					wx.onMenuShareQZone({
+						title: '互联网之子5',
+						desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+						link: 'http://movie.douban.com/subject/25785114/',
+						imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+						trigger: function (res) {
+							alert('用户点击分享到QZone');
+						},
+						complete: function (res) {
+							alert(JSON.stringify(res));
+						},
+						success: function (res) {
+							alert('已分享');
+						},
+						cancel: function (res) {
+							alert('已取消');
+						},
+						fail: function (res) {
+							alert(JSON.stringify(res));
+						}
+					});
+					
+					//分享到微博
+					wx.onMenuShareWeibo({
+						title: '互联网之子4',
+						desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
+						link: 'http://movie.douban.com/subject/25785114/',
+						imgUrl: 'http://img3.douban.com/view/movie_poster_cover/spst/public/p2166127561.jpg',
+						trigger: function (res) {
+							alert('用户点击分享到微博');
+						},
+						complete: function (res) {
+							alert(JSON.stringify(res));
+						},
+						success: function (res) {
+							alert('已分享');
+						},
+						cancel: function (res) {
+							alert('已取消');
+						},
+						fail: function (res) {
+							alert(JSON.stringify(res));
+						}
+					});
+					
+				};
+			
+			});
+			
+		</script>
+		
+	</script>
+   
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script> 
+	<script type="text/javascript" src="../js/common.js"></script> 
+	<script type="text/javascript" src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/tmpl/product_detail_1_5.js"></script>
+	<!-- S 提示 -->
+	<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+	<!-- E 提示 -->
+			
+	<!--微信分享JS-->
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>更多橱窗</title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #f0f0f0;
+        }
+        .header2 {
+            position: fixed;
+            height: 45px;
+            z-index: 8;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+        }
+        .nav-one{
+            max-width: 750px;
+            min-width: 320px;
+            background-color: #343a49;
+            margin: auto;
+            height: 45px;
+        }
+        .nav-one>div{
+            float: left;
+        }
+        .search {
+            margin-top: 11.5px;
+            margin-left: 2%;
+        }
+        #keyword {
+            height: 23px;
+        }
+        .nav-one>div:nth-child(2) {
+            margin: auto;
+            margin-left: calc((100% - 230px)/2);
+            font-size: 16px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .logo-name {
+            color: #ffffff;
+        }
+        .hot-top-m{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+        }
+        .hot-top-m >ul >li{
+            width: 45.8%;
+            float: left;
+            margin: 12px 0 0 3.2% ;
+            border: 1px solid #dddddd;
+            border-top:none ;
+            background: #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .shunjian-tit span {
+            float: left;
+            margin-left: 8px;
+        }
+        .shunjian-tit span i{
+            display: block;
+        }
+        .shunjian-tit span i:nth-child(1){
+            font-size: 12px;
+            color: #333333;
+            margin-top: 10px;
+        }
+        .shunjian-tit span i:nth-child(2){
+            font-size: 12px;
+            margin-top: 5px;
+            color: #999998;
+        }
+
+        .shunj-pic li{
+            width: 46%;
+            float: left;
+            margin-left: 2.5%;
+        }
+        .shunj-pic{
+            margin-top: 10px;
+        }
+        .shunj-pic img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <div class="search" id="">
+            <a href="javascript:history.go(-1)" ><img class="search-input" id="keyword" src="../img/arrow_left.png"></a>
+        </div>
+        <div class="logo-name" id="logo-name">
+            热门橱窗 Selected Boards
+        </div>
+    </div>
+</header>
+    <div class="hot-top-m" id="showcase" style="margin-top:50px">
+
+    </div>
+		
+	<script type="text/html" id="showcase_model">
+		
+		<% if(micro_personal_class_list != null) { %>
+			
+			<ul>
+				<% for(var i in micro_personal_class_list) { %>
+					<li>
+						<div class="shunjian-tit">
+							<span>
+								<i><a href="../chuchuangzhuye.html?favorites_class_id=<%=micro_personal_class_list[i].favorites_class_id%>"><%=micro_personal_class_list[i].favorites_class_name%></a></i>
+								<i><a href="../chuchuangzhuye.html?favorites_class_id=<%=micro_personal_class_list[i].favorites_class_id%>">共<%=micro_personal_class_list[i].micro_personal_count%>个瞬间</a></i>
+							</span>
+							<div style="clear: both;"></div>
+						</div>
+						<% var micro_personal = micro_personal_class_list[i].micro_personal; %>
+						<% if(micro_personal != null) {%>
+						<ul class="shunj-pic">
+							<% for(var n in micro_personal) { %>
+								<li><a href="../chuchuangzhuye.html?favorites_class_id=<%=micro_personal_class_list[i].favorites_class_id%>"><img src="<%=micro_personal[n].commend_image%>" alt=""/></a></li>
+							<% } %>
+						</ul>
+						<% } %>
+						<div style="clear: both;"></div>
+					</li>
+				<% } %>
+			</ul>
+			
+		<% } %>
+		
+	</script>
+	
+	<script type="text/javascript" src="../../js/config.js"></script>
+	
+	<script type="text/javascript" src="../../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/template.js"></script>
+	<script type="text/javascript" src="../../js/tmpl/favorites_showcase.js"></script>
+
+</body>
+</html>
+</html>

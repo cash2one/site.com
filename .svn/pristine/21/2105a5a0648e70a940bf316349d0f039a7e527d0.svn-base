@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" contect="U2FsdGVkX1+liZRYkVWAWC6HsmKNJKZKIr5plAJdZUSg1A==">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+<title>玩艺网</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+<link rel="stylesheet" href="../css/jquery.flipster.css">
+<link rel="stylesheet" href="../css/huanlsongindex.css"/>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/jquery.flipster.js"></script>
+<style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="nctouch-product-header fixed">
+        <div class="nav-one">
+            <ul>
+                <a href="happy_send.html"><li class="on">欢乐送</li></a>
+                <!-- <a href="gift_card.html"><li class="">礼品卡</li></a> -->
+            </ul>
+                <span class="gouwuche">
+                   <a href="../feedback/hezi.html" ><img src="img/chouti.png" alt=""/></a>
+                </span>
+        </div>
+    </header>
+      <div id="commend_list" class="list" style="margin-top: 45px"></div>
+      <div id="array_list" class="list"> </div>
+      <div id="product_list" class="list"> </div>
+	<div style="margin-bottom:70px"></div>
+	<!--微信分享-->
+	<div id="wx_share"></div>
+	<iframe src="fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+	<script>
+		var ifm= document.getElementById("iframepage");
+		//**********遮罩的******
+		function zhaozhao(){
+			ifm.style.display="block";
+		}
+		//**********设置高度*******
+		function reinitIframe(){
+			ifm.height=document.documentElement.clientHeight;
+		}
+		//*****************添加点击事件的机制******************
+		var IframeOnClick = {
+			resolution: 200,
+			iframes: [],
+			interval: null,
+			Iframe: function() {
+				this.element = arguments[0];
+				this.cb = arguments[1];
+				this.hasTracked = false;
+			},
+			track: function(element, cb) {
+				this.iframes.push(new this.Iframe(element, cb));
+				if (!this.interval) {
+					var _this = this;
+					this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+				}
+			},
+
+			checkClick: function() {
+				if (document.activeElement) {
+					var activeElement = document.activeElement;
+					for (var i in this.iframes) {
+						if (activeElement === this.iframes[i].element) { // user is in this Iframe
+							if (this.iframes[i].hasTracked == false) {
+								this.iframes[i].cb.apply(window, []);
+
+								this.iframes[i].hasTracked = true;
+							}
+						} else {
+							this.iframes[i].hasTracked = false;
+						}
+					}
+				}
+			}
+		};
+		IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+	</script>
+	
+	<footer id="footer" class="fixed-Width"></footer>
+	
+     <script type="text/html" id="commend_body">
+        <div  class="shunjx-m">
+			<div class="banner">
+				<div class="flipster popular-main">
+					<ul>
+						<% var goods_list = datas; %>
+						<% if(goods_list.length >0){%>
+							<%for(i=0;i<goods_list.length;i++){%>
+								<li id="<%=goods_list[i].goods_id;%>">
+									<a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1"  class="Button Block">
+										<img src="<%=goods_list[i].goods_image;%>" alt=""/>
+										<span class="banner-t">
+											<i>¥<%=goods_list[i].goods_promotion_price;%></i>
+											<p><%=goods_list[i].goods_name;%></p>
+										</span>
+									</a>
+								</li>
+							<%}%>
+						<%}%>
+					</ul>
+				</div>
+				<div class="jiarugongn">
+					<span id="jiaruxinyuan"><img src="../img/jiaruxinyuan.png" alt=""/></span>
+					<a href="" id="qianbao"><span><img src="../img/qianbao.png" alt=""/></span></a>
+					<a href="javascript:void(0)" onclick='get_wx_share("", "", "","/tmpl/happy_send.html")'><span onclick="zhaozhao(this)"><img src="../img/fenxiangshme.png" alt=""/></span></a>
+				</div>
+			</div>
+        </div>
+		<script>
+			$(".flipster").flipster({ 
+                            style: 'carousel',
+                            start: 0 , enableKeyboard:false , 
+                            enableMousewheel:false,
+                            onItemSwitch:function (){
+                               $("#qianbao").attr("href",$(".flip-current").children().children().attr("href"));
+                               $("#jiaruxinyuan").attr("value",$(".flip-current").attr("id"));
+//                                 console.log(document.getElementsByClassName("flip-current")[0].children[0].children[0]);
+                            }
+                        });
+                        document.getElementById("jiaruxinyuan").onclick=function (){
+                            getFavorites(this,$("#jiaruxinyuan").attr("value"));
+                        }
+                     
+//                        function dangqiana(){
+//                            var qianbao=document.getElementById("qianbao");
+//                            var current=document.getElementsByClassName("flip-item flip-current");
+//                            console.log(current)
+////                             var Button=document.getElementsByClassName("Button");
+////                        for(var i=0,leng=Button.length;i<leng;i++){
+////                            console.log(Button[i].href)
+////                            console.log(Button[i].parentNode.parentNode)
+////                            console.log(Button[i].parentNode.parentNode.className)
+////                            
+////                        }
+//                        }
+//                        dangqiana();
+                       
+		</script>
+    </script>
+	
+    <script type="text/html" id="array_body">
+		<div class="xiala">
+			<div class="shousuo" id="shousuo">
+				<span class="text-l">搜索</span><span class="text-r" style="margin-top: 10px;"><img src="../img/xiala.png" alt="" /></span>
+				<div style="clear: both"></div>
+			</div>
+			<div class="xianshixuanqu" id="xianshixuanqu">
+				<span class="text-l xianshi" id="xianshi">
+
+				</span>
+				<i class="text-r close" id="close">x</i>
+				<div style="clear: both;"></div>
+			</div>
+			<ul class="xialak" id="xialak">
+				<li>
+					<div class="biaoti">
+						<span class="text-l">价格</span><span class="text-r">任意价格+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="momey" >
+							<li>任意价格</li>
+							<% var price_list = datas.price; %>
+							<% if(price_list.length >0){%>
+							<%for(i=0;i<price_list.length;i++){%>
+								<li data_id="<%=price_list[i].hps_value_id%>"><%=price_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">关系</span><span class="text-r">任意关系+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="friend">
+							<li>任意关系</li>
+							<% var relationship_list = datas.relationship; %>
+							<% if(relationship_list.length >0){%>
+							<%for(i=0;i<relationship_list.length;i++){%>
+								<li data_id="<%=relationship_list[i].hps_value_id%>"><%=relationship_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">场景</span><span class="text-r">任意场景+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="scenes">
+							<li>任意场景</li>
+							<% var scenes_list = datas.scenes; %>
+							<% if(scenes_list.length >0){%>
+							<%for(i=0;i<scenes_list.length;i++){%>
+								<li data_id="<%=scenes_list[i].hps_value_id%>"><%=scenes_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">收件人性别</span><span class="text-r">任意性别+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao sex">
+						<ul class="xiangqing" id="sex">
+							<% var sex_list = datas.sex; %>
+							<% if(sex_list.length >0){%>
+							<%for(i=0;i<sex_list.length;i++){%>
+								<li  data_id="<%=sex_list[i].hps_value_id%>"><%=sex_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="biaoti">
+						<span class="text-l">收件人年龄</span><span class="text-r">任意年龄+</span>
+						<div style="clear: both;"></div>
+					</div>
+					<div class="liebiao">
+						<ul class="xiangqing" id="year">
+							<% var year_list = datas.year; %>
+							<% if(year_list.length >0){%>
+							<%for(i=0;i<year_list.length;i++){%>
+								<li data_id="<%=year_list[i].hps_value_id%>"><%=year_list[i].attr_value_name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script>
+			var liebiaom=document.getElementsByClassName("xiangqing");
+			var textr=document.getElementsByClassName("text-r");
+			var liebiao=document.getElementsByClassName("liebiao");
+			var xianshixuanqu=document.getElementById("xianshixuanqu");
+			var xianshi=document.getElementById("xianshi");
+			var xialak=document.getElementById("xialak");
+			var close=document.getElementById("close");
+			var shousuo=document.getElementById("shousuo");
+			var textarr = new Array();
+			var arr = new Array();
+			document.getElementById("shousuo").onclick=function(){
+				xialak.style.display=xialak.style.display=="block"?"none":"block";
+				if(xialak.style.display=="none"){
+					for(var q= 2,lenq=textr.length;q<lenq;q++){
+						textr[q].parentNode.nextElementSibling.style.display="none";
+			}
+				}
+			};
+			for(var q= 2,lenq=textr.length;q<lenq;q++){
+				textr[q].onclick=function(){
+					if(this.parentNode.nextElementSibling.style.display=="none"){
+						for(var q= 2,lenq=textr.length;q<lenq;q++){
+							textr[q].parentNode.nextElementSibling.style.display="none";
+						}
+					}
+					this.parentNode.nextElementSibling.style.display=this.parentNode.nextElementSibling.style.display=="block"?"none":"block";
+				}
+			}
+			for(var k= 0,lenk=liebiaom.length;k<lenk;k++){
+				var liebiaol=liebiaom[k].children;
+				for(var i= 0,len=liebiaol.length;i<len;i++){
+					liebiaol[i].onclick=function(){
+						for(var i= 0,len=this.parentNode.children.length;i<len;i++) {
+							this.parentNode.children[i].className = "";
+						}
+						console.log(this.getAttribute("data_id"));
+				  
+					   init_get_list(this.getAttribute("data_id"),'','','','');
+						this.className="dianji";
+						xianshixuanqu.style.display="block";
+						shousuo.style.display="none";
+						switch (this.parentNode.id){
+							case "momey":
+								textarr[0]=this.innerHTML;
+								arr[0] = this.getAttribute("data_id");
+								break;
+							case "friend":
+								textarr[1]=this.innerHTML;
+								arr[1] = this.getAttribute("data_id");
+								break;
+							case "scenes":
+							textarr[2]=this.innerHTML;
+							arr[2] = this.getAttribute("data_id");
+							break;
+							case "sex":
+								textarr[3]=this.innerHTML;
+								arr[3] = this.getAttribute("data_id");
+								break;
+							case "year":
+								textarr[4]=this.innerHTML;
+								arr[4] = this.getAttribute("data_id");
+								break;
+					}
+						xianshi.innerHTML=textarr.join(" ");
+					   init_get_list(arr[0], arr[1], arr[2], arr[3], arr[4]);
+				}
+			}
+			}
+			close.onclick=function(){
+				xianshixuanqu.style.display="none";
+				shousuo.style.display="block";
+				xianshi.innerHTML="";
+				xialak.style.display="none";
+				for(var b= 0,leng=liebiao.length;b<leng;b++) {
+					liebiao[b].style.display="none";
+					for(var i= 0,len=liebiao[b].children[0].children.length;i<len;i++) {
+						liebiao[b].children[0].children[i].className = "";
+					}
+				}
+				document.getElementsByClassName("shurunian")[0].value="";
+			};
+
+		</script>
+    </script>
+       <script type="text/html" id="home_body">
+           <div  class="shunjx-m">
+            <div class="changpintu">
+            <% var goods_list = datas; %>
+         <% if(goods_list.length >0){%>
+         <%for(i=0;i<goods_list.length;i++){%>
+           <%if(i==4||i==9){%>
+       <div class="big-chanpi">
+        <div class="cp-pic">
+            <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1"><img src="<%=goods_list[i].goods_image;%>" alt=""/></a>
+        </div>
+        <div class="cp-text">
+            <i><%=goods_list[i].goods_name;%></i>
+            <i><%=goods_list[i].goods_promotion_price;%></i>
+        </div>
+    </div>
+    <%}else{%>    
+          
+        <div class="shangping-m">
+            <div class="cp-pic">
+                <a href="product_detail.html?goods_id=<%=goods_list[i].goods_id;%>&is_happysend=1"><img src="<%=goods_list[i].goods_image;%>" alt=""/></a>
+            </div>
+            <div class="cp-text">
+                <i><%=goods_list[i].goods_name;%></i>
+                <i><%=goods_list[i].goods_promotion_price;%></i>
+            </div>
+        </div>
+                <%}%>
+           
+        <%}%>
+        
+			<% if (hasmore) {%>
+			<li class="loading"><div class="spinner"><i></i></div>商品数据读取中...</li>
+			<% } %>
+	<%
+	   }else {
+	%>
+		<div class="nctouch-norecord search">
+			<div class="norecord-ico"><i></i></div>
+				<dl>
+					<dt>没有找到任何相关信息</dt>
+					<dd>选择或搜索其它商品分类/名称...</dd>
+				</dl>
+			<a href="javascript:history.go(-1)" class="btn">重新选择</a>
+		</div>
+	<%
+	   }
+	%>
+        </div>
+                   </div>
+   </div>
+        </script>
+
+<!--微信分享配置-->
+<script type="text/html" id="wx_share_model">
+   
+	<script>
+		/*
+		* 注意：
+		* 1. 所有的JS接口只能在公众号绑定的域名下调用，公众号开发者需要先登录微信公众平台进入“公众号设置”的“功能设置”里填写“JS接口安全域名”。
+		* 2. 如果发现在 Android 不能分享自定义内容，请到官网下载最新的包覆盖安装，Android 自定义分享接口需升级至 6.0.2.58 版本及以上。
+		* 3. 常见问题及完整 JS-SDK 文档地址：http://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html
+		*
+		* 开发中遇到问题详见文档“附录5-常见错误及解决办法”解决，如仍未能解决可通过以下渠道反馈：
+		* 邮箱地址：weixin-open@qq.com
+		* 邮件主题：【微信JS-SDK反馈】具体问题
+		* 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
+		*/
+		wx.config({
+			debug: false,
+			appId: '<%=signPackage.appId;%>',
+			timestamp: '<%=signPackage.timestamp;%>',
+			nonceStr: '<%=signPackage.nonceStr;%>',
+			signature: '<%=signPackage.signature;%>',
+			jsApiList: [
+				'onMenuShareTimeline',
+				'onMenuShareAppMessage',
+				'onMenuShareQQ',
+				'onMenuShareWeibo',
+				'onMenuShareQZone'
+			]
+		});
+
+	</script>
+	
+</script>
+ 
+    <script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/layer.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/happy_send.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+<!--微信分享JS-->
+<script src="../js/jweixin-1.0.0.js"></script>
+<script src="../js/wx_share.js"></script>
+</body> 
+</html>

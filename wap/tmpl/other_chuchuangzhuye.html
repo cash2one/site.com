@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/my_chuchuangzhuye.css"/>
+	<style>
+        iframe{
+            z-index: 55;
+            position: fixed;
+            top: 0;
+            display: none;
+            left: 0;
+        }
+    </style>
+    <!--微信分享JS-->
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script src="../js/jweixin-1.0.0.js"></script>
+    <script src="../js/wx_share.js"></script>
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <div class="search" id="">
+            <a href="javascript:history.go(-1)" ><img class="search-input" id="keyword" src="img/arrow_left.png"></a>
+        </div>
+        <div class="logo-name" id="logo-name">
+            热门橱窗
+        </div>
+    </div>
+</header>
+<div class="shunjx-m" style="margin-top: 45px;">
+
+    <div id="showcase_info"></div>
+    <div id="personal_list"></div>
+    <div class="tanchuk" id="tanchuk"></div>
+    <!--微信分享遮罩层-->
+    <iframe src="fenxianggengduo.html" id="iframepage" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" onLoad="reinitIframe()" ></iframe>
+    
+</div>
+
+    <script>
+        var ifm= document.getElementById("iframepage");
+        //**********遮罩的******
+        function zhaozhao(){
+                ifm.style.display="block";
+        }
+        //**********设置高度*******
+        function reinitIframe(){
+            ifm.height=document.documentElement.clientHeight;
+        }
+        //*****************添加点击事件的机制******************
+        var IframeOnClick = {
+            resolution: 200,
+            iframes: [],
+            interval: null,
+            Iframe: function() {
+                    this.element = arguments[0];
+                    this.cb = arguments[1];
+                    this.hasTracked = false;
+            },
+            track: function(element, cb) {
+                    this.iframes.push(new this.Iframe(element, cb));
+                    if (!this.interval) {
+                            var _this = this;
+                            this.interval = setInterval(function() { _this.checkClick(); }, this.resolution);
+                    }
+            },
+
+            checkClick: function() {
+                if (document.activeElement) {
+                    var activeElement = document.activeElement;
+                    for (var i in this.iframes) {
+                        if (activeElement === this.iframes[i].element) { // user is in this Iframe
+                            if (this.iframes[i].hasTracked == false) {
+                                this.iframes[i].cb.apply(window, []);
+
+                                this.iframes[i].hasTracked = true;
+                            }
+                        } else {
+                            this.iframes[i].hasTracked = false;
+                        }
+                    }
+                }
+            }
+        };
+        IframeOnClick.track(document.getElementById("iframepage"), function() { ifm.style.display="none";});
+    </script>
+	
+<!-- 橱窗介绍Model -->
+<script type="text/html" id="showcase_info_model">
+	
+    <div class="yonghu">
+        <span class="touxiang"></span>
+        <span class="xinxi">
+            <i><%=favorites_class_list.favorites_class_name%></i>
+            <u>粉丝 <%=favorites_class_list.favorites_count%></u>
+        </span>
+        <span class="goumai" style="display: block;"><!-- onclick="guangzhu(this,'<%=favorites_class_list.favorites_class_id%>')" -->
+            <a href="javascript:void(0)" onclick="guangzhu(this,'<%=favorites_class_list.favorites_class_id%>')">关注</a>
+        </span>
+    </div>
+    <div class="text-main">
+        <span class="touxiang"><img src="<%=favorites_class_list.member_avatar%>" alt=""/> </span>
+        <span class="textwenb">
+            <p>
+              <%=favorites_class_list.member_name%>  <% if(favorites_class_list.favorites_content != "") { %> :<%=favorites_class_list.favorites_content%> <% } %>
+            </p>
+        </span>
+    </div>
+	
+</script>
+
+<!-- 瞬间列表Model -->
+<script type="text/html" id="personal_list_model">
+		
+    <% if(micro_personal != null) { %>
+    <% for(var i in micro_personal) { %>
+	    <div class="shunjian-m">
+			<div class="shunjian-p">
+				<a href="shunjianziye.html?personal_id=<%=micro_personal[i].personal_id%>">
+					<img src="<%=micro_personal[i].commend_image%>" alt=""/></div>
+				</a>
+			<div class="guanzhu-x">
+					<span class="shunjian-t">
+						<a href="shunjianziye.html?personal_id=<%=micro_personal[i].personal_id%>">
+							<%=micro_personal[i].commend_message%>
+						</a>
+					</span>
+				<% if(micro_personal[i].micro_like_data != null) { %>
+				<% var micro_like_data = micro_personal[i].micro_like_data; %>
+				<ul class="guanzhu-l">
+					<% for(var n in micro_like_data) { %>
+					<li><img src="<%=micro_like_data[n].member_avatar%>" alt=""/></li>
+					<% } %>
+				</ul>
+				<% } %>
+				<div style="clear: both"></div>
+			</div>
+			<div class="shunjian-tit">
+				<div class="shunjian-pic">
+					<a href="tarendezhongxin.html?member_id=<%=micro_personal[i].commend_member_id%>"><img src="<%=micro_personal[i].member_avatar%>" alt=""/></a>
+						<span>
+							<i><%=micro_personal[i].member_name%><u>+<%=micro_personal[i].count_friend%></u></i>
+							<s onclick="member_attention(this,<%=micro_personal[i].commend_member_id%>,2)">关注</s>
+						</span>
+				</div>
+				<div class="gz-f">
+					<span onclick="member_like(this,'<%=micro_personal[i].personal_id;%>')">
+						<img src="img/shunjainxin.png" alt=""/>
+						<span><%=micro_personal[i].like_count %></span>
+					</span>
+					<span>
+						<a href="javascript:void(0)" onclick="get_wx_share(this)" title1="分享瞬间"  imgUrl='<%=micro_personal[i].commend_image%>' desc = '<%=micro_personal[i].commend_message%>' link = '/tmpl/shunjianziye.html?personal_id=<%=micro_personal[i].personal_id%>'><img src="img/shunajianfenx.png" alt=""/></a>
+						<a href="javascript:void(0)" onclick="member_favorites_window(this,'<%=micro_personal[i].personal_id;%>')"><img class="tjcc" src="img/jiaruchuc.png" alt=""/></a>
+					</span>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+    <% } %>
+    <% } %>
+</script>
+
+<!--橱窗列表-->
+<script type="text/html" id="showcase_list_model">
+	
+    <div>
+		<span>
+			<i>添加至我橱窗</i>
+			<span id="close">x</span>
+		</span>
+		<% if(favorites_list != null) { %>
+		<div class="xinjian-m">
+		<% for(var i in favorites_list) { %>
+		<a href="javascript:void(0)" onclick="member_favorites(this,<%=favorites_list[i].favorites_class_id%>)">
+			<span>
+				<img src="<%=favorites_list[i].favorites_img%>" alt=""/>
+				<%=favorites_list[i].favorites_class_name%>
+				<span class="morer" onclick="zhaozhao(this)">
+					<img src="img/moreright.png" alt=""/>
+				</span>
+			</span>
+		</a>
+		<% }%>
+		</div>
+		<% } %>
+		<a href="javascript:void(0)" onclick="create_favorites_class(this)">
+			<span>
+				<img src="img/tianjjiachuc.png" alt=""/>新建橱窗...
+				<span class="morer"><img src="img/moreright.png" alt=""/></span>
+			</span>
+		</a>
+		<input type="hidden" id="set_personal_id" value="0"/>
+	</div>
+	<script>
+		document.getElementById("close").onclick=function(){
+			 document.getElementById("tanchuk").style.display="none";
+			 document.getElementById("set_personal_id").value=0;
+		};
+		
+    </script>
+</script>	
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/wx_share.js"></script>
+<script type="text/javascript" src="../js/tmpl/other_chuchuangzhuye_1_5.js"></script>
+	
+<!-- S 提示 -->
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+<!-- E 提示 -->
+</body>
+</html>

@@ -1,0 +1,191 @@
+<?php
+
+/**
+ * 活动
+ *
+ *
+ *
+ * * */
+defined('InShopNC') or exit('Access Invalid!');
+
+class microControl extends apiHomeControl {
+
+    /**
+     * 单个活动信息页
+     */
+    public function get_personal_listOp() {
+        $model_personal = Model('micro_personal');
+         $order = 'personal_id desc';
+        $page = $_GET['page'];
+        $condition['microshop_commend'] = 1;
+        if($_GET['keyword']){
+        $condition['commend_message'] = array('like', '%' . $_GET['keyword'] . '%');
+        }
+        $field = 'micro_personal.*,member.member_name,member.member_truename,member.member_avatar,member_areainfo';
+        $list = $model_personal->getListWithUserInfo($condition, $this->page, $order, $field);
+        $page_count = $model_personal->gettotalpage();
+        foreach ($list as $key => $value) {
+           if($list[$key]['commend_image']){
+                        $file_name = str_replace('.', '_'.'tiny'.'.', $list[$key]['commend_image']);
+                        $file_name_list = str_replace('.', '_'.'list'.'.', $list[$key]['commend_image']);
+            $list[$key]['commend_image'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].'/'.$list[$key]['commend_image'];
+             $list[$key]['commend_image_tiny'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].DS.$file_name  ;
+             $list[$key]['commend_image_list'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].DS.$file_name_list  ;
+             }
+            $list[$key]['member_avatar'] =  getMemberAvatarForID($list[$key]['commend_member_id']);
+            $list[$key]['image_width'] = getimagesize($list[$key]['commend_image'])[0];
+            $list[$key]['image_height'] = getimagesize($list[$key]['commend_image'])[1];
+        
+        }
+        output_data($list,  mobile_page($page_count));
+    }
+
+    /**
+     * 单个活动信息页
+     */
+    public function get_personal_list_wapOp() {
+        $model_personal = Model('micro_personal');
+        $order = 'personal_id desc';
+        $page = $_GET['page'];
+        $condition['microshop_commend'] = 1;
+        if($_GET['keyword']){
+            $condition['commend_message'] = array('like', '%' . $_GET['keyword'] . '%');
+        }
+        $field = 'micro_personal.*,member.member_name,member.member_truename,member.member_avatar,member_areainfo';
+        $list = $model_personal->getListWithUserInfo($condition, $this->page, $order, $field);
+        $page_count = $model_personal->gettotalpage();
+        foreach ($list as $key => $value) {
+            if($list[$key]['commend_image']){
+                $file_name = str_replace('.', '_'.'tiny'.'.', $list[$key]['commend_image']);
+                $file_name_list = str_replace('.', '_'.'list'.'.', $list[$key]['commend_image']);
+                $list[$key]['commend_image'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].'/'.$list[$key]['commend_image'];
+                $list[$key]['commend_image_tiny'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].DS.$file_name  ;
+                $list[$key]['commend_image_list'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$list[$key]['commend_member_id'].DS.$file_name_list  ;
+            }
+            $list[$key]['member_avatar'] =  getMemberAvatarForID($list[$key]['commend_member_id']);
+            $list[$key]['image_width'] = @getimagesize($list[$key]['commend_image'])[0];
+            $list[$key]['image_height'] = @getimagesize($list[$key]['commend_image'])[1];
+
+        }
+        $list_wap['goods_list'] = $list;
+        output_data($list_wap,  mobile_page($page_count));
+    }
+    
+    /**
+     * 评论列表
+     */
+	public function comment_listOp() {
+        $comment_id = intval($_GET['comment_id']);
+        $model_comment = Model('micro_comment');
+        $page = intval($_GET['page']);
+        if($comment_id > 0) {
+            $condition = array();
+            $condition['comment_object_id'] = $comment_id;
+            $comment_type = 2;
+            if(!empty($comment_type)) {
+                $condition['comment_type'] = $comment_type; 
+                $field = 'micro_comment.*,member.member_name,member.member_truename,member.member_avatar';
+                $comment_list = $model_comment->getListWithUserInfo($condition,$page,'comment_time desc',$field);
+                foreach ($comment_list as $key => $value) {
+                    $comment_list[$key]['member_avatar'] =  getMemberAvatarForID($comment_list[$key]['comment_member_id']);
+                    $comment_list[$key]['comment_message'] = json_decode($comment_list[$key]['comment_message']);
+					if($comment_list[$key]['comment_image']){
+                        $file_name = str_replace('.', '_'.'tiny'.'.', $comment_list[$key]['comment_image']);
+                        $file_name_list = str_replace('.', '_'.'list'.'.', $comment_list[$key]['comment_image']);
+						$comment_list[$key]['comment_image'] =     UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP_COMMENT.DS.$comment_list[$key]['comment_member_id'].DS.$comment_list[$key]['comment_image'];
+						$comment_list[$key]['comment_image_tiny'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP_COMMENT.DS.$comment_list[$key]['comment_member_id'].DS.$file_name  ;
+						$comment_list[$key]['comment_image_list'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP_COMMENT.DS.$comment_list[$key]['comment_member_id'].DS.$file_name_list  ;
+                    }
+                }
+                output_data($comment_list);
+            }
+        }
+    }
+	
+	/**
+	 * 找灵感详情页
+	 * add by lizh 11:59 2016/7/11
+	 */
+	public function inspirationDetailOp() {
+		
+		$personal_id = $_GET['personal_id'];
+		$micro_personal = Model('micro_personal');
+		$micro_personal_detail = $micro_personal -> getOne(array(personal_id => $personal_id));
+		$micro_personal_detail['commend_image'] = UPLOAD_SITE_URL.DS.ATTACH_MICROSHOP.DS.$micro_personal_detail['commend_member_id'].'/'.$micro_personal_detail['commend_image'];
+		$micro_personal_detail['member_avatar'] = getMemberAvatarForID($micro_personal_detail['commend_member_id']);
+		
+		$member_data = Model() -> table('member') -> where(array(member_id => $micro_personal_detail['commend_member_id'])) -> find();
+		$micro_personal_detail['member_name'] = $member_data['member_name'];
+		$micro_personal_detail['commend_time'] = date('m月d', $micro_personal_detail['commend_time']);
+		
+		$micro_like = Model('micro_like');
+		$micro_like_data = $micro_like -> where(array(like_object_id => $personal_id, like_type => 2)) -> limit(4) -> select();
+		foreach($micro_like_data as $k => $v) {
+			
+			$micro_like_data[$k]['like_member_avatar'] = getMemberAvatarForID($v['like_member_id']);
+			
+		}
+		
+		output_data(array(micro_personal_detail => $micro_personal_detail,micro_like_data => $micro_like_data));
+		
+	}
+	
+	/**
+	 * 找灵感点赞接口
+	 * add by lizh 09:37 2016/7/13
+	 */
+	public function inspirationLikeOp() {
+		
+		if(empty($_GET['member_id']) && empty($_GET['key'])) {
+			
+			output_data(array(status => 0, message => '用户未登录'));
+			
+		}
+		
+		if(!empty($_GET['key'])) {
+			
+			$key = $_GET['key'];
+			
+			$model_mb_user_token = Model('mb_user_token');
+			$mb_user_token_info = $model_mb_user_token->getMbUserTokenInfoByToken($key);
+			
+			if(empty($mb_user_token_info)) {
+				
+				output_data(array(status => 0, message => '用户未登录'));
+			
+			} else {
+				
+				$member_id = $mb_user_token_info['member_id'];
+				
+			}
+			
+		}
+		
+		if(!empty($_GET['member_id'])) {
+			
+			$member_id = $_GET['member_id'];
+			
+		}
+		
+		$personal_id = $_GET['personal_id'];
+		
+		$micro_like = Model('micro_like');
+		$result = $micro_like -> setUsersPointLike($member_id,$personal_id );
+               
+		if($result == 1) {
+			
+            output_data(array(status => 1, message => '点赞成功'));
+			
+		} else if($result == 0) {
+			
+			output_data(array(status => 0, message => '点赞失败'));
+			
+		} else if($result == 2) {
+			
+			output_data(array(status => 0, message => '用户已点赞'));
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/shuniian.css"/>
+</head>
+<body>
+<div class="shunjian" id="shunjian_detail">
+
+</div>
+<script type="text/html" id="shunjian_detail_model">
+
+    <div class="shunjian-m">
+        <div class="shunjian-tit">
+            <span><img src="<%=micro_personal_detail.commend_member_avatar%>" alt=""/><%=micro_personal_detail.member_name%></span>
+            <span><%=micro_personal_detail.commend_time%></span>
+            <div style="clear: both"></div>
+        </div>
+        <div class="shunjian-p"><img src="<%=micro_personal_detail.commend_image%>" alt=""/></div>
+        <p class="shunjian-t">
+            <%=micro_personal_detail.commend_message%>
+        </p>
+        <div class="guanzhu-x">
+            <% if(micro_like_data != null) { %>
+            <ul class="guanzhu-l">
+                <% for(var i in micro_like_data){ %>
+                <li><img src="<%=micro_like_data[i].like_member_avatar%>" alt=""/></li>
+                <% } %>
+            </ul>
+            <% } %>
+            <div class="gz-f">
+                <span><img src="img/shunjainxin.png" alt=""/><%=micro_personal_detail.like_count%></span>
+                <span id="onMenuShareAppMessage"><a href=""><img src="img/fengxing_icon.png" alt=""/></a></span>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+
+    <script >
+        wx.config({
+            debug: true,
+            appId: "<%=sign_package['appId']%>",
+            timestamp: <%=sign_package['timestamp']%>,
+            nonceStr: "<%=sign_package['nonceStr']%>",
+            signature: "<%=sign_package['signature']%>",
+            jsApiList: [
+                'checkJsApi',
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'hideMenuItems',
+                'showMenuItems',
+                'hideAllNonBaseMenuItem',
+                'showAllNonBaseMenuItem',
+                'translateVoice',
+                'startRecord',
+                'stopRecord',
+                'onRecordEnd',
+                'playVoice',
+                'pauseVoice',
+                'stopVoice',
+                'uploadVoice',
+                'downloadVoice',
+                'chooseImage',
+                'previewImage',
+                'uploadImage',
+                'downloadImage',
+                'getNetworkType',
+                'openLocation',
+                'getLocation',
+                'hideOptionMenu',
+                'showOptionMenu',
+                'closeWindow',
+                'scanQRCode',
+                'chooseWXPay',
+                'openProductSpecificView',
+                'addCard',
+                'chooseCard',
+                'openCard'
+            ]
+        });
+
+        wx.ready(function () {
+            // 1.分享给朋友
+            wx.onMenuShareAppMessage({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+            //分享到朋友圈
+            wx.onMenuShareTimeline({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+            //分享到QQ
+            wx.onMenuShareQQ({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+            //分享到腾讯微博
+            wx.onMenuShareWeibo({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+            //分享到QQ空间
+            wx.onMenuShareQZone({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+            wx.onMenuShareAppMessage({
+                title: "瞬间",
+                desc: "<%= micro_personal_detail.commend_message %>",
+                link: "http://www.wantease.com/wap/tmpl/shunjian.html?personal_id=<%=micro_personal_detail.personal_id %>",
+                imgUrl: "<%= micro_personal_detail.commend_image %>",
+            });
+
+
+        });
+
+
+        wx.error(function (res) {
+        });
+
+</script>
+</script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/tmpl/shunjian_1_5.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</body>
+</html>

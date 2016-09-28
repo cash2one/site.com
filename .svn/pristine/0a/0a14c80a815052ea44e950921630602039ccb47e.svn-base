@@ -1,0 +1,9 @@
+[2016-04-09 11:34:06] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('103114','6','1460171240','1304','1','6','62')
+[2016-04-09 14:41:07] /cms/index.php?act=comment&op=comment_up ( act=comment&op=comment_up ) 
+ERR: Db Error: Column 'up_member_id' cannot be null
+INSERT  INTO `wantease_cms_comment_up` (comment_id,up_member_id,up_time) VALUES ('4',NULL,'1460184067')
+[2016-04-09 14:41:14] /cms/index.php?act=comment&op=comment_up ( act=comment&op=comment_up ) 
+ERR: Db Error: Column 'up_member_id' cannot be null
+INSERT  INTO `wantease_cms_comment_up` (comment_id,up_member_id,up_time) VALUES ('2',NULL,'1460184074')

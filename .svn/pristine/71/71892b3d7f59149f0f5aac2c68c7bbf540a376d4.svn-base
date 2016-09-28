@@ -1,0 +1,177 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu { margin: 0; padding: 0; }
+
+body { font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; font-size: 12px; -webkit-tap-highlight-color: transparent; }
+a { text-decoration: none; }
+.rel { position: relative; }
+.abs { position: absolute; }
+.fl { float: left; }
+.fr { float: right; }
+ul li { list-style: none; }
+.clr { line-height: 0; height: 0; clear: both; font-size: 0; overflow: hidden; }
+.clearfix:after { display: block; height: 0; visibility: hidden; clear: both; content: "."; }
+.no_select { -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+html { -webkit-text-size-adjust: none; }
+/* 禁用iPhone中Safari的字号自动调整 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/* 设置HTML5元素为块 */
+img { border: none; max-width: 100%; height: auto; vertical-align: top; }
+/* 设置图片视频等自适应调整 */
+strong, span, label { display: inline-block; vertical-align: middle; }
+select, input { -webkit-appearance: none; line-height: 24px; border-radius: 0; /* mobile-select设置*/ }
+.hide { display: none; }
+
+/*pgc*/
+.nctouch-main-layout {margin-top:0;}
+.container { overflow: hidden; }
+#cover { background-size: 100% 100%; }
+#cover .cover-bar { background: rgba(0, 0, 0, 0.5); width: 100%; height: 100px; position: absolute; bottom: 0; color: #fff; }
+#cover .cover-bar .title { font-size: 24px; padding: 19px 2% 3px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+#cover .cover-bar .desc  { padding: 5px 2% 0;width:96%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+#cover .cover-bar .arrow  { background-image: url("../img/1.png");
+    background-size: 100% 100%;
+    width: 30px;
+    height: 16px;
+    position: absolute;
+    left: calc(50% - 7px);
+    margin-left: -10px;
+    bottom: 5px;
+    -webkit-animation: page_arrow 1s infinite;
+ }
+@-webkit-keyframes page_arrow { 0% { -webkit-transform: translateY(0); opacity: 1; }
+    40% { -webkit-transform: translateY(-20%); opacity: 1; }
+    100% { -webkit-transform: translateY(0); opacity: 1; } }
+#content { background: #fff; color: #333; }
+#content .sub-title { color: #c12932; font-size: 15px; text-align: center; display: block; line-height: 60px; }
+#content .rich-text {  }
+#content .rich-text p>span {display: block;}
+#content .rich-text .speak { padding: 40px 6px 20px; line-height: 20px; text-indent: 2em; }
+#content .rich-text .speak .sign { text-align: right; color: #999; }
+#content .rich-text .details section { margin: 0 0 30px; }
+#content .rich-text .details section img { margin-bottom: 10px; }
+#content .rich-text .details section p { padding: 0px 10px; line-height: 20px; }
+#content .rich-text .live .video { width: 100%; height: 170px; overflow: hidden; }
+#content .date { font-size: 10px; color: #999; text-align: center; display: block; padding: 14px 0 22px; }
+#content .info { border-top: 1px solid #E6E6E6; border-bottom: 5px solid #ccc;background: #f0f0f0; }
+#content .info .avatar { width: 80px; height: 80px; -webkit-box-shadow: 0px 0px 2px 1px #cccaca; margin: 30px auto 20px; display: block; }
+#content .info .name { font-size: 20px; text-align: center; }
+#content .info .desc { color: #14ceb6; text-align: center; line-height: 20px; }
+#content .info .desc>p { display: inline-block; max-width: 80%; }
+#content .info .btns { text-align: center; }
+/*#content .info .btns a {
+    background-image: url("../img/yiguanzhu1.png");
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin: 20px 10px 20px;
+    text-indent: -999em;
+    background-size: 100% 100%;
+}*/
+#content .info .btns #store_collected {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin: 20px 10px 20px;
+    color: #14ceb6;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+}
+#content .info .btns #store_notcollect {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin: 20px 10px 20px;
+    color: #14ceb6;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1px solid #343a48;
+}
+#content .info .btns a.share {
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin: 20px 10px 20px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #14ceb6;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+#content .master-work { padding: 0 14px; }
+#content .master-work .card { border: 1px solid #ccc; font-size: 14px; padding: 8px 8px 15px 8px; }
+#content .master-work .card .desc { margin: 10px 0; color: #333; }
+#content .master-work .card .price .icon { display: inline-block; width: 17px; height: 17px; background: url("../img/sprite.png") -55px 0; background-size: 320px auto; }
+#content .master-work .card .price .num { font-size: 15px; color: #333; }
+#content .end { color: #dddddd; font-size: 13px; text-align: center; height: 44px; line-height: 42px; width: 100%; position: relative; background: url("../img/shadow.png"); background-size: 100% 100%; }
+
+.download-bar { width: 100%; height: 50px; background: rgba(0, 0, 0, 0.85); position: fixed; bottom: 0; color: #fff; }
+.download-bar .icon { width: 36px; height: 36px; background-image: url("../img/sprite.png"); background-size: 320px auto; background-position: 0px -37px; position: absolute; top: 7px; left: 15px; }
+.download-bar .text { position: absolute; top: 9px; left: 60px; font-size: 14px; }
+.download-bar .text .slogan { font-size: 12px; line-height: 18px; }
+.download-bar .download-btn { display: block; width: 100px; height: 30px; background-color: #dc251d; color: #fff; border-radius: 5px; text-align: center; font-size: 12px; line-height: 30px; position: absolute; right: 15px; top: 10px; }
+.container .download-bar {display: none; }
+
+/*post*/
+.post-container { padding-bottom: 45px; }
+
+.post-container .headpic img { margin-bottom: 5px; }
+
+.post-container .icon { background-image: url("../img/sprite.png"); background-size: 320px auto; }
+.post-container .desc { width: 94%; padding: 4% 3% 5%; color: #333; position: relative; }
+.post-container .desc .text { font-size: 14px; margin: 0% 0 4%; }
+.post-container .desc .state { font-size: 10px; color: #bbbbbb; }
+.post-container .desc .state .like, .post-container .desc .state .share { float: right; }
+.post-container .desc .state .like .tip, .post-container .desc .state .share .tip { background-color: #bbb; border-radius: 9px; text-align: center; color: #fff; line-height: 19px; height: 18px; width: 30px; margin-left: 3px; }
+.post-container .desc .state .like .icon { width: 18px; height: 18px; background-position: -64px -138px; }
+.post-container .desc .state .share .icon { width: 18px; height: 18px; background-position: -33px -14px; margin-left: 15px; }
+
+.post-container .info { width: 94%; padding: 4% 3% 5%; color: #333; position: relative; }
+.info .state { font-size: 10px; color: #bbbbbb; position: relative; margin: 0px 0 15px; }
+.info .state .price { color: #f83030; font-size: 18px; }
+.info .state .price .icon { width: 16px; height: 16px; background-position: -55px -19px; }
+.info .state .price .custorm { font-size: 13px; vertical-align: text-bottom; }
+.info .state .tag { color: #999999; margin: 3px 0 7px; font-size: 11px; }
+.info .state .btn { float: right; position: absolute; right: 0; top: 0; text-align: center; }
+.info .state .btn .like, .info .state .btn .share { width: 36px; height: 36px; border-radius: 5px; border: 1px solid #bbb; font-size: 9px; }
+.info .state .btn .like .icon, .info .state .btn .share .icon { width: 18px; height: 18px; margin: 2px 0 1px; }
+.info .state .btn .like .tip, .info .state .btn .share .tip { display: block; }
+.info .state .btn .like { margin-right: 8px; }
+.info .state .btn .like .icon { background-position: -66px -138px; }
+.info .state .btn .share .icon { background-position: -33px -14px; }
+.info .state .stock { margin: 4px 10px 7px 0; }
+.info .state .tag img { width: 13px; height: 13px; margin: 0 3px 0 0; }
+.info .state .tag span { margin: 0 4% 0 0; line-height: 15px; vertical-align: middle; }
+.inspection { width: 100%; height: 30px; line-height: 30px; background: #f1f2f4; border-top: 1px solid #bbbbbb; border-bottom: 1px solid #bbbbbb; text-align: center; }
+.inspection a { color: #333; }
+.info .state .tips { font-size: 11px; background: #bbb; width: 100%; line-height: 12px; color: #fff; padding: 4px 2px; }
+.info .text { font-size: 14px; margin: 0% 0 4%; line-height: 18px; }
+
+.user { width: 100%; height: 156px; background: url("../bg2.jpg") repeat-x; position: relative; text-align: center; border-bottom: 5px solid #d9d9d9; }
+.user .avatar { width: 77px; height: 77px; border-radius: 50%; margin: 20px 0 5px; }
+.user .name { font-size: 14px; color: #333; line-height: 23px; }
+.user .title { font-size: 11px; color: #ffae4e; }
+.user .title .icon { width: 15px; height: 15px; background-position: -42px -39px; margin-left: 3px; }
+.user .side-btn a { position: absolute; display: block; width: 74px; height: 32px; top: 50%; margin-top: -16px; color: #666; font-size: 12px; line-height: 32px; }
+.user .side-btn .follow { right: 0; background-position: -74px 0; padding-left: 28px; box-sizing: border-box; display: hidden;}
+.user .side-btn .location { left: 0; background-position: -155px 0; color: #9d9d9e; }
+
+.comment { border-bottom: 5px solid #d9d9d9; }
+.comment .title { font-size: 13px; border-bottom: 1px solid #d9d9d9; height: 30px; width: 96%; line-height: 30px; padding: 0 2%; }
+.comment .title .num { color: #999; }
+.comment .list li { padding: 12px 0; margin: 0 3%; border-bottom: 1px dotted #ccc; width: 94%; }
+.comment .list li:last-child { border-bottom: 0; }
+.comment .list li .avatar { float: left; width: 10%; }
+.comment .list li .avatar img { width: 24px; height: 24px; border-radius: 50%; }
+.comment .list li .content { width: 90%; margin-left: 10%; }
+.comment .list li .content .name { font-size: 13px; color: #999; }
+.comment .list li .content .name .time { font-size: 9px; color: #ddd; margin-left: 10px; }
+.comment .list li .content .text { font-size: 14px; color: #333; margin: 5px 0 0; line-height: 20px; }
+
+.post-container .more-btn {display:block; width: 100%; text-align: center; height: 30px; border: 1px solid #ccc; line-height: 30px; font-size: 14px; }
+.inspection a span { color: #e83014; vertical-align: baseline; }

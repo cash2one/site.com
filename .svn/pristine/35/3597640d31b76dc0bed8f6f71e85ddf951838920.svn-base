@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>热门话题</title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #f0f0f0;
+        }
+        .header2 {
+            position: fixed;
+            height: 45px;
+            z-index: 8;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+        }
+        .nav-one{
+            max-width: 750px;
+            min-width: 320px;
+            background-color: #343a49;
+            margin: auto;
+            height: 45px;
+        }
+        .nav-one>div{
+            float: left;
+        }
+        .search {
+            margin-top: 11.5px;
+            margin-left: 2%;
+        }
+        #keyword {
+            height: 23px;
+        }
+        .nav-one>div:nth-child(2) {
+            margin: auto;
+            margin-left: calc((100% - 230px)/2);
+            font-size: 16px;
+            line-height: 45px;
+            width: 180px;
+            text-align: center;
+        }
+        .logo-name {
+            color: #ffffff;
+        }
+        .hot-top-m{
+            max-width: 750px;
+            min-width: 320px;
+            margin: 50px auto;
+        }
+        .hot-top-m ul li{
+            width: 29%;
+            height: 142.5px;
+            float: left;
+            text-align: center;
+            background: #ffffff;
+            font-size: 12px;
+            color: #333333;
+            line-height: 20px;
+            border-radius: 6px;
+            margin: 12px 0 0 3.2% ;
+        }
+        .hot-top-m ul li img{
+          width: 100%;
+            height:110px;
+        }
+    </style>
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <div class="search" id="">
+            <a href="window_shopping.html" ><img class="search-input" id="keyword" src="img/arrow_left.png"></a>
+        </div>
+        <div class="logo-name" id="logo-name">
+            热门话题 Hot Topics
+        </div>
+    </div>
+</header>
+    <div class="hot-top-m" id="hot_topics_list">
+        
+    </div>
+	
+	<script type="text/html" id="hot_topics_model">
+		
+		<% if(hot_topics != null) { %>
+			
+			<ul>
+				<% for(var i in hot_topics) { %>
+				<li><a href="hot_topic_info.html?class_id=<%=hot_topics[i].class_id%>"><img src="<%=hot_topics[i].class_image%>" alt=""/><span><%=hot_topics[i].class_name%></span></a></li>
+				<% } %>
+			</ul>
+			
+		<% } %>
+		<div style="clear: both;"></div>
+	</script>
+	
+	<script type="text/javascript" src="../js/config.js"></script>
+	
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/tmpl/more_hot_topic.js"></script>
+
+</body>
+</html>

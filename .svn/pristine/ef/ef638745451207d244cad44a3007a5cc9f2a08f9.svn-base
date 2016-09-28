@@ -1,0 +1,54 @@
+[2016-06-02 09:22:24] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464830544',NULL,NULL,NULL)
+[2016-06-02 09:48:15] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464832095',NULL,NULL,NULL)
+[2016-06-02 09:48:29] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464832109',NULL,NULL,NULL)
+[2016-06-02 10:26:27] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464834387',NULL,NULL,NULL)
+[2016-06-02 10:38:45] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464835125',NULL,NULL,NULL)
+[2016-06-02 10:43:40] /shop/index.php?act=goods&op=addbrowse&gid=107121 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('107121','569','1464835420','14','1','4','14')
+[2016-06-02 10:53:21] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836001',NULL,NULL,NULL)
+[2016-06-02 10:59:54] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836394',NULL,NULL,NULL)
+[2016-06-02 11:01:35] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836495',NULL,NULL,NULL)
+[2016-06-02 11:04:03] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836643',NULL,NULL,NULL)
+[2016-06-02 11:04:14] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836654',NULL,NULL,NULL)
+[2016-06-02 11:07:21] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836841',NULL,NULL,NULL)
+[2016-06-02 11:09:50] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464836990',NULL,NULL,NULL)
+[2016-06-02 11:10:24] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464837024',NULL,NULL,NULL)
+[2016-06-02 11:12:42] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464837162',NULL,NULL,NULL)
+[2016-06-02 11:16:50] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464837410',NULL,NULL,NULL)
+[2016-06-02 11:20:42] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464837642',NULL,NULL,NULL)
+[2016-06-02 11:23:05] //mobile/index.php ( act=index&op=index ) 
+ERR: Db Error: Column 'fav_id' cannot be null
+INSERT  INTO `wantease_favorites` (member_id,member_name,fav_id,fav_type,fav_time,store_name,store_id,sc_id) VALUES ('574','13512714015',NULL,'store','1464837785',NULL,NULL,NULL)

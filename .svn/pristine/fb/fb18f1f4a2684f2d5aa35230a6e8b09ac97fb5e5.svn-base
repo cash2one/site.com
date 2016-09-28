@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>拆礼物</title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333; text-decoration: none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #f1f4fb;
+        }
+        .header2 {
+            position: fixed;
+            height: 45px;
+            z-index: 58;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            background: #FFFFFF;
+        }
+        .nav-one{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+            height: 45px;
+        }
+        .nav-one>div{
+            float: left;
+        }
+        .search {
+            margin-top: 11.5px;
+            margin-left: 2%;
+            font-size: 14px;
+            color: #999999;
+        }
+        .search:active{
+            color: #cccccc;
+        }
+        #keyword {
+            height: 23px;
+        }
+        .main{
+            background: #FFFFFF;
+            position: relative;
+        }
+        .pri{
+            height: 400px;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+        .pri img{
+            width: 320px;
+            height: 320px;
+            margin-top: 40px;
+
+        }
+        .wai-kuang{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+        }
+        .bofang{
+            width: 280px;
+            height: 160px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            -moz-box-shadow:0px 5px 10px #ced6e7; -webkit-box-shadow:0px 5px 10px #ced6e7; box-shadow:0px 5px 10px #ced6e7;
+            position: absolute;
+            left:calc((100% - 280px)/2);
+            bottom: -120px;
+        }
+        .bofang s{
+            text-align: center;
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #333333;
+        }
+        .bofang i{
+            text-align: center;
+            display: block;
+            margin-bottom: 12px;
+            font-size: 12px;
+            color: #333333;
+        }
+        .lineing{
+            display: block;
+            width: 28px;
+            height: 2px;
+            background: #000;
+            margin: auto;
+            margin-bottom: 12px;
+        }
+        .bofang img {
+            display: block;
+            width: 100%;
+        }
+        .button-item{
+            width: 184px;
+            height: 36px;
+            border-radius: 18px;
+            background: #afc2ee;
+            margin: auto;
+            position: absolute;
+            left: calc((100% - 184px)/2);
+            color: #FFFFFF;
+            top: 505px;
+            font-size: 10px;
+            text-align: center;
+            line-height: 36px;
+        }
+		.huanyifen{
+		   color: #14ceb6;
+		   position:absolute;
+		   display:block;
+		   text-align:center;
+		   bottom:-160px;
+		   font-size:10px;
+		   width:100%;
+		   
+		}
+    </style>
+</head>
+<body>
+<header class="header2">
+    <div class="nav-one">
+        <a href="javascript:history.go(-1)">
+            <div class="search" id="keyword">
+                返回
+            </div>
+        </a>
+    </div>
+</header>
+<div class="wai-kuang" id="goods_info">
+    
+</div>
+
+<script type="text/html" id="goods_info_model">
+
+	<div class="main">
+        <span class="pri">
+			<img src="<%=goods_image%>" alt=""/>
+        </span>
+		<div class="bofang">
+			<s><%=goods_name%></s>
+			<i><%=goods_spec%></i>
+			<u class="lineing"></u>
+			<img src="img/jichang.png" alt=""/>
+		</div>
+        <a href="javascript:void(0)" onclick="get_new_windows('tianxieziliao.html')"><span class="button-item">我就要这一个啦！</span></a>
+        <a href="javascript:void(0)" onclick="get_new_windows('huanliwu.html')"><span class="huanyifen">我想换一份</span></a>
+    </div>
+	
+</script>
+	
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/gift/chailiwu.js"></script>
+<script type="text/javascript" src="../js/gift/turned.js"></script>	
+</body>
+</html>

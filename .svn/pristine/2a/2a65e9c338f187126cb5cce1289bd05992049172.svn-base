@@ -1,0 +1,38 @@
+<?php defined('InShopNC') or exit('Access Invalid!'); return array (
+  'ap_id' => '1050',
+  'ap_name' => '设计师3',
+  'ap_intro' => '',
+  'ap_class' => '0',
+  'ap_display' => '1',
+  'is_use' => '1',
+  'ap_width' => '294',
+  'ap_height' => '530',
+  'ap_price' => '0',
+  'adv_num' => '1',
+  'click_num' => '0',
+  'default_content' => '05048137208101771.png',
+  'gc_id' => '0',
+  'adv_list' => 
+  array (
+    0 => 
+    array (
+      'adv_id' => '1173',
+      'ap_id' => '1050',
+      'adv_title' => '旅行出差收纳',
+      'adv_origin' => '',
+      'adv_price' => '¥179.00',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"05048137382752062.png";s:11:"adv_pic_url";s:65:"www.site.com/index.php?act=goods&amp;op=index&amp;goods_id=101479";}',
+      'adv_start_date' => '1448294400',
+      'adv_end_date' => '1480435200',
+      'slide_sort' => '0',
+      'member_id' => '0',
+      'member_name' => '',
+      'click_num' => '0',
+      'is_allow' => '1',
+      'buy_style' => '',
+      'goldpay' => '0',
+      'gc_id' => '0',
+      'store_id' => '0',
+    ),
+  ),
+);

@@ -1,0 +1,165 @@
+[2016-07-15 00:04:46] /index.php?act=connect_wx&op=wap&code=0417Gkvg2OYPcO0Khcvg26dqvg27Gkv9&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'953566886ef37383d85b3ffeebd5d1ed','1468512269','wechat')
+[2016-07-15 00:05:12] /index.php?act=connect_wx&op=wap&code=041Y3ZKb0PNtzI1nAtIb0lk6Lb0Y3ZK7&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'dab2a1d92ca77d4ec5c7f0f5f3edd158','1468512295','wechat')
+[2016-07-15 09:17:25] /index.php?act=connect_wx&op=wap&code=021ukGT62XooJF02vFT62MBzT62ukGT7&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'820f645137782412a9e9cac185db9371','1468545429','wechat')
+[2016-07-15 09:22:04] /mobile1/index.php?act=member_wap_message&op=count&key=8717b207318b086ee694c2182516faac ( act=member_wap_message&op=count ) 
+ERR: Db Error: Table 'wanyi2.wantease_wap_message' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `wantease_wap_message` WHERE ( read_state = '0' ) AND ( member_id = '413' ) LIMIT 1  
+[2016-07-15 09:22:04] /mobile1/index.php?act=member_wap_message&op=count&key=8717b207318b086ee694c2182516faac ( act=member_wap_message&op=count ) 
+ERR: Db Error: Table 'wanyi2.wantease_wap_message' doesn't exist
+SELECT content,ftime,member_id FROM `wantease_wap_message` WHERE ( read_state = '0' ) AND ( member_id = '413' ) ORDER BY ftime asc LIMIT 0,5  
+[2016-07-15 10:03:56] /index.php?act=connect_wx&op=wap&code=031Mr3Ce1FnxMn0BNuDe19XaCe1Mr3Cf&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'29828ae8670753eb5abd7d050de7a76a','1468548217','wechat')
+[2016-07-15 10:16:00] /index.php?act=connect_wx&op=wap&code=0116WSQj2TwcOK0qquQj23FQQj26WSQi&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'4b582db87e12f51e4af872f8fd31b9ae','1468548942','wechat')
+[2016-07-15 10:49:49] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468550989' WHERE ( goods_id IN ('111502') )
+[2016-07-15 10:49:55] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468550995' WHERE ( goods_id IN ('111502') )
+[2016-07-15 10:54:28] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551268' WHERE ( goods_id IN ('107669') )
+[2016-07-15 10:54:40] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551280' WHERE ( goods_id IN ('107669') )
+[2016-07-15 10:54:49] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551289' WHERE ( goods_id IN ('107669') )
+[2016-07-15 11:02:17] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551737' WHERE ( goods_id IN ('111484') )
+[2016-07-15 11:02:17] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551737' WHERE ( goods_id IN ('111502') )
+[2016-07-15 11:02:17] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551737' WHERE ( goods_id IN ('115367') )
+[2016-07-15 11:02:17] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551737' WHERE ( goods_id IN ('115378') )
+[2016-07-15 11:02:20] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551740' WHERE ( goods_id IN ('111484') )
+[2016-07-15 11:02:20] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551740' WHERE ( goods_id IN ('111502') )
+[2016-07-15 11:02:20] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551740' WHERE ( goods_id IN ('115367') )
+[2016-07-15 11:02:20] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468551740' WHERE ( goods_id IN ('115378') )
+[2016-07-15 11:09:47] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552187' WHERE ( goods_id IN ('111628') )
+[2016-07-15 11:10:01] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552201' WHERE ( goods_id IN ('111628') )
+[2016-07-15 11:10:28] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552228' WHERE ( goods_id IN ('111628') )
+[2016-07-15 11:10:36] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552236' WHERE ( goods_id IN ('111628') )
+[2016-07-15 11:11:00] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552260' WHERE ( goods_id IN ('111628') )
+[2016-07-15 11:12:22] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552342' WHERE ( goods_id IN ('111504') )
+[2016-07-15 11:12:29] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552349' WHERE ( goods_id IN ('111504') )
+[2016-07-15 11:12:38] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552358' WHERE ( goods_id IN ('111504') )
+[2016-07-15 11:12:48] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468552367' WHERE ( goods_id IN ('111504') )
+[2016-07-15 11:19:44] /index.php?act=connect_wx&op=wap&code=0316nZRE1NRdQe08sHSE1x21SE16nZR1&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'d712a5969dca2d044bd226e7df334059','1468552767','wechat')
+[2016-07-15 11:25:24] /index.php?act=connect_wx&op=wap&code=021V1cmy0qSGMl133Rny0Kldmy0V1cmc&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'38b1049de586cb38c7b89df72949e8e5','1468553105','wechat')
+[2016-07-15 11:25:28] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553128' WHERE ( goods_id IN ('111504') )
+[2016-07-15 11:26:40] /index.php?act=connect_wx&op=wap&code=031BGdSy0vRgal12lKRy0cJiSy0BGdSA&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'cd521f494fd9098254af1dcb33f49d11','1468553184','wechat')
+[2016-07-15 11:26:56] /index.php?act=connect_wx&op=wap&code=031bscby1cy7G30zU8dy1x2eby1bscbD&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'c4937ac1269dec606e38f8d1a958e65f','1468553199','wechat')
+[2016-07-15 11:27:15] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553235' WHERE ( goods_id IN ('106433') )
+[2016-07-15 11:27:20] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553239' WHERE ( goods_id IN ('106433') )
+[2016-07-15 11:27:25] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553245' WHERE ( goods_id IN ('106433') )
+[2016-07-15 11:27:28] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553248' WHERE ( goods_id IN ('106433') )
+[2016-07-15 11:27:31] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553251' WHERE ( goods_id IN ('106433') )
+[2016-07-15 11:29:36] /index.php?act=connect_wx&op=wap&code=011GSqJ42uS7bI0zdUM42L5uJ42GSqJm&state=STATE ( act=connect_wx&op=wap ) 
+ERR: Db Error: Column 'member_id' cannot be null
+INSERT  INTO `wantease_mb_user_token` (member_id,member_name,token,login_time,client_type) VALUES (NULL,NULL,'53da77dda2bed10d61ec29926c573396','1468553359','wechat')
+[2016-07-15 11:31:14] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553474' WHERE ( goods_id IN ('115307') )
+[2016-07-15 11:31:14] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553474' WHERE ( goods_id IN ('115364') )
+[2016-07-15 11:31:14] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553474' WHERE ( goods_id IN ('115385') )
+[2016-07-15 11:31:32] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553492' WHERE ( goods_id IN ('115307') )
+[2016-07-15 11:31:32] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553492' WHERE ( goods_id IN ('115364') )
+[2016-07-15 11:31:32] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553492' WHERE ( goods_id IN ('115385') )
+[2016-07-15 11:31:41] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553501' WHERE ( goods_id IN ('115307') )
+[2016-07-15 11:31:41] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553501' WHERE ( goods_id IN ('115364') )
+[2016-07-15 11:31:41] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553501' WHERE ( goods_id IN ('115385') )
+[2016-07-15 11:32:03] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553523' WHERE ( goods_id IN ('115307') )
+[2016-07-15 11:32:03] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553523' WHERE ( goods_id IN ('115364') )
+[2016-07-15 11:32:03] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553523' WHERE ( goods_id IN ('115385') )
+[2016-07-15 11:32:19] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553534' WHERE ( goods_id IN ('115307') )
+[2016-07-15 11:32:19] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553534' WHERE ( goods_id IN ('115364') )
+[2016-07-15 11:32:19] /mobile1/index.php?act=member_order&op=order_cancel ( act=member_order&op=order_cancel ) 
+ERR: Db Error: BIGINT UNSIGNED value is out of range in '(`wanyi2`.`wantease_goods`.`goods_salenum` - 1)'
+UPDATE `wantease_goods` SET goods_storage=goods_storage+1,goods_salenum=goods_salenum-1,goods_edittime='1468553534' WHERE ( goods_id IN ('115385') )

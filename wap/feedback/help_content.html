@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/bangzhu.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="bangzhu.html"><i class="back"></i></a>
+        <span id="title" style="color:#fff"></span>
+    </div>
+    <div class="help-pic" id="help_content" style="margin-top: 60px;font-size: 13px;">
+        
+		
+    </div>
+</div>
+
+<!-- 帮助中心内容 -->
+<script type="text/html" id="help_content_model">
+	
+	<% if(article_data != null) { %>
+	
+		<% for(var i in article_data) { %>
+			<%= article_data[i].article_data_html; %>
+		<% } %>
+	
+	<% } else { %>
+		
+		<span>暂无内容；敬请期待！！！</span>
+	
+	<% } %>
+
+</script>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/common.js?g"></script>
+<script type="text/javascript" src="../js/feedback/help_content_1_5.js"></script>
+
+</body>
+</html>

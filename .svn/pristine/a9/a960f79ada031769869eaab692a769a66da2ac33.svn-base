@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>玩艺网</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css"/>
+    <link rel="stylesheet" href="css/faxianye_1_5.css"/>
+    
+</head>
+<body>
+    <header class="header2">
+        <div class="nav-one">
+            <div class="search" id="">
+                <a href="search.html" ><img class="search-input" id="keyword" src="img/search_ico.png"></a>
+            </div>
+            <div class="logo-name" id="logo-name">
+                发现 Discover
+            </div>
+        </div>
+    </header>
+   <div class="faxian-m">
+       <div class="swiper-container" id="banner">
+           
+       </div>
+       <div>
+           <div class="pinzhishengh">
+               <div class="gcc-tit">
+                   <span>热门分类/品质生活</span>
+                   <!-- <a href=""><i>查看更多 ></i></a> -->
+                   <div style="clear: both;"></div>
+               </div>
+               <div class="con_mid-rds-o con_mid-two-m" id="classification_list">
+                   
+               </div>
+           </div>
+       </div>
+       <div>
+           <div class="guangchuc">
+               <div class="gcc-tit">
+                   <span>热门橱窗</span>
+                   <a href="more_showcase.html"><i>查看更多 ></i></a>
+               </div>
+               <div style="clear: both;"></div>
+			   <div id="micro_personal_class_list">
+               
+			   </div>
+           </div>
+       </div>
+       <div>
+           <div class="hot-top">
+               <div class="gcc-tit">
+                   <span>热门话题</span>
+                   <a href="more_hot_topic.html"><i>查看更多 ></i></a>
+                   <div style="clear: both;"></div>
+               </div>
+               <div class="hot-m  hot-talk" id="hot_topic">
+                   
+               </div>
+             </div>
+       </div>
+       <div style="display: none;">
+           <div class="nikenengxh">
+               <div class="gcc-tit">
+                   <span>你可能喜欢</span>
+                   <!-- <a href=""><i>查看更多 ></i></a> -->
+                   <div style="clear: both;"></div>
+               </div>
+               <div class="nilike" id="you_may_like">
+                   
+               </div>
+           </div>
+       </div>
+	   <div class="eve-wen">
+		   <div class="gcc-tit">
+			   <span>每日文章</span>
+			   <!-- <a href=""><i>查看更多 ></i></a> -->
+			   <div style="clear: both;"></div>
+		   </div>
+		   <ul class="wenzhangmian" id="daily_article">
+                        <script type="text/html" id="daily_article_model">
+                           <% if(cms_article_list != null) { %>
+                               <% for(var i in cms_article_list) { %>
+			   <li>
+				   <div>
+                                   <a href="/wap/article.html?article_id=<%= cms_article_list[i].article_id %>">
+					   <img src="<%=cms_article_list[i].article_image; %>" alt=""/>
+                                   </a>
+				   </div>
+			   </li>
+                                <% } %>
+                           <% } %>
+			  </script>
+		   </ul>
+	   </div>
+   </div>
+   <div style="height: 70px;"></div>
+   <footer id="footer" class="fixed-Width"></footer>
+   
+	<!-- 轮播图Model -->
+	<script type="text/html" id="banner_model">
+		
+		<% if(banner != null) { %>
+		<div class="swiper-wrapper">
+			<% for(var i in banner) { %>
+			<div class="swiper-slide">
+				<a href="/wap/special.html?special_id=<%= banner[i].special_id %>">
+                    <img src="<%= banner[i].special_banner %>" alt="">
+                </a>
+			</div>
+			<% } %>
+
+		</div>
+		<% } %>
+		<script>
+			<% if(banner != null) { %>
+				$(document).ready(function(){
+					var mySwiper = new Swiper('.swiper-container',{
+						loop : true,
+						autoplay : 3000,
+						autoplayDisableOnInteraction :false
+					});
+				})
+			<% } %>
+		</script>
+	</script>
+	
+	<!-- 品质生活Model -->
+	<script type="text/html" id="classification_list_model">
+		<% if(class_list != null) { %>
+		<div class="con_mid-rds con_mid-two">
+			<ul style="width:<%= 158 * class_list.length%>px">
+			<% for(var i in class_list) { %>
+				<li>
+				<a href="window_shopping_cat.html?gc_id=<%=class_list[i].gc_id%>">
+					<img src="<%=class_list[i].image%>" alt=""/>
+				</a>
+				</li>
+			<% } %>
+			</ul>
+		</div>
+		<% } %>
+	
+		
+	</script>
+	
+	<!-- 你可能喜欢Model -->
+	<script type="text/html" id="you_may_like_model">
+		<% if(guess_like != null) { %>
+		<div class="niliek-l">
+		   <ul style="width:<%=158*guess_like.length%>px">
+			<% for(var i in guess_like) { %>
+			   <li>
+				<a href="product_detail.html?goods_id=<%=guess_like[i].goods_id%>">
+					<img src="<%=guess_like[i].goods_image%>" alt=""/>
+					<i>
+						<% if(guess_like[i].goods_name.length >= 12) { %>
+							<%= guess_like[i].goods_name.substring(0,10) %>...
+						<% } else { %>
+							<%= guess_like[i].goods_name %>
+						<% } %></i>
+				</a>
+				<i>¥<%=guess_like[i].goods_marketprice%></i>
+				</li>
+			<% } %>
+			   
+		   </ul>
+	   </div>
+		<% } %>
+		
+	</script>
+	
+	<!-- 热门话题Model -->
+	<script type="text/html" id="hot_topic_model">
+		<% if(hot_topics != null) { %>
+			<div class="hot-l">
+			   <ul style="width:<%=158*hot_topics.length%>px">
+				<% for(var i in hot_topics) {%>
+				   <li><a href="hot_topic_info.html?class_id=<%=hot_topics[i].class_id;%>"><img src="<%=hot_topics[i].class_image%>" alt=""/></a></li>
+				<%}%>
+			   </ul>
+		   </div>
+		<% } %>
+		
+	</script>
+	
+	<!-- 热门橱窗Model -->
+	<script type="text/html" id="micro_personal_class_list_model">
+		<% if(hot_topics != null) { %>
+		<div class="hot-l">
+			<ul style="width:<%=158*hot_topics.length%>px">
+				<% for(var i in hot_topics) {%>
+				<li><a href="hot_topic_info.html?class_id=<%=hot_topics[i].class_id;%>"><img src="<%=hot_topics[i].class_image%>" alt=""/><i><%=hot_topics[i].class_name%></i></a></li>
+				<%}%>
+			</ul>
+		</div>
+		<% } %>
+
+	</script>
+
+</body>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/window_shopping_1_5.js"></script>
+<script src="../js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+
+</html>

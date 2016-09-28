@@ -1,0 +1,199 @@
+*{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    font-family:Arial,Verdana,Microsoft YaHei;
+}
+/*.nav-top{
+    width: 100%;
+    background: #fcfcfc;
+    border-bottom: 1px solid #dddddd;
+}
+.nav,.big-logo{
+   width:1400px;
+    margin: auto;
+}
+.nav{
+    text-align: center;
+    height: 65px;
+    background: #fcfcfc;
+    line-height: 65px;
+}
+.nav>div{
+   display: inline-block;
+    font-size: 12px;
+}
+.nav-mid{
+    width: 70%;
+}
+.nav-rig{
+   text-align: right;
+}
+.nav-mid>div , .nav-rig>div{
+   display: inline-block;
+}
+.nav-mid>a>span ,.nav-rig>a>span,.search{
+    margin-right: 64px;
+}
+.denglu>i{
+   margin: 0 12px;
+}
+.nav>.logo{
+    text-align: left;
+    width: 160px;
+}
+.search{
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    height: 25px;
+    padding: 3px;
+    background: #ffffff;
+}
+.search>img{
+    vertical-align:middle;
+    margin-right: 3px;
+}
+.big-logo-wai{
+    background: #f0f0f0;
+    width: 100%;
+}
+.big-logo{
+    background: url("img/lALOJ9OgHcyYzQeA_1920_152.png") no-repeat center;
+    height: 152px;
+}
+.denglu-main,.zhuce-main{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dddddd;
+}*/
+.title-main-wai{
+   width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top:  1px solid #dddddd;
+}
+.title-main{
+    height: 70px;
+    width: 400px;
+    margin: auto;
+}
+.title-main>span{
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 67px;
+}
+
+.title-main>span:nth-child(1){
+    border-bottom: 2px solid #3b4567;
+}
+
+.denglu-box,.other-loding,.zhuce-box{
+    width: 400px;
+    margin: auto;
+}
+.yonghu-denglu>div{
+    height: 42px;
+    margin-top: 54px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 3px #baf4e7;
+}
+.yonghu-denglu>div>input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.rem-or-forget{
+    margin: 25px 0;
+    font-size: 12px;
+}
+.rem-or-forget>span>input{
+    vertical-align:text-bottom;
+}
+.rem-or-forget>span:nth-child(2){
+    float: right;
+}
+.submit{
+    height: 42px;
+    background:#7a8398 ;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 42px;
+    color: #ffffff;
+}
+.submit:hover{
+    background:#242a49 ;
+}
+.other-loding{
+    margin-top: 30px;
+}
+.other-loding>li{
+  float: left;
+    font-size: 12px;
+}
+.other-loding>li:nth-child(2){
+   margin: 0 64px;
+}
+.other-loding>li>span{
+    float: left;
+     width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+}
+.other-loding>li>i{
+    line-height: 45px;
+    margin-left: 12px;
+}
+.other-loding>li>span>img{
+    width: 100%;
+    height: 100%;
+}
+.yonghu-zuce>div{
+    height: 42px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+.yonghu-zuce>span>div{
+    height: 42px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+.yonghu-zuce>div>input{
+    width: 100%;
+    height: 100%;
+}
+.yanzhenma{
+    float: left;
+    width: 212px;
+}
+.yanzhenma>input{
+    width: 100%;
+    height: 100%;
+}
+.huoqu{
+    float: right;
+    width: 172px;
+    text-align: center;
+    line-height: 42px;
+}
+.yonghu-zuce>div{
+    margin: 40px 0;
+}
+.index-input-submit {
+    
+    height: 10px;
+    width: 20px;
+    background: url("../newimg/Combined%20Shape.png") no-repeat center;
+    
+}

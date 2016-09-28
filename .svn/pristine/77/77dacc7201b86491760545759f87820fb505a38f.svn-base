@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>玩艺网</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+            background: #f0f0f0;
+        }
+        .pics_wall ul {
+            margin-left: 4%;
+        }
+        .classify li {
+            margin-bottom: 12px;
+        }
+        .pics_wall h3 {
+            padding: 12px 0 7px 4%;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .classify {
+           
+        }
+
+        .pics_wall {
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        .pics_wall li {
+            float: left;
+            width: 46%;
+            min-height: 100px;
+            margin-right: 4%;
+            background: #F3F3F3;
+            margin-bottom: 10px;
+        }
+        .pics_wall a img{
+            width: 100%;
+        }
+        .main{
+             margin: auto;
+             max-width: 750px;
+             min-width: 320px;
+         }
+        .pics_wall h3 {
+            padding: 12px 0 7px 4%;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .txt {
+            position: relative;
+            padding-left: 40px;
+        }
+        .txt p:first-child {
+            height: 21px;
+            margin-top: 7.5px;
+        }
+        .txt p {
+            overflow: hidden;
+        }
+
+        .txt p:nth-child(2) {
+            height: 18px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #818181;
+        }
+
+        .txt img {
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+       .clearfix .touxiang{
+           width: 28px;
+           height: 28px;
+           display: inline-block;
+           border-radius: 50%;
+           margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pics_wall classify" id="classification_list">
+            
+        </div>
+        <div class="pics_wall" id="Designer_brand">
+           
+        </div>
+    </div>
+    <div style="height: 70px;"></div>
+   <footer id="footer" class="fixed-Width"></footer>
+    <!-- 品质生活Model -->
+    <script type="text/html" id="classification_list_model">
+
+        <h3>生活美学</h3>
+        <% if(class_list != null) { %>
+        <ul class="clearfix" id="classify">
+             <% for(var i in class_list) { %>
+            <li>
+                <a href="window_shopping_cat.html?gc_id=<%=class_list[i].gc_id%>">
+                    <img src="<%=class_list[i].image%>" alt=""/>
+                </a>
+            </li>
+            <% if(i >= 7){ break; } %>
+            <% } %>
+        </ul>
+        <% } %>
+        <div style="clear: both;"></div>
+        
+    </script>
+    
+    <!-- 设计师品牌模型 add by lizh 10:37 2016/7/6 -->
+    <script type="text/html" id="Designer_brand_model">
+	
+        
+        <h3>汇聚全球独立品牌</h3>
+        <% var model_num = 0; %>
+        <% if(store_list != null) { %>
+            <ul class="clearfix" id="brand">
+                <% for(var i in store_list) { %> 
+                <li>
+                    <a href="store.html?store_id=<%= store_list[i].store_id; %>">
+                        <img src="<%= store_list[i].app_banner; %>" alt="">
+                        <div class="txt">
+                            <p><%= store_list[i].store_name; %></p>
+                            <p><%= store_list[i].store_collect; %> fans</p>
+                            <img src="<%= store_list[i].store_avatar; %>" alt="" class="touxiang">
+                        </div>
+                    </a>
+                </li>
+                <% model_num++; %>
+                <% } %>
+            </ul>
+            <% } %>
+            <div style="clear: both;"></div>
+    </script>
+    
+    <script type="text/javascript" src="../js/config.js"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/tmpl/window_shopping_1_5_3.js"></script>
+    <script src="../js/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</body>
+</html>

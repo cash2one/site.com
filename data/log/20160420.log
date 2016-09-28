@@ -1,0 +1,72 @@
+[2016-04-20 09:08:18] /shop/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('104130','361','1461114379','624','593','597','624'),('104817','361','1461114447','1174','256','1174','0')
+[2016-04-20 09:55:44] /shop/index.php?act=goods&op=addbrowse&gid=102587 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('102587','29','1461117344','1075','470','1075','0')
+[2016-04-20 11:16:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 LIMIT 1  
+[2016-04-20 11:16:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT micro_personal.*,member.member_name,member.member_truename,member.member_avatar,like_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 11:16:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 LIMIT 1  
+[2016-04-20 11:16:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT micro_personal.*,member.member_name,member.member_truename,member.member_avatar,like_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 11:16:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 LIMIT 1  
+[2016-04-20 11:16:45] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT micro_personal.*,member.member_name,member.member_truename,member.member_avatar,like_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 11:17:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 LIMIT 1  
+[2016-04-20 11:17:42] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'store_id' in 'where clause'
+SELECT micro_personal.*,member.member_name,member.member_truename,member.member_avatar,like_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id WHERE store_id = 1 ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 11:29:07] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'member.like_count' in 'field list'
+SELECT micro_personal.personal_id,micro_personal.commend_image,micro_personal.commend_message,member.member_name,member.member_truename,member.member_avatar,member.like_count FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 11:35:26] /mobile/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'micro_personal.like_countmember.member_name' in 'field list'
+SELECT micro_personal.personal_id,micro_personal.commend_member_id,micro_personal.commend_image,micro_personal.commend_message,micro_personal.like_countmember.member_name,member.member_truename,member.member_avatar FROM `wantease_micro_personal` AS `micro_personal` LEFT JOIN `wantease_member` AS `member` ON micro_personal.commend_member_id = member.member_id ORDER BY like_count asc LIMIT 0,16  
+[2016-04-20 15:38:56] /shop/index.php?act=goods&op=addbrowse&gid=105302 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105302','339','1461137936','92','1','8','92')
+[2016-04-20 15:39:58] /shop/index.php?act=goods&op=addbrowse&gid=105303 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105303','339','1461137998','1524','470','1524','0')
+[2016-04-20 15:40:25] /shop/index.php?act=goods&op=addbrowse&gid=105304 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105304','339','1461138025','1075','470','1075','0')
+[2016-04-20 15:40:41] /shop/index.php?act=goods&op=addbrowse&gid=105307 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105307','339','1461138041','1510','470','1273','1510')
+[2016-04-20 15:41:25] /shop/index.php?act=goods&op=addbrowse&gid=105301 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105301','339','1461138085','1075','470','1075','0')
+[2016-04-20 15:41:46] /shop/index.php?act=goods&op=addbrowse&gid=105306 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105306','339','1461138106','1333','593','594','1333')
+[2016-04-20 15:51:48] /shop/index.php?act=goods&op=addbrowse&gid=105300 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105300','339','1461138708','1510','470','1273','1510')
+[2016-04-20 15:52:03] /shop/index.php?act=goods&op=addbrowse&gid=105299 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105299','339','1461138723','62','1','6','62')
+[2016-04-20 15:52:09] /shop/index.php?act=goods&op=addbrowse&gid=105308 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105308','339','1461138729','1510','470','1273','1510')
+[2016-04-20 15:52:31] /shop/index.php?act=goods&op=addbrowse&gid=105305 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105305','339','1461138751','1257','470','1184','1257')
+[2016-04-20 15:52:55] /shop/index.php?act=goods&op=addbrowse&gid=105299 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105299','339','1461138774','62','1','6','62')
+[2016-04-20 15:52:57] /shop/index.php?act=goods&op=addbrowse&gid=105299 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Unknown column 'gc_id_3' in 'field list'
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('105299','339','1461138777','62','1','6','62')

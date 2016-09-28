@@ -1,0 +1,135 @@
+[2016-06-11 10:59:17] /index.php?act=login&op=index ( act=login&op=index ) 
+ERR: Db Error: Champ 'gc_id_3' inconnu dans field list
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106465','575','1465612272','1516','1058','1515','1516'),('106853','575','1465613930','1530','1526','1530','0')
+[2016-06-11 14:48:06] /index.php?act=login&op=index ( act=login&op=index ) 
+ERR: Db Error: Champ 'gc_id_3' inconnu dans field list
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106632','6','1465626868','60','1','6','60')
+[2016-06-11 15:04:00] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:04:03] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:04:42] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:05:28] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:06:53] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:07:04] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:07:12] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:09:54] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:22:48] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:25:13] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:46:19] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:50:35] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:51:05] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:55:35] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:58:37] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 15:59:15] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:03:43] /index.php?act=goods&op=addbrowse&gid=106865 ( act=goods&op=addbrowse ) 
+ERR: Db Error: Champ 'gc_id_3' inconnu dans field list
+INSERT INTO `wantease_goods_browse` (goods_id,member_id,browsetime,gc_id,gc_id_1,gc_id_2,gc_id_3) VALUES ('106865','6','1465632223','1530','1526','1530','0')
+[2016-06-11 16:05:31] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:08:33] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:09:02] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:09:44] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:11:59] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:12:08] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:12:10] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:12:11] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:18:07] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:23:26] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:26:15] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:26:34] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:28:47] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:28:49] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:28:50] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:28:52] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:28:54] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:29:45] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:34:11] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:34:20] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:34:48] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:43:30] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 16:58:18] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 17:48:54] /index.php ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 17:51:48] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  
+[2016-06-11 17:54:51] / ( act=index&op=index ) 
+ERR: Db Error: La table 'wanyi2.wantease_' n'existe pas
+SELECT * FROM `wantease_` WHERE ( store_id <> '0' ) LIMIT 1000  

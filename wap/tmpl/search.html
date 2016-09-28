@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>商品搜索</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        .main{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+        }
+        .bg {
+            -moz-filter: blur(1px);
+            -webkit-filter: blur(1px);
+            -o-filter: blur(1px);
+            -ms-filter: blur(1px);
+            filter: blur(1px);
+            background-color:rgba(0,0,0,0.8);
+            opacity: 0.8;
+            color: #FFFFFF;
+            width: 100%;
+        }
+        .shousuo{
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+         }
+        .nav{
+            height: 45px;
+            background: #343b48;
+            width: 100%;
+        }
+        .nav .back{
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            float: left;
+            margin: 12px 0 0 15px;
+        }
+        .shurukuang{
+            width: 67%;
+            display: inline-block;
+            background: #FFFFFF;
+            height: 30px;
+            float: left;
+            margin-top: 7px;
+            margin-left: 6%;
+        }
+        .qingchu{
+            width: 17px;
+            height: 17px;
+            vertical-align: -5px;
+            margin-left: 5%;
+        }
+        .btn{
+            float: right;
+            margin: 12px 15px 0 0;
+        }
+        .nav input{
+            border-radius: 5px;
+            height: 96%;
+            width: 82%;
+        }
+        .nav span{
+            color: #FFFFFF;
+            font-size: 14px;
+
+        }
+        .tit{
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            font-size: 11.5px;
+        }
+        .tit i{
+            color: #999;
+        }
+        .tit u{
+            margin: 0 5%;
+            color: #999;
+        }
+        .shangpin{
+            width: 100%;
+        }
+        .xuansp ul{
+            text-align: center;
+        }
+        .xuansp ul li {
+            padding: 4px 16px;
+            border-radius: 4px;
+            border: 1px solid #14ceb6;
+            font-size: 13px;
+            float: left;
+
+            margin-left: 16px;
+            margin-bottom: 10px;
+        }
+        .xuansp ul li a{
+            color: #14ceb6;
+        }
+        .shousojilv{
+            border-top: 1px solid #eeeeee;
+            margin-top: 15px;
+        }
+        .shousojilv li{
+            vertical-align: middle;
+            height: 44px;
+            line-height: 44px;
+            width: 90%;
+            border-bottom: 1px solid #eeeeee;
+            margin: auto;
+
+            font-size: 12px;
+        }
+        .shousojilv li a{
+            color: #ffffff;
+        }
+        .shousojilv li img{
+            width: 12px;
+            height: 12px;
+        }
+        .shousuojilv {
+            margin-right: 16px;
+            float: left;
+            margin-top: 16px;
+        }
+        .shancujilv{
+            float: right;
+            margin-top: 16px;
+        }
+        .remove{
+            text-align: center;
+            font-size: 13px;
+            margin-top: 18px;
+            color: #14ceb6;
+        }
+        .tit .chuangc{
+            color: #14ceb6;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="bg"></div>
+    <div class="shousuo">
+        <div class="nav">
+            <img class="back" src="img/arrow_left_b.png" alt="" onclick="javascript:history.go(-1)"/>
+            <div  class="shurukuang">
+                <input type="text" id="keyword"/>
+                <img class="qingchu" src="img/qiongkong.png" alt="" onclick="remove_keyword()"/>
+            </div>
+            <span class="btn" onclick="select_keyword()">搜索</span>
+        </div>
+        <div class="shangpin" id="select_list">
+            
+        </div>
+        <div class="shousojilv" id="history_list">
+            
+        </div>
+        
+    </div>
+</div>
+
+    <script type="text/html" id="select_list_model">
+        
+        <span class='tit'>
+            <% if(yipincss == 1) { %>
+                <i class="chuangc" id="goods">艺品</i>
+            <% } else { %>
+                <i class="goods" id="goods">艺品</i>
+            <% } %>
+            <u>|</u>
+            <% if(pinpaicss == 1) { %>
+                <i class="chuangc" id="store">品牌</i>
+            <% } else { %>
+                <i class="store" id="store">品牌</i>
+            <% }  %>
+        </span>
+        <div class="xuansp">
+            <% if(list != null) { %>
+            <ul>
+                <% for(i = 0; i < list.length; i++) { %>
+                    <li><a href="<%=$buildUrl('keyword',list[i])%>"><%=list[i]%></a></li>
+                <% } %>
+            </ul>
+            <% } %>
+            <div style="clear: both;"></div>
+        </div>
+    </script>
+
+    <script type="text/html" id="history_list_model">
+            <% if(his_list != null) { %>
+        <ul>
+            <% for(i = 0; i < his_list.length; i++) { %>
+            <li >
+                <img class="shousuojilv" src="img/shousuojilv.png" alt=""/>
+                <a href="<%=$buildUrl('keyword',his_list[i])%>">
+                    <%=his_list[i]%>
+                </a>
+                <img class="shancujilv" src="img/shancujilv.png" alt="" onclick="delete_history(this)"/>
+            </li>
+            <% } %>
+        </ul>
+        <div class="remove" onclick="remove_all_history(this)">
+            清空历史记录
+        </div>
+        <% } %>
+
+    </script>
+    
+<script>
+    window.onload=function(){
+        document.getElementsByClassName("bg")[0].style.height = window.screen.height+"px";
+    }
+</script>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/tmpl/search_1_5.js"></script> 
+
+</body>
+</html>

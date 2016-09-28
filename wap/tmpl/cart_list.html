@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title></title>
+	<link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="css/gouwudai.css"/>
+
+</head>
+<body>
+<header id="header" class="nctouch-product-header fixed">
+    <div class="nav-one">
+        <ul>
+            <a href="cart_list.html"><li class="on">购物袋</li></a>
+            <a href="member/goods.favoritesList.html"><li class="">心愿单</li></a>
+        </ul>
+        <span class="gouwuche" id="gouwuche">编辑</span>
+    </div>
+</header>
+
+<div class="gouwud-m" id="cart_list"></div>
+<div class="guige-waiku">
+  <div class="guige" id="update_goods_spec" style="width: 100%"></div>
+</div>
+
+<div class="jiesfooter">
+    <div>
+        <div class="xuanall"><input class="all_checkbox" type="checkbox" checked id="all_checkbox"></div>
+        <div class="jiesuan-txt">
+            <span>合计：<i id="set_sum">¥0.00</i></span>
+            <span class="ok" id="cart-list-wp" onclick="billing(this)"><s>|</s> <u>结算(<i id="set_cart_count">0</i>)</u></span>
+        </div>
+    </div>
+</div>
+<div></div>
+<footer id="footer" class="fixed-Width"></footer>
+	
+<!--购物车商品列表-->
+<script type="text/html" id="cart_list_model">
+
+	<% if(cart_list != null){ %>
+		<% for(var i in cart_list){ %>
+		<div class="dianpou">
+			<div class="gouwud-t">
+				<input class="store_checkbox" type="checkbox" checked>
+				<%=cart_list[i].store_name%>
+			</div>
+			<% if(cart_list[i].goods != null){ %>
+			<% var goods = cart_list[i].goods; %>
+				<% for(var n in goods){ %>
+					<div class="gouwud-q">
+						<div class="xuanzhong"><input class="goods_checkbox" type="checkbox" checked="checked"></div>
+						<div class="changpin"><a href="product_detail.html?goods_id=<%=goods[n].goods_id%>"><img src="<%=goods[n].goods_image_url%>" alt=""/></a></div>
+						<div class="gouwud-x"  >
+							<div class="gouwuche-mon">
+								<span>¥<%=goods[n].goods_promotion_price%></span><s>原价¥<%=goods[n].goods_marketprice%></s><i class="suliang">x<%=goods[n].goods_num%></i>
+								<div style="clear: both;"></div>
+							</div>
+							<div class="gouwuche-txt" >
+								<p><%=goods[n].goods_name%></p>
+								<% if(goods[n].goods_spec != ""){ %>
+								<span class="color"><%=goods[n].goods_spec%><i></i></span>
+								<% } %>
+							</div>
+						</div>
+						<div class="bianji"  style="display: none;">
+							<div>
+								<span class="spsuliang" cart_id="<%=goods[n].cart_id%>">
+									<i class="jian"></i>
+									<input type="number" value="<%=goods[n].goods_num%>" class="zhi" readonly="readonly"/>
+									<i class="jia"></i>
+									<input type="hidden" value="<%=goods[n].goods_storage%>"/>
+								</span>
+								<% if(goods[n].goods_spec != ""){ %>
+								<span class="xuanzheguige">
+									<span><%=goods[n].goods_spec%></span>
+									<i></i> 
+									<s class="guige-t" onclick="set_goods_spec(<%=goods[n].goods_id%>,<%=goods[n].cart_id%>,<%=goods[n].goods_num%>)">
+										<img src="img/down_icon.png" alt=""/>
+									</s>
+								</span>
+								<% } %>
+							</div>
+							<div class="delete" onclick="del_goods_confim(<%=goods[n].cart_id%>)">删除</div>
+						</div>
+						<i style="clear: both; display: block;"></i>
+						<input type="hidden" name="cart_id" value="<%=goods[n].cart_id%>"/>
+						<input type="hidden" name="goods_num" class="goods_num" value="<%=goods[n].goods_num%>"/>
+						<input type="hidden" name="goods_price" class="goods_price" value="<%=goods[n].goods_promotion_price%>"/>
+					</div>
+	
+				<% } %>
+			<% } %>
+		</div>
+		<% } %>
+	<% } %>
+
+	<script>
+
+		var gouwudX=document.getElementsByClassName("gouwud-x");
+		var bianJi=document.getElementsByClassName("bianji");
+		var spsuliang=document.getElementsByClassName("spsuliang");
+		var dianpou=document.getElementsByClassName("dianpou");
+		var allxuanzhong=document.getElementById("allxuanzhong");
+
+		document.getElementById("gouwuche").onclick=function(){
+
+			this.innerHTML=this.innerHTML=="编辑"?"完成":"编辑";
+			for(var i= 0,len=gouwudX.length;i<len;i++){	
+				gouwudX[i].style.display=gouwudX[i].style.display=="none"?"block":"none";
+				bianJi[i].style.display=gouwudX[i].style.display=="none"?"block":"none";
+			}
+		};
+		
+	   /*for (var i = 0,slleng=spsuliang.length; i < slleng; i++) {
+		   //将点击事件绑定到tr元素
+		   spsuliang[i].onclick = function (e) {
+			   var e = e || window.event;
+			   var el = e.target || e.srcElement; //通过事件对象的target属性获取触发元素
+			   var cls = el.className; //触发元素的class
+			   var countInout = this.getElementsByClassName('zhi')[0]; // 数目input
+			   var value = parseInt(countInout.value); //数目
+			   var gouwudq=this.parentNode.parentNode.parentNode;
+			   var suliang=gouwudq.getElementsByClassName("suliang")[0];
+			   //通过判断触发元素的class确定用户点击了哪个元素
+			   switch (cls) {
+				   case 'jia': //点击了加号
+					   countInout.value = value + 1;
+					   suliang.innerHTML="x"+countInout.value;
+					   break;
+				   case 'jian': //点击了减号
+					   if (value > 1) {
+						   countInout.value = value - 1;
+						   suliang.innerHTML="x"+countInout.value;
+					   }
+					   break;
+			   }
+		   }
+			// 给数目输入框绑定keyup事件
+			spsuliang[i].getElementsByClassName("zhi")[0].onkeyup = function () {
+			   var gouwudq=this.parentNode.parentNode.parentNode.parentNode;
+			   var suliang=gouwudq.getElementsByClassName("suliang")[0];
+			   var val = parseInt(this.value);
+			   if (isNaN(val) || val <= 0) {
+				   val = 1;
+			   }
+			   if (this.value != val) {
+				   this.value = val;
+			   }
+			   suliang.innerHTML="x"+val;
+		   }
+	   }*/
+		//单个商品点击
+		/*var shangpinxuan=document.getElementsByClassName("shangpinxuan");
+		for(var p= 0, spleng=shangpinxuan.length; p<spleng;p++){
+			shangpinxuan[p].onclick=function(){
+				this.src=this.src.substring(33)=="img/weibeixuanj.png"?"img/yijingxuanz.png":"img/weibeixuanj.png";
+				dianpuall(this.parentNode.parentNode.parentNode);
+				alldianshang();
+			}
+		}*/
+		//判断是否当前店铺商品是否全点上
+		/*function dianpuall(dangqian){
+			var dshangpinxuan=dangqian.getElementsByClassName("shangpinxuan");
+			var dianpuxuan=dangqian.getElementsByClassName("dianpuxuan")[0];
+			for(var k= 0, spaleng=dshangpinxuan.length; k<spaleng;k++){
+			   if(dshangpinxuan[k].src.substring(33)=="img/weibeixuanj.png"){
+				  return dianpuxuan.src="img/weibeixuanj.png" ;
+			   }else{
+				   dianpuxuan.src="img/yijingxuanz.png";
+			   }
+			}
+		}*/
+		//点击店勾选，店铺下的商品全选上
+		/*var dianpuxuan=document.getElementsByClassName("dianpuxuan");
+		for(var a= 0, dpleng=dianpuxuan.length; a<dpleng;a++){
+			dianpuxuan[a].onclick=function(){
+				var dangqian=this.parentNode.parentNode;
+				var dshangpinxuan=dangqian.getElementsByClassName("shangpinxuan");
+				this.src=this.src.substring(33)=="img/weibeixuanj.png"?"img/yijingxuanz.png":"img/weibeixuanj.png";
+				for(var b= 0, dspxleng=dshangpinxuan.length; b<dspxleng;b++){
+					if(this.src.substring(33)=="img/weibeixuanj.png"){
+						dshangpinxuan[b].src="img/weibeixuanj.png";
+					}else{
+						dshangpinxuan[b].src="img/yijingxuanz.png";
+					}
+				}
+				alldianshang();
+			}
+		}*/
+		//所有店铺的勾选
+		/*allxuanzhong.onclick=function(){
+			this.src=this.src.substring(33)=="img/weibeixuanj.png"?"img/yijingxuanz.png":"img/weibeixuanj.png";
+			for(var e= 0,eleng=dianpou.length;e<eleng;e++){
+				var shangpinxuan=dianpou[e].getElementsByClassName("shangpinxuan");
+				for(var s= 0,sleng=shangpinxuan.length;s<sleng;s++){
+					if(this.src.substring(33)=="img/weibeixuanj.png"){
+						dianpou[e].getElementsByClassName("dianpuxuan")[0].src="img/weibeixuanj.png";
+						shangpinxuan[s].src="img/weibeixuanj.png";
+					}else{
+						dianpou[e].getElementsByClassName("dianpuxuan")[0].src="img/yijingxuanz.png";
+						shangpinxuan[s].src="img/yijingxuanz.png";
+					}
+				}
+			}
+		};*/
+		//判断当前所有店铺和商品是否全点上
+		/*function alldianshang(){
+			for(var k= 0, kleng=dianpou.length; k<kleng;k++){
+				if(dianpou[k].getElementsByClassName("dianpuxuan")[0].src.substring(33)=="img/weibeixuanj.png"){
+				   return allxuanzhong.src="img/weibeixuanj.png";
+				}else{
+					allxuanzhong.src="img/yijingxuanz.png" ;
+				}
+			}
+		}*/
+
+	</script>
+	
+</script>
+
+<script type="text/html" id="update_goods_spec_model">
+	
+	<div class="jairugouwuche" id="jairugouwuche" style="width: 100%;">
+        <div class="shangping">
+            <span id="spec_goods_image"><img src="<%=goods_info.goods_image%>" alt=""/></span>
+               <span>
+                   <i id="spec_goods_price">¥<%=goods_info.goods_price%></i>
+                   <u id="spec_goods_storage">库存<%=goods_info.goods_storage%>件</u>
+               </span>
+            <span id="close">X</span>
+            <div style="clear: both"></div>
+        </div>
+		
+		<% if(goods_map_spec.length != 0){%>
+			<% for(var i =0;i<goods_map_spec.length;i++){%>
+			<div class="yanse">
+				<div><%=goods_map_spec[i].goods_spec_name%></div>
+				<ul class="color">
+					<% var goods_spec_value = goods_map_spec[i].goods_spec_value; %>
+					<%for(var j = 0;j<goods_spec_value.length;j++){%>
+						<% var goods_spec = goods_info.goods_spec; %>
+						<li <% if(goods_spec[goods_spec_value[j].specs_value_id]) {　%> class="hover" <% } %>>
+							<%=goods_spec_value[j].specs_value_name%>
+							<input type="hidden" value="<%=goods_spec_value[j].specs_value_id%>">
+						</li>
+						<% if(goods_spec[goods_spec_value[j].specs_value_id]) {　%> 
+							<input type="hidden" class="goods_spec_id" value="<%=goods_spec_value[j].specs_value_id%>">
+						 <% } %>
+					<% } %>
+
+				</ul>
+			</div>
+			<div style="clear: both"></div>
+			<% } %>
+		<% } %>
+
+    </div>
+	
+    <script>
+		
+		//弹出规格匡
+		//var guiget=document.getElementsByClassName("guige-t");
+		
+		
+		//var sizes=document.getElementById("size").children;
+		
+		//关闭规格匡
+		var buyNow=document.getElementById("jairugouwuche");
+		document.getElementById("close").onclick=function(){
+			buyNow.style.display="none";
+			document.getElementsByClassName("guige-waiku")[0].style.display="none";
+		};
+		/*var colors=document.getElementsByClassName("color")
+		//console.log(colors);
+		for(var k= 0, rlen=colors.length; k<rlen; k++){
+		
+			var colorsc=colors[k].children;
+			for(var r= 0, clen=colorsc.length; r<clen; r++){
+				colorsc[r].onclick=function(){
+					for(var i= 0, lent=this.parentNode.children.length; i<lent; i++){
+						this.parentNode.children[i].className="";
+					}
+					this.className="hover";
+				}
+			}
+		}*/
+
+	</script>
+	
+</script>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script> 
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/common.js"></script> 
+<script type="text/javascript" src="../js/template.js"></script> 
+<script type="text/javascript" src="../js/simple-plugin.js"></script>
+<script type="text/javascript" src="../js/tmpl/cart-list_1_5.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</body>
+</html>

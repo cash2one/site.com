@@ -1,0 +1,38 @@
+<?php defined('InShopNC') or exit('Access Invalid!'); return array (
+  'ap_id' => '1259',
+  'ap_name' => '幻灯片2',
+  'ap_intro' => '',
+  'ap_class' => '0',
+  'ap_display' => '2',
+  'is_use' => '1',
+  'ap_width' => '1200',
+  'ap_height' => '450',
+  'ap_price' => '0',
+  'adv_num' => '1',
+  'click_num' => '0',
+  'default_content' => '',
+  'gc_id' => '0',
+  'adv_list' => 
+  array (
+    0 => 
+    array (
+      'adv_id' => '1087',
+      'ap_id' => '1259',
+      'adv_title' => '愚人节就往脸上砸大饼！',
+      'adv_origin' => '',
+      'adv_price' => '0',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"05138597676983753.jpg";s:11:"adv_pic_url";s:13:"www.sr020.com";}',
+      'adv_start_date' => '1448553600',
+      'adv_end_date' => '1480521600',
+      'slide_sort' => '0',
+      'member_id' => '0',
+      'member_name' => '',
+      'click_num' => '0',
+      'is_allow' => '1',
+      'buy_style' => '',
+      'goldpay' => '0',
+      'gc_id' => '0',
+      'store_id' => '0',
+    ),
+  ),
+);

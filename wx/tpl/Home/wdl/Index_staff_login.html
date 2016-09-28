@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>店员登陆</title>
+
+      
+            <!--end congtX-->
+            <div class="congtX" style="margin-left:230px;">
+            	<div class="contLt clr">
+                    <form action="{pigcms::U('Users/staff_checklogin')}" method="post" class="login">
+                    	<p class="denglu clr">店员登录</p>
+                    	<div class="name clr">
+                        	<span style="padding-right:10px;">用户名</span> 
+                            <input class="text" type="text" name="username" />
+                        </div><br />
+                        <div class="password clr">
+                        	<span style="padding-right:10px;">密码</span> 
+                            <input class="text" type="password" name="password" />
+                        </div><br />
+                        <div class="yanzheng clr">
+                        	<span style="padding-right:10px;">验证码</span> 
+                             <input name="verifycode2" type="text" size="8" style="width:80px;" class="text" maxlength="4" />&nbsp;<img src="{pigcms::U('Index/verifyLogin')}" id="txtCheckCode2" style="width:70px;margin-top:-5px"/>&nbsp;<a href="javascript:refreshImg2();" style="color:#666">看不清？换一张</a>
+                            <script>
+                            function refreshImg2(){
+                                document.getElementById("txtCheckCode2").src="/index.php?g=Home&m=Index&a=verifyLogin&s="+Math.random();
+                            }
+                            </script>
+                        </div><br />
+						<input type="hidden" name="token" value="{pigcms:$token}" />
+                        <button class="submit" type="submit">登录</button>
+                    </form>
+                </div>
+              
+                <!--end right-->
+                
+            </div>
+        </div>
+ 

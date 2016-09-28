@@ -1,0 +1,140 @@
+
+.parwer-liucheng{
+	background: #a38b77;
+	width: 1200px;
+	height: 140px;
+	margin:  0 auto;
+	margin-top: 25px;
+}
+.parwer-liucheng ul{
+	padding: 0 120px;
+}
+.parwer-liucheng ul li{float:left;text-align:center;margin-top: 30px}
+.parwer-liucheng ul span{
+	display:block;
+	color: #ffffff;
+	margin-top: 13px;
+}
+.parwer-liucheng ul li i{
+	width: 0px;
+	height: 0px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #ffffff;
+	font-size: 0px;
+	line-height:65px;
+	margin: 0 45px;
+}
+.banner-title{
+	width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+.container-banner{
+	overflow: hidden;
+	height: 500px;
+	margin:0  auto;
+	text-align: center;
+}
+.banner{
+	text-align: center;
+	margin: 0 auto;
+	width: 1200px;
+}
+.banner-w{
+	width: 1200px;
+	margin: 0 auto;
+}
+.biaoti{
+	text-align: center;
+	padding-top: 35px ;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	width: 300px;
+}
+.biaoti h1{
+	font-size: 38px;
+}
+.biaoti h1 span{
+	margin-left: 12px;
+}
+.biaoti p{
+    margin-top: 5px;
+}
+.active{
+	border-bottom: 4px solid;
+}
+.banner-title ul li {
+	float: left;
+	font-size: 25px;
+	line-height: 96px;
+	width: 25%;
+	text-align: center;
+	cursor: pointer;
+}
+.banner{
+	background-color: #f2f3f2;
+	height: 400px;
+}
+.banner-title{
+	background-color: #f2f3f2;
+	height:100px;
+}
+.zhenxuanlei{
+	width: 1200px;
+	height: 620px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.zhenxuanlei ul li{
+   float: left;
+	background: #c7b7aa;
+	width: 190px;
+	margin-left: 8px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+.zhenxuanlei ul li span{
+	display: block;
+	text-align: center;
+    height: 40px;
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 30px;
+}
+.zhenxuanlei ul li img{
+	width: 190px;
+	height: 105px;
+}
+.biaoti h3{
+	font-size: 23px;
+}
+.biaoti span{
+	cursor: pointer;
+}
+.banner .show .pic-list p{
+	position: absolute;
+}
+.show-text {
+	float: left;
+}
+.show-text  span{
+	margin-left: 9px;
+}
+.show-img{
+	float: right;
+	margin-top: 25px;
+}
+.pic-list li .pic-cont .show{
+	padding-left: 8px;
+}
+.pic-list li .pic-cont .show img{
+	margin-right: 20px;
+}
+/**************************/
+.flexslider {
+	min-height: 450px;
+}
+.flex-control-nav li{
+	border-bottom: none;
+}

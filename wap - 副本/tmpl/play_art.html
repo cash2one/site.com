@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Author" contect="U2FsdGVkX1+liZRYkVWAWC6HsmKNJKZKIr5plAJdZUSg1A==">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>玩艺说</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/faxianye.css">
+    <link rel="stylesheet" type="text/css" href="../css/wanyishuo.css">
+    <link rel="stylesheet" type="text/css" href="../css/nctouch_common.css">
+</head>
+<body>
+<header id="header" class="nctouch-product-header fixed">
+    <div class="header-l"> <a href="javascript:history.go(-1)"> <i class="back"></i> </a> </div>
+    <div class="nav-one">
+        <ul>
+            <a href="/wap/tmpl/play_art.html"><li class="on">玩艺说</li></a>
+            <a href="/wap/tmpl/art_life.html"><li>艺生活</li></a>
+            <a href="/wap/tmpl/by_ingenuity.html"><li>致匠心</li></a>
+        </ul>
+      <span class="gouwuche">
+          <a href="../tmpl/cart_list.html" ><img src="../img/chouti.png" alt=""/></a>
+          <!--<i id="cart_count"></i>-->
+      </span>
+    </div>    
+</header>
+    <div class="wanyishuo">
+        <div class="wanyishuo-btn">
+            <span  id="yijian"  class="xuanzhong">
+                艺见<br>Product Experience
+            </span>
+            <span id="yifang"  class="buxuanzhong">
+                艺访<br>InterViews
+            </span>
+            <div style="clear: both;"></div>
+        </div>
+ <div class=""  id="yijian-list">
+     <div id="article_list"></div>
+ </div>
+  <div class="" id="yifang-list">
+     <div id="article_list_1"></div>
+ </div>   
+    </div>
+
+  <div class="footer-top"></div>
+<footer id="footer" class="fixed-Width"></footer>
+</body>
+<script type="text/html" id="article_body">
+    <% if(datas && datas.length >0){%>
+    <%for(i=0;i<datas.length;i++){%>
+       <div class="yijian-list">
+               <div class="yijian-pic">
+                    <a href="cms_article_show.html?article_id=<%=datas[i].article_id%>"><img src="<%=datas[i].article_image;%>" alt=""/></a>
+               </div>
+               <div class="yijian-text">
+                    <a href="cms_article_show.html?article_id=<%=datas[i].article_id%>"><p><%=datas[i].article_title;;%></p></a>
+                    <div>
+                        <span><%=datas[i].article_abstract;%></span>
+                        <span><i class="shoucan-m"></i><i class="dianzan"></i><%=datas[i].like_count%></span>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+       </div>
+    <%}%>
+    <% if (hasmore) {%>
+    <li class="loading"><div class="spinner"><i></i></div>数据读取中...</li>
+    <% } %>
+    <%
+    }else {
+    %>
+    <div class="nctouch-norecord search">
+        <div class="norecord-ico"><i></i></div>
+        <dl>
+            <dt>没有找到任何相关信息</dt>
+        </dl>
+        <a href="javascript:history.go(-1)" class="btn">重新选择</a>
+    </div>
+    <%
+    }
+    %>
+</script>
+<script type="text/html" id="article_body_1">
+    <% if(datas && datas.length >0){%>
+    <%for(i=0;i<datas.length;i++){%>
+       <div class="yifang-list">
+        <div class="yifang">
+               <div class="yifang-pic">
+                    <a href="cms_article_show.html?article_id=<%=datas[i].article_id%>"><img src="<%=datas[i].article_image;%>" alt=""/></a>
+               </div>
+               <div class="yifang-text">
+                    <a href="cms_article_show.html?article_id=<%=datas[i].article_id%>"><p><%=datas[i].article_title;;%></p></a>
+                   <i></i>
+                    <div>
+                        <span><%=datas[i].article_abstract;%></span>
+                        <span><i class="guanjianci"></i><i class="dianzan"></i><%=datas[i].like_count%></span>
+
+                    </div>
+                </div>
+            <div style="clear: both"></div>
+        </div>
+       </div>
+    <%}%>
+    <% if (hasmore) {%>
+    <li class="loading"><div class="spinner"><i></i></div>数据读取中...</li>
+    <% } %>
+    <%
+    }else {
+    %>
+    <div class="nctouch-norecord search">
+        <div class="norecord-ico"><i></i></div>
+        <dl>
+            <dt>没有找到任何相关信息</dt>
+        </dl>
+        <a href="javascript:history.go(-1)" class="btn">重新选择</a>
+    </div>
+    <%
+    }
+    %>
+</script>
+<script>
+    window.onload=function(){
+        var yijian=document.getElementById("yijian");
+        var yifang=document.getElementById("yifang");
+        yijian.onclick=function(){
+            document.getElementById("yijian-list").style.display="block";
+            document.getElementById("yifang-list").style.display="none";
+            this.className="xuanzhong";
+            yifang.className="buxuanzhong";
+        };
+        yifang.onclick=function(){
+            this.className="xuanzhong";
+            yijian.className="buxuanzhong";
+            document.getElementById("yifang-list").style.display="block";
+            document.getElementById("yijian-list").style.display="none";
+        };
+
+    }
+</script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tmpl/play_art.js"></script>
+<script type="text/javascript" src="../js/tmpl/footer.js"></script>
+</html>

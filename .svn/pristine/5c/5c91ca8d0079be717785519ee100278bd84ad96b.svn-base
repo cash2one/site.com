@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>行业方案 - 焜升网络科技-微信营销、微商城开发、微信分销系统开发</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content=" 行业方案 ">
+<meta name="description" content="焜升网络科技，国内顶尖的微信第三方开发服务商，微信营销软件专家，行业权威微信公众平台代运营服务商，焜升授权服务商将享受最优惠的代理价格和极具吸引力的高额利润回报">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/global.css" rel="stylesheet" type="text/css">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/style.css" rel="stylesheet" type="text/css">
+<link href="/tpl/Home/weidogsfx/static/kehu301/css/products.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="app_bg">
+<div id="header">
+    <div class="header_top">
+    <img src="/tpl/Home/weidogsfx/static/kehu301/images/header_telephone.jpg" class="header_telephone"/>
+    </div>
+    <div class="header_main">
+		<div class="logo"><a href="/"><img src="/tpl/Home/weidogsfx/logo/logo.png" alt="焜升网络科技"></a></div>
+		<div class="menu">
+			<ul>
+      	<li><a href="/" class="cur_new">首页</a></li>
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=fxxt')}" title="分销系统" >分销系统</a></li> 
+                <li ><a href="/index.php?g=Home&m=Index&a=youshi" title="微信营销" >微信营销</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=yuncanting')}" title="云餐厅" >云餐厅</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=c1')}" title="产品"   class="cur" >产品</a></li> 
+                <li ><a href="{pigcms::U('/index.php?g=Home&m=Index&a=anli')}" title="案例" >案例</a></li> 
+               <li ><a href="/index.php?g=User&m=Index&a=index" title="管理中心" >管理中心</a></li> 
+                <div class="clear"></div>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+	<div class="wrap po_re">
+    	<div class="blank15"></div>
+		<div class="left" id="lefter">
+			<script src="/tpl/Home/weidogsfx/static/kehu301/js/jquery-1.9.1.min.js" ></script>
+<div id="app">
+	<h3>产品</h3>
+	<div class="app_cont">
+
+		             
+	   <dl>
+		<dt><a href="/" class="icon_1">数据魔方</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="/" class="icon_2">微会员</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="/" class="icon_3">微场景</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/weiguanwang.html" class="icon_4">微官网</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="//" class="icon_5">微商圈</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/weiyingyong.html" class="icon_6">微应用</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/weizhifu.html" class="icon_7">微支付</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="//" class="icon_8">微助力</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/weixinqiang.html" class="icon_9">微信墙</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/kf.html" class="icon_10">微客服</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/c3.html" class="icon_11">产品优势</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/c4.html" class="icon_12">DIY模式</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="/c611.html" class="icon_13">高级接口</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/xiaoximoban.html" class="icon_14">消息模板</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/duanxinjiekou.html" class="icon_15">短信接口</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/jichujiekou.html" class="icon_16">基础功能</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/hy.html" class="icon_17">行业方案</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/bm.html" class="icon_18">便民查询</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="/wp.html" class="icon_19">微拍</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/c12.html" class="icon_20">微商城</a></dt>	
+	  </dl>
+
+	                 
+	   <dl>
+		<dt><a href="tpl/Home/weidogsfx/c1/shujutj.html" class="icon_21">微统计</a></dt>	
+	  </dl>
+
+	     	</div>
+</div>
+<script type="text/ecmascript">$(function(){$('#app .hover dd').slideDown()})</script>
+		</div>
+		<div class="right" id="righer">
+			<div class="con_right">
+				  <img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/911f54e2328f958f792a55b8f3a42a0c.jpg" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/43f669425a1c94974cde12c269b9cbef.jpg" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/dfce8284fa43a0236aaae1a977574437.jpg" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/0084080488b1f2603a87ca2ea6baac33.jpg" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/947279ce226939c9794389543a0c81c6.jpg" alt="" /><img src="/tpl/Home/weidogsfx/data/upload/2015-07-15/82751d3a0b9a9c875a97c7a648dfe53e.jpg" alt="" />			 </div>
+		</div>
+		<div class="blank6"></div>
+	</div>
+	<div class="blank9"></div>
+	
+<div class="blank9"></div>
+<div id="footer">
+
+ <div class="footer_top">
+
+  <div class="footer_top_left">
+
+   <div class="footer_top_item">
+
+    <h2>走进焜升网络科技</h2>
+
+    <p><a href="/qiyejianjie/">关于我们</a></p>
+
+    <p><a href="/lianxi/">联系我们</a></p>
+
+    <p><a href="/bangonghuanjing/">办公环境</a></p>
+
+    <p><a href="/rencaizhaopin/">人才招聘</a></p>
+
+   </div>
+
+   <div class="footer_top_item">
+
+    <h2>企业产品</h2>
+
+    <p><a href="#" target="_blank">一体化建站</a></p>
+
+    <p><a href="#" target="_blank">焜升网络科技</a></p>
+
+   </div>
+
+   <div class="footer_top_item">
+
+    <h2>焜升网络科技导航</h2>
+
+    <p><a href="/product/weiguanwang/">产品功能</a></p>
+
+    <p><a href="/qudao/">微商学院</a></p>
+
+    <p><a href="/anli/">经典案例</a></p>
+
+   </div>
+
+   <div class="footer_top_item">
+
+    <h2>关注我们</h2>
+
+    <p><a href="http://t.qq.com/a2860122324?pgv_ref=im.perinfo.perinfo.icon&ptlang=2052" target="_blank"></a></p>/*微博*/
+
+    <p><a href="http://weibo.com/u/1999701245" target="_blank"></a></p>/*微博*/
+
+   </div>
+
+   <div class="clear"></div>
+
+  </div>
+
+  <div class="footer_top_right"><img src="/tpl/Home/weidogsfx/static/kehu301/images/footer_right_logo.jpg" /></div>
+
+  <div class="clear"></div>
+
+ </div>
+
+ <div class="footer_bottom">
+
+  <font style="letter-spacing:2px"></font> Copyright@2012-2015    <a href="http://www.beianbeian.com/search/wybao.cn" target="_blank"><font style="color:#FFF">粤ICP备15052845号-1</font></a>
+
+</div>
+
+<style type="text/css">
+
+#kf_box{width:51px; height:500px; position:fixed; top:200px; right:3px; display:block;z-index:999}
+
+#kf_box #kf_display{display:none;}
+
+#kf_box .kf_list{display:none;}
+
+</style>
+
+<div id="kf_box">
+
+ <img src="/tpl/Home/weidogsfx/static/kehu301/images/kf_start.jpg" usemap="#kf_startMap" id="kf_start" border="0" />
+
+ <map name="kf_startMap" id="kf_startMap">
+
+   <area shape="rect" coords="2,1,71,387" href="javascript:show_kf();" />
+
+   <area shape="rect" coords="-1,385,90,516" href="#" onclick="go_top();" />
+
+ </map>
+
+ <img src="/tpl/Home/weidogsfx/static/kehu301/images/kf.jpg" id="kf_display" usemap="#kf_Map" border="0" />
+
+ <map name="kf_Map" id="kf_Map">
+
+  <area shape="rect" coords="-1,3,52,389" href="javascript:hide_kf();" />
+
+  <area shape="rect" coords="1,388,51,503" href="#" onclick="go_top();" />
+
+
+
+  <area shape="rect" coords="73,105,201,139" href="http://wpa.qq.com/msgrd?v=1&uin=3105920978&site=焜升网络科技&menu=yes" target="_blank" />
+
+  <area shape="rect" coords="73,145,202,181" href="http://wpa.qq.com/msgrd?v=1&uin=3105920978&site=焜升网络科技&menu=yes" target="_blank" />
+
+  <area shape="rect" coords="73,183,204,220" href="http://wpa.qq.com/msgrd?v=1&uin=3105920978&site=焜升网络科技&menu=yes" target="_blank" />
+
+  <area shape="rect" coords="73,313,204,349" href="http://wpa.qq.com/msgrd?v=1&uin=3105920978&site=焜升网络科技&menu=yes" target="_blank" />
+
+
+
+ </map>
+
+</div>
+
+<script type="text/javascript">
+
+function show_kf(){
+
+	$('#kf_box #kf_start').hide();
+
+	$('#kf_box').css("width",221);
+
+	$('#kf_box #kf_display').show();
+
+	$('#kf_box .kf_list').show();
+
+}
+
+
+
+function hide_kf(){
+
+	$('#kf_box #kf_display').hide();	
+
+	$('#kf_box .kf_list').hide();
+
+	$('#kf_box').css("width",51);
+
+	$('#kf_box #kf_start').show();	
+
+}
+
+
+
+function go_top(){
+
+	window.scroll(0,0);
+
+}
+
+</script>
+
+
+
+</body>
+</html>

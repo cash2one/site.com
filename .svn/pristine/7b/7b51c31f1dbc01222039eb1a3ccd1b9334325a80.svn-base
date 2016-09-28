@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>买手笔记</title>
+    <style>
+        *{margin: 0;padding: 0;font-style:normal;list-style: none;border:none; color:#333333;text-decoration:none;}
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        .lian-main{
+            min-width: 320px;
+            max-width: 750px;
+            margin: 45px auto 0 ;
+            background: url(../img/songlibg.png) no-repeat ;
+            background-size: 100% 100%;
+        }
+        .lian-nav {
+            width: 100%;
+            height: 45px;
+            background: #343a48;
+            line-height: 45px;
+            position: fixed;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 14px;
+            top: 0;
+            z-index: 10;
+        }
+        .lian-nav a{
+            position: absolute;
+            z-index: 1;
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0.4775rem;
+            left: 0;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            margin: 10%;
+            background-image: url(../img/arrow_left_b.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+        }
+        .title{
+            font-size: 28px;
+            color: #FFFFFF;
+            font-weight: 500;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding-top: 17px;
+        }
+        .title i{
+            color: #f66d9d;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .main{
+            max-width: 750px;
+            min-width: 320px;
+            margin: auto;
+            text-align: center;
+            margin-top: 45px;
+        }
+        .main ul li{
+            width: 100%;
+            height: 187px;
+            position: relative;
+        }
+        .main li img{
+            width: 100%;
+            height: 100%;
+        }
+        .text{
+            position: absolute;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            background: url("../img/yingying.png") no-repeat ;
+            background-size: 100% 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            bottom: 0;
+        }
+        .tit{
+            font-size: 15px;
+            color: #FFFFFF;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 5px;
+
+        }
+        .text-main{
+            font-size: 12px;
+            color: #FFFFFF;
+            display: block;
+            padding:0 4% ;
+            white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+        }
+    </style>
+</head>
+<body>
+<div class="lian-nav">
+    <a href=""><i class="back"></i></a>
+   买手笔记
+</div>
+<div class="main" id="note_buyers_list"></div>
+<script type="text/html" id="note_buyers_list_model">
+
+    <% if(special_list != null) { %>
+    <ul>
+        <% for(var i in special_list) { %>
+        <li>
+            <a href="/wap/special.html?special_id=<%=special_list[i].special_id;%>">
+                <img src="<%=special_list[i].special_banner; %>" alt=""/>
+            <div class="text">
+                <span class="tit"></span>
+                <p class="text-main"></p>
+            </div>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+    <% } %>
+</script>
+
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/template.js"></script>
+<script type="text/javascript" src="../js/simple-plugin.js"></script> 
+<script type="text/javascript" src="../js/indexmore/note_buyers.js"></script>
+
+</body>
+</html>

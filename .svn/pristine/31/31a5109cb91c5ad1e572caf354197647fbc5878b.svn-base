@@ -1,0 +1,19 @@
+
+.login-layout{
+	background: url('../newimg/lADOSYemzs0Dt80HgA_1920_951.jpg') center top no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.wuzi{
+	width: 150px;
+	background: url("../newimg/lALOMbuEhXLMlg_150_114.png") no-repeat center;
+	position: absolute;
+    height: 114px ;
+    bottom: 22px;
+    left: -62px;
+    display: none;
+    border-radius: 4px;
+    z-index: 100;
+}
+

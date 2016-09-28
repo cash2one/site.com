@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1" />
+    <title>关注的人</title>
+    <link rel="stylesheet" href="css/zhengzaiguanzhu.css"/>
+</head>
+<body>
+<div class="lian-main">
+    <div class="lian-nav">
+        <a href="javascript:history.go(-1)"><i class="back"></i></a>
+       关注的人
+    </div>
+    <div class="zzguanzhu" id="like">
+        
+    </div>
+	
+	<script type="text/html" id="like_model">
+		
+		<% if(datas != null) { %>
+		<% for(var i in datas) { %>
+		<div>
+            <i>
+				<a href="tarendezhongxin.html?member_id=<%=datas[i].member_id%>">
+                <img src="<%=datas[i].member_avatar%>" alt=""/>
+				</a>
+                <span class="zzguanzhu-t">
+                    <i><%=datas[i].member_name%></i>
+                    <ul>
+                        <li><i><%=datas[i].like_count%></i>关注</li>
+                        <li>/</li>
+                        <li><i><%=datas[i].like_my_count%></i>粉丝</li>
+                        <li>/</li>
+                        <li><i><%=datas[i].showcase_count%></i>关注橱窗</li>
+                    </ul>
+                </span>
+            </i>
+			
+			<% if(datas[i].like_state) { %>
+				<i>
+					<s>已关注</s>
+				</i>
+			<% } else { %>
+				
+				<i onclick="member_attention(this,'<%=datas[i].member_id%>')">
+					<s class="yi-guanzhi">+关注</s>
+				</i>
+				
+			<% } %>
+			<div style="clear: both"></div>
+        </div>
+		<% } %>
+		<% } %>
+        
+	</script>
+	
+	<script type="text/javascript" src="../js/config.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/template.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/tmpl/zhengzaiguanzhu.js"></script>
+	<!-- S 提示 -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>	
+	<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script> 
+	<!-- E 提示 -->  
+</body>
+</html>

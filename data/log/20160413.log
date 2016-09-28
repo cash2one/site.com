@@ -1,0 +1,6 @@
+[2016-04-13 15:07:54] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'geval_orderno' cannot be null
+INSERT INTO `wantease_evaluate_goods` (geval_orderid,geval_orderno,geval_goodsid,geval_goodsname,geval_goodsprice,geval_goodsimage,geval_scores,geval_content,geval_isanonymous,geval_addtime,geval_storeid,geval_storename,geval_frommemberid,geval_frommembername) VALUES ('0',NULL,NULL,NULL,NULL,NULL,'32','呵呵','0','1460531274',NULL,NULL,'271','Ar-H14')
+[2016-04-13 15:07:54] /mobile1/index.php?act=member_evaluate&op=evaluate_add ( act=member_evaluate&op=evaluate_add ) 
+ERR: Db Error: Column 'seval_orderno' cannot be null
+INSERT  INTO `wantease_evaluate_store` (seval_orderid,seval_orderno,seval_addtime,seval_storeid,seval_storename,seval_memberid,seval_membername,seval_desccredit,seval_servicecredit,seval_deliverycredit) VALUES ('0',NULL,'1460531274',NULL,NULL,'271','Ar-H14','3','4','3')

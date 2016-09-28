@@ -1,0 +1,118 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.fork {
+	border:0;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.col {
+	width: 320px;
+	float: left;
+	margin-right:32px;
+	margin-bottom: 16px;
+}
+.c3 {
+	margin-right:0;
+}
+
+h3:hover {
+	background: rgb(228,10,85);
+}
+
+p:hover {
+	background: #999;
+}
+
+h3.open {
+	background: rgb(255,70,120);
+}
+h3.open a {
+	background-position: 13px -25px;
+ 
+}
+h3 + div {
+	padding: 10px;
+}
+h2 + div, .example {
+	background: #fff;
+	overflow: hidden;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-bottom: 20px;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+h3+div {
+	display: none;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+#css3-animated-example h3 + div {
+	height: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background: #000;
+	display: block!important;
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition:all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#css3-animated-example .content {
+	padding: 10px;
+}
+#css3-animated-example h3.open + div {
+	height: auto;
+	background: #aaffff;
+}
+/* Event example
+--- */
+pre#event-log {
+	background: #fafacc;
+	padding: 10px;
+	display: block;
+}
+
+/* Responsive design
+--- */
+@media screen and (max-width: 1056px) {
+
+ .c2 {
+ margin-right: 0;
+ margin-bottom: 0;
+}
+}
+ @media only screen and (max-width: 704px), only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+ .c1 {
+ margin-right: 0;
+ margin-bottom: 0;
+}
+ h1 {
+ font-size: 28px;
+ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+}
+}
+ @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+.juli>p>span {
+	
+	margin-left:8px;
+	
+}
+
+.inputtype {
+    width: 100px;
+    height: 20px;
+    margin-left: 8px;
+    border: 1px solid rgba(51, 51, 51, 0.6);
+}
+
+.atype {
+    margin-left: 4px;
+	color: #4CD821;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

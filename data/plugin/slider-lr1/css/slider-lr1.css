@@ -1,0 +1,9 @@
+.cffff {zoom:1; font-size:12px;  width:1142px;  overflow:hidden; position:relative;padding:13px 29px;  background: #f3f4f4;}/*padding:35px 0 0 0;*/
+.cffff .pcont { width:1142px; float:left; overflow:hidden; position:relative; z-index:1; margin:0 0 0 1px}
+.cffff .ScrCont { width:32766px; zoom:1; }
+.cffff #List1_2, .cffff #List2_2 { float:left; text-align:center }
+.cffff .LeftBotton1 { width:14px; height:42px; float:left; background:url(../images/ppai-l.png) no-repeat;  background-position:center;position:absolute; z-index:2; left:10px; background-size:100% 100%}
+.cffff .RightBotton2 { width:14px; height:42px; float:right; background:url(../images/ppai-r.png) no-repeat; background-position:center;position:absolute; z-index:2; right:10px; background-size:100% 100%}
+.cffff a.pl:hover {color:#333333; }
+.pcshow{ width:100px; height:42px; background:url(images/pcshow_picbg.png) no-repeat;position:relative;}
+.w-line34{width:1px;height:34px;background:#595757;position:absolute;right:0;top:4px;}
